@@ -1,34 +1,40 @@
 import * as vscode from 'vscode';
-import { getWebviewContent } from './webview_content';
+import * as path from 'path';
+import * as fs from 'fs';
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let currentPanel: vscode.WebviewPanel | undefined = undefined;
+    let panel: vscode.WebviewPanel | undefined = undefined;
 
     context.subscriptions.push(
         vscode.commands.registerCommand('uiua_keypad.activate_keypad', () => {
 
-            if (currentPanel) {
-                currentPanel.reveal(vscode.ViewColumn.One);
+            if (panel) {
+                panel.reveal(vscode.ViewColumn.One);
             } else {
-                currentPanel = vscode.window.createWebviewPanel(
+                panel = vscode.window.createWebviewPanel(
                     'uiua_keypad_webviewpanel',
                     'Uiua Keypad',
-                    vscode.ViewColumn.Beside,
+                    vscode.ViewColumn.Two,
                     {
                         enableScripts: true,
+                        enableCommandUris: true,
+                        localResourceRoots: [
+                            vscode.Uri.joinPath(context.extensionUri, 'webview_keypad')
+                        ]
                     }
                 );
-                currentPanel.webview.html = getWebviewContent();
                 
-                currentPanel.onDidDispose(
+                panel.webview.html = get_webview_content(context, panel);
+                
+                panel.onDidDispose(
                     () => {
-                        currentPanel = undefined;
+                        panel = undefined;
                     },
                     undefined,
                     context.subscriptions
                 );
-                currentPanel.webview.onDidReceiveMessage(async (message) => {
+                panel.webview.onDidReceiveMessage(async (message) => {
                     switch(message.command){
                         case "write_glyph":
                             //vscode.window.showErrorMessage(message.text);
@@ -59,4 +65,41 @@ export function activate(context: vscode.ExtensionContext) {
         })
     );
 
+}
+
+
+// function get_webview_content(context: vscode.ExtensionContext, panel:vscode.WebviewPanel) {
+//     let html_string = fs.readFileSync(
+//         path.join(context.extensionPath, "webview_keypad", "index.html"),
+//         'utf8'
+//     );
+//     // replace "{{main.js}}" with the uri
+//     html_string = html_string.replace(
+//         "{{main.js}}", 
+//         panel.webview.asWebviewUri(
+//             vscode.Uri.joinPath(context.extensionUri, "webview_keypad", "main.js")
+//         ).toString()
+//     );
+//     return html_string;
+// }
+
+function get_webview_content(context: vscode.ExtensionContext, panel: vscode.WebviewPanel): string {
+    let html_string = fs.readFileSync(
+        path.join(context.extensionPath, "webview_keypad", "index.html"),
+        'utf8'
+    );
+
+    return html_string.replace(
+        /(href|src)=\"(.*?)\"/g, // Regular expression to match href="" or src=""
+        (match, attributeName, originalPath) => { 
+            // Only replace paths that don't start with "http" or "//" (to avoid modifying external links)
+            if (!originalPath.startsWith('http') && !originalPath.startsWith('//')) {
+                // Convert the matched filename to its corresponding webview URI
+                return `${attributeName}="${panel.webview.asWebviewUri(
+                    vscode.Uri.joinPath(context.extensionUri, "webview_keypad", originalPath)
+                ).toString()}"`;
+            }
+            return match; // If it's an external link, return the match unchanged
+        }
+    );
 }

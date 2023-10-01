@@ -2,6 +2,13 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.1.3]
+
+- remove roll and unroll and add dip `→`
+- smaller buttons
+- bigger tooltip
+- better source code layout
+
 ## [0.1.2]
 
 - Fixed missing scan glyph `\` on button

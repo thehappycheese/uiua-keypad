@@ -4,89 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Uiua Keypad</title>
-        <!-- <style>
-
-            body{
-                font-family:  "DejaVu Sans Mono", sans-serif;
-                user-select: none;
-            }
-            #tooltip-display{
-                font-size: 1.5em;
-            }
-            #button-holder{
-                font-size:2em;
-                display:flex;
-                flex-wrap: wrap;
-            }
-            #button-holder > button{
-                font-family:  "DejaVu Sans Mono", sans-serif;
-                width:2em;
-                font-size:1.2em;
-                background-color: #19232d;
-                margin:0.1em;
-            }
-            .stack-function-button {
-                color:#d1daec;
-            }
-            .monadic-function-button{
-                color: #95d16a;
-            }
-            .dyadic-function-button{
-                color:#54b0fc;
-            }
-            .modifier1-button{
-                color:#f0c36f;
-            }
-            .modifier2-button{
-                color:#cc6be9;
-            }
-            .noadic-function-button{
-                color:#ed5e6a;
-            }
-            .stack-function-button{
-                color:#aadaec;;
-            }
-            .misc-function-button{
-                color:lightgray;
-            }
-            .trans{
-                background-image: linear-gradient(180deg, #5BCEFA 29%, #F5A9B8 29%, #F5A9B8 43%, #FFFFFF 43%, #FFFFFF 57%, #F5A9B8 57%, #F5A9B8 71%, #5BCEFA 71%);
-                background-size: 100%;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -moz-text-fill-color: transparent;
-            }
-            .fb{
-                break-after: always;
-            }
-        </style> -->
+        <link rel="stylesheet" href="index.css" type="text/css"/>
+        <script src="main.js" defer></script>
         <script>
-            window.addEventListener("DOMContentLoaded",e=>{
-                let vscode = acquireVsCodeApi()
-                let tooltip = document.querySelector("#tooltip-display");
-                document.querySelector("#button-holder").addEventListener("mouseover",e=>{
-                    if(e.target.attributes["data-title"]){
-                        tooltip.innerHTML = e.target.attributes["data-title"].value
-                    }
-                });
-                document.querySelector("#button-holder").addEventListener("mouseup", e=>{
-                    if(e.target.attributes["data-title"]){
-                        let glyph = e.target.innerHTML;
-                        if (glyph=="&lt;"){
-                            glyph = "<";
-                        }else if(glyph==="&gt;"){
-                            glyph=">";
-                        }
-                        vscode.postMessage({
-                            command:"write_glyph",
-                            text:glyph,
-                            name:e.target.attributes["data-title"].value
-                        })
-                    }
-                })
-            })
+            
         </script>
     </head>
     <body>
@@ -99,9 +20,8 @@
 <button data-title="(:) flip"                class="stack-function-button"        >∶</button>
 <button data-title="pop"                     class="stack-function-button"        >;</button>
 <button data-title="noop"                    class="stack-function-button"        >·</button>
-<button data-title="roll"                    class="stack-function-button"        >↷</button>
-<button data-title="unroll"                  class="stack-function-button"        >↶</button>
-<button data-title="restack"                 class="stack-function-button fb"     >⇵</button>
+<button data-title="dip"                     class="stack-function-button"        >→</button>
+<button data-title="restack"                 class="stack-function-button"     >⇵</button>
 <button data-title="not"                     class="monadic-function-button"      >¬</button>
 <button data-title="sign"                    class="monadic-function-button"      >±</button>
 <button data-title="(`) negate"              class="monadic-function-button"      >¯</button>
@@ -110,7 +30,7 @@
 <button data-title="sine"                    class="monadic-function-button"      >○</button>
 <button data-title="floor"                   class="monadic-function-button"      >⌊</button>
 <button data-title="ceiling"                 class="monadic-function-button"      >⌈</button>
-<button data-title="round"                   class="monadic-function-button fb"      >⁅</button>
+<button data-title="round"                   class="monadic-function-button"      >⁅</button>
 <button data-title="(=) equals"              class="dyadic-function-button"       >=</button>
 <button data-title="(!=) not equals"         class="dyadic-function-button"       >≠</button>
 <button data-title="less than"               class="dyadic-function-button"       >&lt;</button>
@@ -126,7 +46,7 @@
 <button data-title="logarithm"               class="dyadic-function-button"       >ₙ</button>
 <button data-title="minimum"                 class="dyadic-function-button"       >↧</button>
 <button data-title="maximum"                 class="dyadic-function-button"       >↥</button>
-<button data-title="atangent"                class="dyadic-function-button fb"       >∠</button>
+<button data-title="atangent"                class="dyadic-function-button"       >∠</button>
 <button data-title="length"                  class="monadic-function-button"      >⧻</button>
 <button data-title="rank"                    class="monadic-function-button"      >∴</button>
 <button data-title="shape"                   class="monadic-function-button"      >△</button>
@@ -139,7 +59,7 @@
 <button data-title="grade"                   class="monadic-function-button"      >⌂</button>
 <button data-title="classify"                class="monadic-function-button"      >⊛</button>
 <button data-title="deduplicate"             class="monadic-function-button"      >⊝</button>
-<button data-title="constant"                class="monadic-function-button fb"      >□</button>
+<button data-title="constant"                class="monadic-function-button"      >□</button>
 <button data-title="join"                    class="dyadic-function-button"       >⊂</button>
 <button data-title="couple"                  class="dyadic-function-button"       >⊟</button>
 <button data-title="match"                   class="dyadic-function-button"       >≅</button>
@@ -198,7 +118,6 @@
 <button data-title="binding (=)"             class="misc-function-button"         >←</button>
 <button data-title="signature"               class="misc-function-button"         >|</button>
 <button data-title="comment"                 class="misc-function-button"         >#</button>
-</div>
-    
+        </div>
     </body>
 </html>
