@@ -12,6 +12,7 @@
             "outFiles": [
                 "${workspaceFolder}/out/**/*.js"
             ],
+            "preLaunchTask": "compile_extention",
             "request": "launch",
             "type": "extensionHost"
         }

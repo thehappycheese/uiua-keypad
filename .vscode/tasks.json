@@ -1,0 +1,10 @@
+{
+    "tasks": [
+        {
+            "label": "compile_extention",
+            "command":["yarn"],
+            "args": ["run", "compile"],
+            "type": "shell",
+        }
+    ]
+}
