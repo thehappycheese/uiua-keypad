@@ -15,11 +15,11 @@ body{
 #button-holder > button{
     font-family:  "DejaVu Sans Mono", sans-serif;
     width:2em;
-    font-size:1.2em;
+    font-size:1.4em;
     background-color: #19232d;
     margin:0.1em;
 }
-.stack-function-button {
+/* .stack-function-button {
     color:#d1daec;
 }
 .monadic-function-button{
@@ -38,11 +38,11 @@ body{
     color:#ed5e6a;
 }
 .stack-function-button{
-    color:#aadaec;;
+    color:#aadaec;
 }
 .misc-function-button{
     color:lightgray;
-}
+} */
 .trans{
     background-image: linear-gradient(180deg, #5BCEFA 29%, #F5A9B8 29%, #F5A9B8 43%, #FFFFFF 43%, #FFFFFF 57%, #F5A9B8 57%, #F5A9B8 71%, #5BCEFA 71%);
     background-size: 100%;
@@ -51,8 +51,4 @@ body{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
-.flbr {
-    flex-basis: 100%;
-    height: 0;
 }

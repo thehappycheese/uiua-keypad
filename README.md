@@ -15,3 +15,16 @@ editor every time you click a key. Please raise an issue / pull request on
 github if you can think of a way to fix it please let me know!
 
 Note that this extension is not made by the Uiua language developers. The language is not stable, so please be patient if this extension is out of date. I am hoping the official Uiua extension will have it's own keypad in future and this extension can be deprecated.
+
+## Notes
+
+To generate `webview_keypad/glyphs.js` use this snippet in the web console on `https://www.uiua.org/pad`
+
+```js
+console.log("const glyphs = "+JSON.stringify(Array.from(document.querySelectorAll(".glyph-button")).map(item=>({
+  glyph:item.innerText,
+  title:item.getAttribute("data-title"),
+  css_class:item.children[0]?Array.from(item.children[0].classList).at(-1):"misc-function-button",
+  color:getComputedStyle(item.children[0]?item.children[0]:item).color
+}))))
+```

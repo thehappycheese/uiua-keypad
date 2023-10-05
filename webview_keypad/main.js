@@ -3,6 +3,7 @@ let vscode;
 try{
     vscode = acquireVsCodeApi()
 }catch(e){
+    // facilitate testing the page without building the extension
     vscode = {};
     vscode.postMessage = (...args)=>console.log("postMessage", ...args);
 }
@@ -27,3 +28,18 @@ document.querySelector("#button-holder").addEventListener("mouseup", e=>{
         })
     }
 })
+
+
+for(let glyph of glyphs){
+    let button = document.createElement("button");
+    button.innerHTML = glyph.glyph;
+    button.setAttribute("data-title", glyph.title);
+    
+    button.setAttribute("data-ic", glyph.css_class);
+    if(glyph.title=="transpose"){
+        button.setAttribute("class", "trans");
+    }else{
+        button.setAttribute("style", `color:${glyph.color};`);
+    }
+    document.querySelector("#button-holder").appendChild(button);
+}
