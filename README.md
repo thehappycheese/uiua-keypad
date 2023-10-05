@@ -16,7 +16,10 @@ github if you can think of a way to fix it please let me know!
 
 Note that this extension is not made by the Uiua language developers. The language is not stable, so please be patient if this extension is out of date. I am hoping the official Uiua extension will have it's own keypad in future and this extension can be deprecated.
 
-## Notes
+## Author's Notes to Self
+
+<details>
+<summary>Click to view</summary>
 
 To generate `webview_keypad/glyphs.js` use this snippet in the web console on `https://www.uiua.org/pad`
 
@@ -28,3 +31,4 @@ console.log("const glyphs = "+JSON.stringify(Array.from(document.querySelectorAl
   color:getComputedStyle(item.children[0]?item.children[0]:item).color
 }))))
 ```
+<details>
