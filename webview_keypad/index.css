@@ -11,6 +11,7 @@ body{
 #button-holder{
     display:flex;
     flex-wrap: wrap;
+    margin-top:2em;
 }
 #button-holder > button{
     font-family:  "DejaVu Sans Mono", sans-serif;
@@ -21,9 +22,23 @@ body{
     padding:0.07em;
     border-width:0;
     border-radius:0.5em;
+    position:relative;
 }
 #button-holder > button:hover{
     background-color: #0003;
+}
+#button-holder > button:hover::after{
+    content:attr(data-title);
+    background-color: #000a;
+    color:#eee;
+    position:absolute;
+    bottom:105%;
+    left:105%;
+    width:7em;
+    padding:0.1em;
+    border-radius:0.2em;
+    z-index:1;
+    pointer-events:none;
 }
 /* .stack-function-button {
     color:#d1daec;
