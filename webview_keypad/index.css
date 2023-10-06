@@ -16,8 +16,14 @@ body{
     font-family:  "DejaVu Sans Mono", sans-serif;
     width:2em;
     font-size:1.4em;
-    background-color: #19232d;
+    background-color: transparent;
     margin:0.1em;
+    padding:0.07em;
+    border-width:0;
+    border-radius:0.5em;
+}
+#button-holder > button:hover{
+    background-color: #0003;
 }
 /* .stack-function-button {
     color:#d1daec;

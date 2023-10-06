@@ -32,14 +32,14 @@ document.querySelector("#button-holder").addEventListener("mouseup", e=>{
 
 for(let glyph of glyphs){
     let button = document.createElement("button");
-    button.innerHTML = glyph.glyph;
+    button.innerHTML = `<div>${glyph.glyph}</div>`;
     button.setAttribute("data-title", glyph.title);
     
     button.setAttribute("data-ic", glyph.css_class);
     if(glyph.title=="transpose"){
-        button.setAttribute("class", "trans");
+        button.querySelector("div").setAttribute("class", "trans");
     }else{
-        button.setAttribute("style", `color:${glyph.color};`);
+        button.querySelector("div").setAttribute("style", `color:${glyph.color};`);
     }
     document.querySelector("#button-holder").appendChild(button);
 }
