@@ -19,5 +19,15 @@ for(let glyph of glyphs){
     }else{
         button.querySelector("div").setAttribute("style", `color:${glyph.color};`);
     }
+    button.addEventListener("click", ()=>{
+        if (button.attributes["data-title"]){
+            console.log(glyph)
+            vscode.postMessage({
+                command:"write_glyph",
+                text:glyph.glyph,
+                name:button.attributes["data-title"].value
+            });
+        }
+    });
     document.querySelector("#button-holder").appendChild(button);
 }
