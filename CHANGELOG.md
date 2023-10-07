@@ -2,6 +2,16 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.1.16]
+
+- Fixed problems with focus
+- Improved styles
+- Keeping up with language changes
+
+## [0.1.15]
+
+- keeping up to date with language changes
+
 ## [0.1.3]
 
 - remove roll and unroll and add dip `→`

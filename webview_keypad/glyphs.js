@@ -24,8 +24,8 @@ const glyphs = [
         "color": "rgb(209, 218, 236)"
     },
     {
-        "glyph": "·",
-        "title": "noop",
+        "glyph": "∘",
+        "title": "identity",
         "css_class": "stack-function-button",
         "color": "rgb(209, 218, 236)"
     },
@@ -252,8 +252,8 @@ const glyphs = [
         "color": "rgb(149, 209, 106)"
     },
     {
-        "glyph": "⊂",
-        "title": "join",
+        "glyph": "≅",
+        "title": "match",
         "css_class": "dyadic-function-button",
         "color": "rgb(84, 176, 252)"
     },
@@ -264,20 +264,20 @@ const glyphs = [
         "color": "rgb(84, 176, 252)"
     },
     {
-        "glyph": "≅",
-        "title": "match",
-        "css_class": "dyadic-function-button",
-        "color": "rgb(84, 176, 252)"
-    },
-    {
-        "glyph": "⊡",
-        "title": "pick",
+        "glyph": "⊂",
+        "title": "join",
         "css_class": "dyadic-function-button",
         "color": "rgb(84, 176, 252)"
     },
     {
         "glyph": "⊏",
         "title": "select",
+        "css_class": "dyadic-function-button",
+        "color": "rgb(84, 176, 252)"
+    },
+    {
+        "glyph": "⊡",
+        "title": "pick",
         "css_class": "dyadic-function-button",
         "color": "rgb(84, 176, 252)"
     },
@@ -402,22 +402,34 @@ const glyphs = [
         "color": "rgb(240, 195, 111)"
     },
     {
-        "glyph": "→",
-        "title": "dip",
-        "css_class": "modifier1-button",
-        "color": "rgb(240, 195, 111)"
-    },
-    {
-        "glyph": "∷",
+        "glyph": "∩",
         "title": "both",
         "css_class": "modifier1-button",
         "color": "rgb(240, 195, 111)"
     },
     {
-        "glyph": "⇉",
-        "title": "share",
+        "glyph": "⊓",
+        "title": "bracket",
         "css_class": "modifier2-button",
         "color": "rgb(204, 107, 233)"
+    },
+    {
+        "glyph": "⊃",
+        "title": "fork",
+        "css_class": "modifier2-button",
+        "color": "rgb(204, 107, 233)"
+    },
+    {
+        "glyph": "⊙",
+        "title": "dip",
+        "css_class": "modifier1-button",
+        "color": "rgb(240, 195, 111)"
+    },
+    {
+        "glyph": "⋅",
+        "title": "gap",
+        "css_class": "modifier1-button",
+        "color": "rgb(240, 195, 111)"
     },
     {
         "glyph": "⍘",
@@ -432,14 +444,14 @@ const glyphs = [
         "color": "rgb(204, 107, 233)"
     },
     {
-        "glyph": "⍛",
-        "title": "fill",
+        "glyph": "⍚",
+        "title": "level",
         "css_class": "modifier2-button",
         "color": "rgb(204, 107, 233)"
     },
     {
-        "glyph": "⍚",
-        "title": "level",
+        "glyph": "⬚",
+        "title": "fill",
         "css_class": "modifier2-button",
         "color": "rgb(204, 107, 233)"
     },

@@ -5,6 +5,18 @@ import * as fs from 'fs';
 export function activate(context: vscode.ExtensionContext) {
 
     let panel: vscode.WebviewPanel | undefined = undefined;
+    let active_text_editor:vscode.TextEditor|undefined = vscode.window.activeTextEditor;
+    // track active text editor
+    // TODO: do we need to track notebook editors separately?
+    vscode.window.onDidChangeActiveTextEditor(new_active_editor=>{
+        if(new_active_editor){
+            active_text_editor = new_active_editor;
+        }
+        console.log(new_active_editor)
+        if(new_active_editor){
+            console.log(new_active_editor.document.fileName)
+        }
+    })
 
     context.subscriptions.push(
         vscode.commands.registerCommand('uiua_keypad.activate_keypad', () => {
@@ -37,22 +49,58 @@ export function activate(context: vscode.ExtensionContext) {
                 panel.webview.onDidReceiveMessage(async (message) => {
                     switch(message.command){
                         case "write_glyph":
-                            //vscode.window.showErrorMessage(message.text);
-                            let editor = vscode.window.activeTextEditor;
-                            if (!editor) {
-                                await vscode.commands.executeCommand('workbench.action.previousEditor');
-                                editor = vscode.window.activeTextEditor;
+                            if (!active_text_editor) {
+                                vscode.window.showErrorMessage(
+                                      `No active editor to insert ${message.text}.\n`
+                                    + `Please place your cursor.`
+                                );
+                                return;
                             }
-                            if (editor) {
-                                const { selections } = editor;
-                                editor.edit(editBuilder => {
-                                    for (const selection of selections) {
-                                        editBuilder.insert(selection.start, message.text);
-                                    }
-                                });
-                            }else{
-                                vscode.window.showErrorMessage(`No active editor to insert ${message.text}`);
+                            const { selections } = active_text_editor;
+                             // 1. Group the original selections by line.
+                            let original_selections_lines:Map<number, vscode.Selection[]> = new Map();
+                            for (const selection of selections) {
+                                let line = selection.start.line;
+                                let new_selections:vscode.Selection[] = original_selections_lines.get(line) || [];
+                                new_selections.push(selection);
+                                original_selections_lines.set(line, new_selections);
                             }
+
+                            // 2. Sort the grouped selections for each line from left to right.
+                            for (let line of original_selections_lines.values()) {
+                                line.sort((a, b) => a.start.character - b.start.character);
+                            }
+
+                            // Perform the insertions.
+                            await active_text_editor.edit(editBuilder => {
+                                for (const selection of selections) {
+                                    editBuilder.replace(selection.start, message.text);
+                                }
+                            });
+
+                            // 3. Adjust the selections.
+                            let newSelections = [];
+                            for (let [line, original_selections] of original_selections_lines.entries()) {
+                                let offset = 0;
+                                for (const original_selection of original_selections) {
+                                    let originalStart = original_selection.start.translate(0, offset);
+                                    newSelections.push(new vscode.Selection(originalStart, originalStart));
+                                    // Note: will misbehave if selection does not end on same
+                                    // line... but then again... that means there are no further
+                                    // selections on that line??
+                                    offset += (
+                                        original_selection.end.character
+                                        - original_selection.start.character
+                                    ) + message.text.length;
+                                }
+                            }
+
+                            active_text_editor.selections = newSelections;
+                            vscode.window.showTextDocument(
+                                active_text_editor.document,
+                                active_text_editor.viewColumn,
+                                false
+                            );
                     }
                 });
             }

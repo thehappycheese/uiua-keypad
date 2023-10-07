@@ -1,7 +1,10 @@
 
 body{
     font-family:  "DejaVu Sans Mono", sans-serif;
+    font-size: x-large;
     user-select: none;
+    background-color: #141a1f;
+    color:rgb(240, 249, 255);
 }
 #tooltip-display{
     text-align: center;
@@ -15,34 +18,15 @@ body{
 #button-holder > button{
     font-family:  "DejaVu Sans Mono", sans-serif;
     width:2em;
-    font-size:1.4em;
+    font-size:inherit;
     background-color: #19232d;
+    border-radius: 0.2em;
     margin:0.1em;
+    border-width: 0;
 }
-/* .stack-function-button {
-    color:#d1daec;
+#button-holder>button:hover{
+    background-color: #0003;
 }
-.monadic-function-button{
-    color: #95d16a;
-}
-.dyadic-function-button{
-    color:#54b0fc;
-}
-.modifier1-button{
-    color:#f0c36f;
-}
-.modifier2-button{
-    color:#cc6be9;
-}
-.noadic-function-button{
-    color:#ed5e6a;
-}
-.stack-function-button{
-    color:#aadaec;
-}
-.misc-function-button{
-    color:lightgray;
-} */
 .trans{
     background-image: linear-gradient(180deg, #5BCEFA 29%, #F5A9B8 29%, #F5A9B8 43%, #FFFFFF 43%, #FFFFFF 57%, #F5A9B8 57%, #F5A9B8 71%, #5BCEFA 71%);
     background-size: 100%;
@@ -51,4 +35,16 @@ body{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width:45em), (max-height:35em) {
+    body{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:20em), (max-height:25em) {
+    body{
+        font-size: medium;
+    }
 }
