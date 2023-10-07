@@ -1,27 +1,37 @@
 
+html,body{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
 body{
     font-family:  "DejaVu Sans Mono", sans-serif;
-    font-size: x-large;
+    font-size: 2em;
     user-select: none;
     background-color: #141a1f;
     color:rgb(240, 249, 255);
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    
 }
 #tooltip-display{
     text-align: center;
-    font-size: 1.8em;
-    padding: 0.5em;
+    font-size: 1.3em;
 }
 #button-holder{
     display:flex;
     flex-wrap: wrap;
+    padding: 0 0.5em;
+    gap:0.3em;
+    justify-content: center;
 }
 #button-holder > button{
     font-family:  "DejaVu Sans Mono", sans-serif;
     width:2em;
+    max-height: 4em;
     font-size:inherit;
     background-color: #19232d;
     border-radius: 0.2em;
-    margin:0.1em;
     border-width: 0;
 }
 #button-holder>button:hover{
@@ -36,15 +46,25 @@ body{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-
+.bar {
+    padding:1em;
+}
+label{
+    background-color: #19232d;
+    border-radius: 0.2em;
+    padding:0.5em;
+}
+label:hover{
+    background-color: #0003;
+}
 @media screen and (max-width:45em), (max-height:35em) {
     body{
-        font-size: large;
+        font-size: 1.3em;
     }
 }
 
 @media screen and (max-width:20em), (max-height:25em) {
     body{
-        font-size: medium;
+        font-size: 1em;
     }
 }

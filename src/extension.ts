@@ -6,8 +6,16 @@ export function activate(context: vscode.ExtensionContext) {
 
     let panel: vscode.WebviewPanel | undefined = undefined;
     let active_text_editor:vscode.TextEditor|undefined = vscode.window.activeTextEditor;
+
+    // TODO: I don't know how to do settings properly yet,
+    //       So i just added a tickbox to the UI and it will default to true
+    //       every time it is activated for now.
+
+    let setting_move_cursor = false;
+
     // track active text editor
     // TODO: do we need to track notebook editors separately?
+    //       I wont bother for now since there is no kernel yet.
     vscode.window.onDidChangeActiveTextEditor(new_active_editor=>{
         if(new_active_editor){
             active_text_editor = new_active_editor;
@@ -16,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
         if(new_active_editor){
             console.log(new_active_editor.document.fileName)
         }
-    })
+    });
 
     context.subscriptions.push(
         vscode.commands.registerCommand('uiua_keypad.activate_keypad', () => {
@@ -48,6 +56,9 @@ export function activate(context: vscode.ExtensionContext) {
                 );
                 panel.webview.onDidReceiveMessage(async (message) => {
                     switch(message.command){
+                        case "set_move_cursor":
+                            setting_move_cursor = message.value;
+                            break
                         case "write_glyph":
                             if (!active_text_editor) {
                                 vscode.window.showErrorMessage(
@@ -94,8 +105,9 @@ export function activate(context: vscode.ExtensionContext) {
                                     ) + message.text.length;
                                 }
                             }
-
-                            active_text_editor.selections = newSelections;
+                            if (!setting_move_cursor){
+                                active_text_editor.selections = newSelections;
+                            }
                             vscode.window.showTextDocument(
                                 active_text_editor.document,
                                 active_text_editor.viewColumn,
@@ -115,30 +127,16 @@ export function activate(context: vscode.ExtensionContext) {
 
 }
 
-
-// function get_webview_content(context: vscode.ExtensionContext, panel:vscode.WebviewPanel) {
-//     let html_string = fs.readFileSync(
-//         path.join(context.extensionPath, "webview_keypad", "index.html"),
-//         'utf8'
-//     );
-//     // replace "{{main.js}}" with the uri
-//     html_string = html_string.replace(
-//         "{{main.js}}", 
-//         panel.webview.asWebviewUri(
-//             vscode.Uri.joinPath(context.extensionUri, "webview_keypad", "main.js")
-//         ).toString()
-//     );
-//     return html_string;
-// }
-
 function get_webview_content(context: vscode.ExtensionContext, panel: vscode.WebviewPanel): string {
     let html_string = fs.readFileSync(
         path.join(context.extensionPath, "webview_keypad", "index.html"),
         'utf8'
     );
 
+    // Replace filenames in the HTML with appropriate webview URIs
+    // This enables easier testing of the webview in a browser during development
     return html_string.replace(
-        /(href|src)=\"(.*?)\"/g, // Regular expression to match href="" or src=""
+        /(href|src)=\"(.*?)\"/g, 
         (match, attributeName, originalPath) => { 
             // Only replace paths that don't start with "http" or "//" (to avoid modifying external links)
             if (!originalPath.startsWith('http') && !originalPath.startsWith('//')) {
