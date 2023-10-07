@@ -2,6 +2,11 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.1.17] - 2023-10-07
+
+- Improved styles and adaptive layout
+- Added checkbox to choose if glyphs are inserted to the left or right of the cursor
+
 ## [0.1.16]
 
 - Fixed problems with focus
