@@ -228,8 +228,14 @@ const glyphs = [
         "color": "rgb(149, 209, 106)"
     },
     {
-        "glyph": "⌂",
-        "title": "grade",
+        "glyph": "⍏",
+        "title": "rise",
+        "css_class": "monadic-function-button",
+        "color": "rgb(149, 209, 106)"
+    },
+    {
+        "glyph": "⍖",
+        "title": "fall",
         "css_class": "monadic-function-button",
         "color": "rgb(149, 209, 106)"
     },
@@ -247,7 +253,13 @@ const glyphs = [
     },
     {
         "glyph": "□",
-        "title": "constant",
+        "title": "box",
+        "css_class": "monadic-function-button",
+        "color": "rgb(149, 209, 106)"
+    },
+    {
+        "glyph": "⊔",
+        "title": "unbox",
         "css_class": "monadic-function-button",
         "color": "rgb(149, 209, 106)"
     },
@@ -494,8 +506,8 @@ const glyphs = [
     {
         "glyph": "!",
         "title": "call",
-        "css_class": "monadic-function-button",
-        "color": "rgb(149, 209, 106)"
+        "css_class": "variadic-function-button",
+        "color": "rgb(209, 218, 236)"
     },
     {
         "glyph": "⎋",
@@ -559,7 +571,7 @@ const glyphs = [
     },
     {
         "glyph": "{}",
-        "title": "constant array",
+        "title": "box array",
         "css_class": "misc-function-button",
         "color": "rgb(209, 218, 236)"
     },

@@ -2,6 +2,10 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.1.18] - 2023-10-08
+
+- Glyph updates
+
 ## [0.1.17] - 2023-10-07
 
 - Improved styles and adaptive layout

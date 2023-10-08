@@ -34,7 +34,7 @@ console.log("const glyphs = "+JSON.stringify(Array.from(document.querySelectorAl
   title:item.getAttribute("data-title"),
   css_class:item.children[0]?Array.from(item.children[0].classList).at(-1):"misc-function-button",
   color:getComputedStyle(item.children[0]?item.children[0]:item).color
-}))))
+})),null,4))
 ```
 
 </details>
