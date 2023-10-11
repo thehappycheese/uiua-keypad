@@ -9,22 +9,22 @@ try{
 let tooltip = document.querySelector("#tooltip-display");
 let tooltipDesc = document.querySelector("#tooltip-display-desc");
 
-for(let [k, v] of Object.entries(glyphs)){
+for(let glyph of glyphs){
     let button = document.createElement("button");
 
-    button.setAttribute("data-title", k);
+    button.setAttribute("data-title", glyph.name);
     button.addEventListener("click", ()=>
         vscode.postMessage({
             command:"write_glyph",
-            text:v.glyph,
+            text:glyph.glyph,
             name:button.attributes["data-title"].value
         })
     );
     button.addEventListener("mouseover", ()=>{
-        tooltip.innerHTML = k;
-        tooltipDesc.innerHTML = v.description;
+        tooltip.innerHTML = glyph.name;
+        tooltipDesc.innerHTML = glyph.description;
     });
-    button.innerHTML = `<div class="${v.class}">${v.glyph}</div>`;
+    button.innerHTML = `<div class="${glyph.class}">${glyph.glyph}</div>`;
     document.querySelector("#button-holder").appendChild(button);
 }
 
