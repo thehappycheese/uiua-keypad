@@ -7,34 +7,24 @@ try{
     vscode.postMessage = (...args)=>console.log("postMessage", ...args);
 }
 let tooltip = document.querySelector("#tooltip-display");
+let tooltipDesc = document.querySelector("#tooltip-display-desc");
 
-document.querySelector("#button-holder").addEventListener("mouseover",e=>{
-    if(e.target.attributes["data-title"]){
-        tooltip.innerHTML = e.target.attributes["data-title"].value
-    }
-});
-
-for(let glyph of glyphs){
+for(let [k, v] of Object.entries(glyphs)){
     let button = document.createElement("button");
-    
-    button.setAttribute("data-title", glyph.title);
-    button.setAttribute("data-ic", glyph.css_class);
-    button.addEventListener("pointerup", e=>
+
+    button.setAttribute("data-title", k);
+    button.addEventListener("click", ()=>
         vscode.postMessage({
             command:"write_glyph",
-            text:glyph.glyph,
-            name:e.target.attributes["data-title"].value
+            text:v.glyph,
+            name:button.attributes["data-title"].value
         })
-    )
-    if(glyph.title=="transpose"){
-        let div = document.createElement("div");
-        div.setAttribute("class", "trans");
-        div.innerText = glyph.glyph;
-        button.appendChild(div);
-    }else{
-        button.innerText = glyph.glyph;
-        button.setAttribute("style", `color:${glyph.color};`);
-    }
+    );
+    button.addEventListener("mouseover", ()=>{
+        tooltip.innerHTML = k;
+        tooltipDesc.innerHTML = v.description;
+    });
+    button.innerHTML = `<div class="${v.class}">${v.glyph}</div>`;
     document.querySelector("#button-holder").appendChild(button);
 }
 

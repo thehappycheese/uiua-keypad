@@ -12,11 +12,17 @@ body{
     color:rgb(240, 249, 255);
     display:grid;
     grid-template-rows: auto 1fr auto;
-    
+
 }
 #tooltip-display{
     text-align: center;
     font-size: 1.3em;
+    font-weight: bold;
+}
+#tooltip-display-desc{
+    text-align: center;
+    font-size: 0.73em;
+    height: 2em;
 }
 #button-holder{
     display:flex;
@@ -24,18 +30,38 @@ body{
     padding: 0 0.5em;
     gap:0.3em;
     justify-content: center;
+    align-content: flex-start;
 }
 #button-holder > button{
     font-family:  "DejaVu Sans Mono", sans-serif;
     width:2em;
     max-height: 4em;
     font-size:inherit;
-    background-color: #19232d;
+    background-color: transparent;
     border-radius: 0.2em;
     border-width: 0;
 }
 #button-holder>button:hover{
     background-color: #0003;
+}
+
+.code-font {
+    color: #d1daec;
+}
+.noadic-function-button {
+    color: #ed5e6a;
+}
+.monadic-function-button {
+    color: #95d16a;
+}
+.dyadic-function-button {
+    color: #54b0fc;
+}
+.modifier1-button {
+    color: #f0c36f;
+}
+.modifier2-button {
+    color: #cc6be9;
 }
 .trans{
     background-image: linear-gradient(180deg, #5BCEFA 29%, #F5A9B8 29%, #F5A9B8 43%, #FFFFFF 43%, #FFFFFF 57%, #F5A9B8 57%, #F5A9B8 71%, #5BCEFA 71%);
@@ -46,6 +72,7 @@ body{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
 .bar {
     padding:1em;
 }
