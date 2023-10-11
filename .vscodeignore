@@ -13,3 +13,4 @@ vsc-extension-quickstart.md
 **/*.ts
 **/test_folder
 **/python_keypad
+generate_json/
