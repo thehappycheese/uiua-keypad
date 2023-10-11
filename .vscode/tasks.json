@@ -1,8 +1,34 @@
 {
     "tasks": [
         {
+            "label": "upgrade_uiua",
+            "command": "cargo",
+            "args": ["update", "-p", "uiua"],
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/generate_json"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ]
+        },
+        {
+            "label": "compile_get_json",
+            "command":"cargo",
+            "args": ["run", "--release"],
+            "type":"shell",
+            "dependsOn": ["upgrade_uiua"],
+            "options": {
+                "cwd": "${workspaceFolder}/generate_json"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ]
+        },
+        {
             "label": "compile_extention",
             "command":["yarn"],
+            "dependsOn": ["compile_get_json"],
             "args": ["run", "compile"],
             "type": "shell",
         }

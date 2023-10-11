@@ -1,5 +1,4 @@
-const glyphs= 
-[
+const glyphs=[
   {
     "name": "duplicate",
     "glyph": ".",
@@ -552,4 +551,4 @@ const glyphs=
     "description": "Debug print the top value on the stack without popping it",
     "class": "code-font stack-function-button"
   }
-]
+];
