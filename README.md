@@ -20,6 +20,12 @@ should be usable enough.
 Inserting into a jupyter notebook will trigger extra glitches, but there is no
 kernel yet so I haven't bothered trying to fix that.
 
+## Thanks
+
+Thanks to @thekifake for creating
+https://github.com/thekifake/uiua-gen-functions-json which I have copy pasted
+into this project
+
 ## Author's Notes to Self
 
 <details>

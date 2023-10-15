@@ -1,7 +1,12 @@
-// Thanks to thekifake for https://github.com/thekifake/uiua-gen-functions-json
+
+
+mod util;
+use util::pretty_json_string;
+
 
 use serde::*;
 use uiua::primitive::{Primitive, PrimClass};
+use uiua::primitive::CONSTANTS;
 
 fn get_prim_class(prim: Primitive) -> &'static str {
     macro_rules! code_font {
@@ -35,35 +40,56 @@ fn get_prim_class(prim: Primitive) -> &'static str {
     }
 }
 
-fn main() {
-    let mut prims = Vec::new();
-    for prim in Primitive::non_deprecated() {
-        if let Some(names) = prim.names() {
-            if names.glyph.is_none() { // Don't include system functions
-                continue;
-            }
-            prims.push(PrimData {
-                name: names.text.into(),
-                glyph: names.glyph,
-                description: prim
-                    .doc()
-                    .map(|doc| doc.short_text())
-                    .unwrap_or_default()
-                    .into(),
-                class: get_prim_class(prim)
-            });
-        }
-    }
-    let json = serde_json::to_string_pretty(&prims).unwrap();
-    let js = format!("const glyphs={};", json);
-    std::fs::write("../webview_keypad/glyphs.js", js).unwrap();
+#[derive(Serialize)]
+struct GlyphData {
+    name: String,
+    glyph: char,
+    description: String,
+    class: &'static str,
 }
 
 #[derive(Serialize)]
-struct PrimData {
-    name: String,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    glyph: Option<char>,
-    description: String,
-    class: &'static str,
+struct ConstantData{
+    pub name: String,
+    pub doc: String,
+    pub value: Option<String>,
+}
+
+fn to_javascript_file(path:&str,name:&str, data:impl Serialize) -> Result<(), Box<dyn std::error::Error>>{
+    let data = pretty_json_string(&data)?;
+    let data = format!("const {name}={data};");
+    std::fs::write(format!("{path}/{name}.js"), data).unwrap();
+    Ok(())
+}
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+
+    let glyphs:Vec<_> = Primitive::non_deprecated().filter_map(|prim| {
+        Some(GlyphData {
+            name: prim.names()?.text.into(),
+            glyph: prim.names()?.glyph?,
+            description: prim
+                .doc()
+                .map(|doc| doc.short_text())
+                .unwrap_or_default()
+                .into(),
+            class: get_prim_class(prim)
+        })
+    }).collect();
+    to_javascript_file("../webview_keypad", "glyphs", glyphs)?;
+
+    let constants:Vec<_> = CONSTANTS.iter().map(|constant| ConstantData{
+        name:constant.name.to_owned(),
+        doc:constant.doc.trim().to_owned(),
+        value: match &constant.value {
+            // TODO: just extracting shape for test. Want to convert value to string;
+            uiua::value::Value::Num(arr) =>  Some(format!("Numeric Array [{:?}]", arr.shape())),
+            uiua::value::Value::Byte(arr) => Some(format!("Byte Array [{:?}]", arr.shape())),
+            uiua::value::Value::Char(arr) => Some(format!("Char Array [{:?}]", arr.shape())),
+            uiua::value::Value::Func(arr) => Some(format!("Func Array [{:?}]", arr.shape())),
+        }
+    }).collect();
+    to_javascript_file("../webview_keypad", "constants", constants)?;
+
+    Ok(())
 }
