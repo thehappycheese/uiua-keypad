@@ -1,5 +1,7 @@
 # Uiua Keypad (unofficial)
 
+> Hold ctrl key to move cursor when inserting a glyph.
+
 Note that this extension is not supported by the Uiua language developers. The
 language is not stable, so please be patient if this extension is out of date.
 

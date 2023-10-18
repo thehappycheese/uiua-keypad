@@ -9,7 +9,7 @@ html,body{
 
 body{
     font-family:  "DejaVu Sans Mono", sans-serif;
-    font-size: max(16pt, min(4vh, 4vw));
+    font-size: max(12pt, min(4vh, 4vw));
     user-select: none;
     background-color: #141a1f;
     color:rgb(240, 249, 255);

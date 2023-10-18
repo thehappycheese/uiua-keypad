@@ -56,10 +56,7 @@ export function activate(context: vscode.ExtensionContext) {
                 );
                 panel.webview.onDidReceiveMessage(async (message) => {
                     switch(message.command){
-                        case "set_move_cursor":
-                            setting_move_cursor = message.value;
-                            break
-                        case "write_glyph":
+                        case "write":
                             if (!active_text_editor) {
                                 vscode.window.showErrorMessage(
                                       `No active editor to insert ${message.text}.\n`
@@ -105,7 +102,7 @@ export function activate(context: vscode.ExtensionContext) {
                                     ) + message.text.length;
                                 }
                             }
-                            if (!setting_move_cursor){
+                            if (!message.move_cursor){
                                 active_text_editor.selections = newSelections;
                             }
                             vscode.window.showTextDocument(
