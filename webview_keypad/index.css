@@ -4,49 +4,71 @@ html,body{
     margin:0;
     padding:0;
 }
+
+
+
 body{
     font-family:  "DejaVu Sans Mono", sans-serif;
-    font-size: 2em;
+    font-size: max(16pt, min(4vh, 4vw));
     user-select: none;
     background-color: #141a1f;
     color:rgb(240, 249, 255);
     display:grid;
-    grid-template-rows: auto 1fr auto;
-
+    grid-template-rows: auto 3fr 1fr 1fr 1fr;
+    gap: 0.3em;
+}
+.bar {
+    padding:0.3em;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    gap:0.3em;
+}
+.bar > div {
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 #tooltip-display{
-    text-align: center;
     font-size: 1.3em;
     font-weight: bold;
 }
 #tooltip-display-desc{
-    text-align: center;
     font-size: 0.73em;
-    height: 2em;
+    white-space: nowrap;
+    overflow:hidden;
 }
-#button-holder{
+
+#div-glyph > button{
+    width:2em;
+}
+#div-system, #div-nonglyph, #div-constant {
+    font-size: 0.8em;
+}
+
+.button-holder{
     display:flex;
     flex-wrap: wrap;
     padding: 0 0.5em;
     gap:0.3em;
     justify-content: center;
-    align-content: flex-start;
+    align-content: center;
 }
-#button-holder > button{
-    font-family:  "DejaVu Sans Mono", sans-serif;
-    width:2em;
-    max-height: 4em;
+.button-holder > button{
+    font-family: inherit;
     font-size:inherit;
+    max-height: 4em;
     background-color: transparent;
     border-radius: 0.2em;
     border-width: 0;
 }
-#button-holder>button:hover{
+.button-holder > button:hover{
     background-color: #0003;
 }
 
 .code-font {
     color: #d1daec;
+    font-family:  "DejaVu Sans Mono", sans-serif;
 }
 .noadic-function-button {
     color: #ed5e6a;
@@ -73,9 +95,7 @@ body{
     -moz-text-fill-color: transparent;
 }
 
-.bar {
-    padding:1em;
-}
+
 label{
     background-color: #19232d;
     border-radius: 0.2em;
@@ -83,15 +103,4 @@ label{
 }
 label:hover{
     background-color: #0003;
-}
-@media screen and (max-width:45em), (max-height:35em) {
-    body{
-        font-size: 1.3em;
-    }
-}
-
-@media screen and (max-width:20em), (max-height:25em) {
-    body{
-        font-size: 1em;
-    }
 }

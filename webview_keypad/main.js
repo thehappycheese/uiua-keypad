@@ -6,32 +6,85 @@ try{
     vscode = {};
     vscode.postMessage = (...args)=>console.log("postMessage", ...args);
 }
-let tooltip = document.querySelector("#tooltip-display");
-let tooltipDesc = document.querySelector("#tooltip-display-desc");
 
-for(let glyph of glyphs){
-    let button = document.createElement("button");
-
-    button.setAttribute("data-title", glyph.name);
-    button.addEventListener("click", ()=>
-        vscode.postMessage({
-            command:"write_glyph",
-            text:glyph.glyph,
-            name:button.attributes["data-title"].value
-        })
-    );
-    button.addEventListener("mouseover", ()=>{
-        tooltip.innerHTML = glyph.name;
-        tooltipDesc.innerHTML = glyph.description;
-    });
-    button.innerHTML = `<div class="${glyph.class}">${glyph.glyph}</div>`;
-    document.querySelector("#button-holder").appendChild(button);
+let tooltip_title    = document.querySelector("#tooltip-display");
+let tooltip_subtitle = document.querySelector("#tooltip-display-desc");
+const set_tooltip = (title, subtitle) => ()=>{
+    tooltip_title.innerText    = title;
+    tooltip_subtitle.innerText = subtitle;
+};
+const clear_tooltip = () => {
+    tooltip_title.innerHTML     = "&nbsp;";
+    tooltip_subtitle.innerHTML = "&nbsp;";
+}
+const configure_tooltip = (element, title, subtitle) => {
+    element.addEventListener("mouseover", set_tooltip(title, subtitle));
+    element.addEventListener("mouseout", clear_tooltip);
 }
 
-document.querySelector("#move-cursor-check").addEventListener(
-    "change",
-    e=>vscode.postMessage({
-        command:"set_move_cursor",
-        value:e.target.checked
-    })
-);
+
+let div_glyph    = document.querySelector("#div-glyph"   );
+let div_nonglyph = document.querySelector("#div-nonglyph");
+let div_system   = document.querySelector("#div-system"  );
+let div_constant = document.querySelector("#div-constant");
+
+for(let primitive of [...primitives, ...extra_primitives]){
+    
+    let button = document.createElement("button");
+    configure_tooltip(button, primitive.name, primitive.description);
+    let button_inner_div = document.createElement("div");
+    button.appendChild(button_inner_div);
+    
+    let text_to_write = primitive.glyph || primitive.name;
+    button_inner_div.innerText = text_to_write;
+    button.addEventListener("click", e =>
+        vscode.postMessage({
+            command     : "write",
+            text        : text_to_write,
+            move_cursor : e.ctrlKey,
+        })
+    );
+    
+    button_inner_div.classList.add("code-font")
+    if (primitive.name==="transpose"){
+        button_inner_div.classList.add("trans")
+    }else if(primitive.primitive_class=="Stack" && primitive.count_modifier_inputs===null){
+        button_inner_div.classList.add("stack-function-button")
+    }else if(primitive.count_inputs===null){
+        if(primitive.count_modifier_inputs===null){
+            button_inner_div.classList.add("variadic-function-button")
+        }else{
+            button_inner_div.classList.add(`modifier${primitive.count_modifier_inputs}-button`)
+        }
+    }else{
+        button_inner_div.classList.add(
+            ["no","mon","dy","tri"][primitive.count_inputs]+"adic-function-button"
+        )
+    }
+
+    if (primitive.glyph){
+        document.querySelector("#div-glyph").appendChild(button);
+    }else if(primitive.primitive_class==="Sys"){
+        document.querySelector("#div-system").appendChild(button);
+    }else{
+        document.querySelector("#div-nonglyph").appendChild(button);
+    }
+}
+
+for(let constant of constants){
+    let button = document.createElement("button");
+    configure_tooltip(button, constant.name, constant.description);
+    let button_inner_div = document.createElement("div");
+    button.appendChild(button_inner_div);
+    button_inner_div.innerText = constant.name;
+    button.addEventListener("click", e =>
+        vscode.postMessage({
+            command     : "write",
+            text        : constant.name,
+            move_cursor : e.ctrlKey,
+        })
+    );
+    button_inner_div.classList.add("code-font")
+    document.querySelector("#div-constant").appendChild(button);
+}
+
