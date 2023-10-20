@@ -8,7 +8,7 @@ pub struct ConstantData {
     pub value: Option<String>,
 }
 
-pub fn get_constants() -> Vec<ConstantData>{
+pub fn get_constants() -> Vec<ConstantData> {
     CONSTANTS
         .iter()
         .map(|constant| ConstantData {
