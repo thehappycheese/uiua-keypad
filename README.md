@@ -1,12 +1,13 @@
 # Uiua Keypad (unofficial)
 
-> Hold ctrl key to move cursor when inserting a glyph.
+**RIGHT CLICK** to insert to the right of the cursor.
 
-Note that this extension is not supported by the Uiua language developers. The
-language is not stable, so please be patient if this extension is out of date.
+**LEFT CLICK** to insert to the left
 
-Hopefully this extension can be merged with the official extension, or
-replaced in the future if something better comes along.
+>Note: This extension is not supported by the Uiua language developers. The 
+> language is not stable, so please be patient if this extension is out of date.
+> Hopefully this extension can be merged with the official extension, or
+> replaced in the future if something better comes along.
 
 
 ![keypad screenshot](https://github.com/thehappycheese/uiua-keypad/raw/main/resources/screenshot.png)

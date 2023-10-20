@@ -22,6 +22,31 @@ const configure_tooltip = (element, title, subtitle) => {
     element.addEventListener("mouseout", clear_tooltip);
 }
 
+let event_target_is_not_a_button = e => !(e.target.tagName === "BUTTON" || e.target.parentElement?.tagName === "BUTTON")
+
+document.addEventListener("contextmenu", e=>{
+    if (event_target_is_not_a_button(e)){
+        // Disable context menu on right click
+        e.preventDefault();
+        // Return focus if missed button
+        vscode.postMessage({
+            command     : "write",
+            text        : "",
+            move_cursor : true,
+        });
+    }
+});
+document.addEventListener("click", e=>{
+    if (event_target_is_not_a_button(e)){
+        // Return focus if missed button
+        vscode.postMessage({
+            command     : "write",
+            text        : "",
+            move_cursor : true,
+        });
+    }
+});
+
 
 let div_glyph    = document.querySelector("#div-glyph"   );
 let div_nonglyph = document.querySelector("#div-nonglyph");
@@ -37,11 +62,29 @@ for(let primitive of [...primitives, ...extra_primitives]){
     
     let text_to_write = primitive.glyph || primitive.name;
     button_inner_div.innerText = text_to_write;
-    button.addEventListener("click", e =>
-        vscode.postMessage({
+    
+
+    // TODO: having trouble with this... should able to ignore this at the document level
+    //       then listen to click with e.button === 2 but for some reason only this 
+    //       event listener setup seems to work :/
+    button.addEventListener(
+        "contextmenu",
+        e =>{
+            e.preventDefault();
+            vscode.postMessage({
+                command     : "write",
+                text        : text_to_write,
+                move_cursor : false,
+            });
+        }
+    )
+
+    button.addEventListener(
+        "click",
+        e => vscode.postMessage({
             command     : "write",
             text        : text_to_write,
-            move_cursor : e.ctrlKey,
+            move_cursor : true,
         })
     );
     
