@@ -9,32 +9,41 @@ html,body{
 
 body{
     font-family:  "DejaVu Sans Mono", sans-serif;
-    font-size: max(12pt, min(4vh, 4vw));
+    font-size: min(25pt, max(12pt, min(3.8vh, 3.8vw)));
     user-select: none;
     background-color: #141a1f;
     color:rgb(240, 249, 255);
     display:grid;
+    grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e";
     grid-template-rows: auto 3fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 8fr 2fr;
     gap: 0.3em;
+}
+@media (min-aspect-ratio: 20/10) {
+    body{
+        grid-template-rows: auto 3fr 1fr;
+        grid-template-areas: "a a a" "b b b" "c d e";
+    }
 }
 .bar {
     padding:0.3em;
     display:grid;
     grid-template-rows: 1fr 1fr;
     gap:0.3em;
+    padding: 0.5em;
+    padding-bottom: 0;
 }
 .bar > div {
-    text-align: center;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 #tooltip-display{
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 #tooltip-display-desc{
-    font-size: 0.73em;
+    font-size: 0.6em;
     white-space: nowrap;
     overflow:hidden;
 }
@@ -103,4 +112,15 @@ label{
 }
 label:hover{
     background-color: #0003;
+}
+
+
+#float-help{
+    position: fixed;
+    top: 0.1em;
+    right: 0.1em;
+    font-size: 50%;
+    z-index: -100;
+    color: #2a3641;
+    text-align: right;
 }

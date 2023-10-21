@@ -12,14 +12,19 @@
     </head>
     <body>
         <!--Top Bar-->
-        <div class="bar">
+        <div class="bar" style="grid-area:a;">
             <div id="tooltip-display">&nbsp;</div>
             <div id="tooltip-display-desc">&nbsp;</div>
         </div>
         
-        <div id="div-glyph"    class="button-holder"></div>
-        <div id="div-nonglyph" class="button-holder"></div>
-        <div id="div-system"   class="button-holder"></div>
-        <div id="div-constant" class="button-holder"></div>
+        <div id="div-glyph"    class="button-holder" style="grid-area:b;"></div>
+        <div id="div-nonglyph" class="button-holder" style="grid-area:c;"></div>
+        <div id="div-system"   class="button-holder" style="grid-area:d;"></div>
+        <div id="div-constant" class="button-holder" style="grid-area:e;"></div>
+
+        <div id="float-help">
+            right click to insert to the right of cursor<br>
+            ctrl+click to open docs
+        </div>
     </body>
 </html>
