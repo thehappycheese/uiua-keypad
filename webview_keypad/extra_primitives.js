@@ -7,7 +7,8 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"arrays"
     },
     {
         "name": "Box Array",
@@ -16,7 +17,8 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"arrays#nested-arrays"
     },
     {
         "name": "Function",
@@ -25,7 +27,8 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"functions#inline-functions"
     },
     {
         "name": "@",
@@ -34,7 +37,8 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"types#characters"
     },
     {
         "name": "\"",
@@ -43,7 +47,8 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"types#characters"
     },
     {
         "name": "Binding",
@@ -52,7 +57,8 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"bindings"
     },
     {
         "name": "Signature / Terminator",
@@ -61,7 +67,8 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"functions#stack-signatures"
     },
     {
         "name": "Comment",
@@ -70,6 +77,7 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax"
+        "primitive_class": "Syntax",
+        "docs":"basic#comments"
     },
 ]

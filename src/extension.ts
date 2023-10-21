@@ -56,10 +56,14 @@ export function activate(context: vscode.ExtensionContext) {
                 );
                 panel.webview.onDidReceiveMessage(async (message) => {
                     switch(message.command){
+
+                        case "docs":
+                            vscode.env.openExternal(vscode.Uri.parse(`https://uiua.org/docs/${message.page}`))
+                            break
                         case "write":
                             if (!active_text_editor) {
                                 vscode.window.showErrorMessage(
-                                      `No active editor to insert ${message.text}.\n`
+                                      `No active editor ${message.text===""?'':'to insert'} ${message.text}.\n`
                                     + `Please place your cursor.`
                                 );
                                 return;

@@ -81,11 +81,18 @@ for(let primitive of [...primitives, ...extra_primitives]){
 
     button.addEventListener(
         "click",
-        e => vscode.postMessage({
-            command     : "write",
-            text        : text_to_write,
-            move_cursor : true,
-        })
+        e => e.ctrlKey ?
+            // open docs
+            vscode.postMessage({
+                command : "docs",
+                page    : primitive.docs ?? primitive.name,
+            })
+            :
+            vscode.postMessage({
+                command     : "write",
+                text        : text_to_write,
+                move_cursor : true,
+            })
     );
     
     button_inner_div.classList.add("code-font")

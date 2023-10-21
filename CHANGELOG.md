@@ -2,6 +2,20 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.1.22] - 2023-10-21
+
+- Ctrl+click now opens docs
+- Added help text to top right
+
+## [0.1.21]
+
+- Instead of ctrl+click to insert to the right, it now uses left and right click
+
+## [...]
+
+- Layout improvements
+- Added system functions and constants
+
 ## [0.1.18] - 2023-10-08
 
 - Glyph updates

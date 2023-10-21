@@ -1,10 +1,6 @@
 # Uiua Keypad (unofficial)
 
-**RIGHT CLICK** to insert to the right of the cursor.
-
-**LEFT CLICK** to insert to the left
-
->Note: This extension is not supported by the Uiua language developers. The 
+> Note: This extension is not supported by the Uiua language developers. The 
 > language is not stable, so please be patient if this extension is out of date.
 > Hopefully this extension can be merged with the official extension, or
 > replaced in the future if something better comes along.
