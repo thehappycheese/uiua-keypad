@@ -4,9 +4,9 @@
    sodipodi:docname="periodic_table_of_uiua_manual_layout.svg"
    id="svg46989"
    version="1.1"
-   viewBox="0 0 3600 1440"
-   height="20in"
-   width="50in"
+   viewBox="0 0 1584 1008"
+   height="14in"
+   width="22in"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -17,9 +17,9 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      inkscape:current-layer="svg46989"
-     inkscape:cy="703.35827"
-     inkscape:cx="841.41277"
-     inkscape:zoom="0.76419092"
+     inkscape:cy="702.30362"
+     inkscape:cx="1003.0265"
+     inkscape:zoom="0.54036458"
      inkscape:snap-others="false"
      inkscape:snap-nodes="false"
      inkscape:bbox-nodes="true"
@@ -52,16 +52,6 @@
        originx="0"
        originy="0"
        visible="true" />
-    <sodipodi:guide
-       position="877.5,1068.038"
-       orientation="1,0"
-       id="guide9"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="536.25,1001.25"
-       orientation="1,0"
-       id="guide10"
-       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata38170">
@@ -1859,39 +1849,39 @@
   <text
      id="text52406"
      y="224.43314"
-     x="437.01562"
+     x="583.26562"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="224.43314"
-       x="437.01562"
+       x="583.26562"
        id="tspan52404"
        sodipodi:role="line">|1.0</tspan></text>
   <text
      id="text52406-49"
      y="126.80367"
-     x="436.7959"
+     x="583.0459"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="126.80367"
-       x="436.7959"
+       x="583.0459"
        id="tspan52404-34"
        sodipodi:role="line">|0.1</tspan></text>
   <text
      id="text52406-49-9"
      y="78.653442"
-     x="439.61133"
+     x="585.86133"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="78.653442"
-       x="439.61133"
+       x="585.86133"
        id="tspan52404-34-5"
        sodipodi:role="line">|0.0</tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="101.15344"
-       x="439.61133"
+       x="585.86133"
        sodipodi:role="line"
        id="tspan9" /></text>
   <text
@@ -1901,312 +1891,427 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="436.7959"
+     x="583.0459"
      y="273.31262"
      id="text52406-8"><tspan
        sodipodi:role="line"
        id="tspan52404-9"
-       x="436.7959"
+       x="583.0459"
        y="273.31262"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.1</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="437.42871"
+     x="583.67871"
      y="468.70108"
      id="text52406-6"><tspan
        sodipodi:role="line"
        id="tspan52404-8"
-       x="437.42871"
+       x="583.67871"
        y="468.70108"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="437.10352"
+     x="583.35352"
      y="517.58057"
      id="text52406-6-1"><tspan
        sodipodi:role="line"
        id="tspan52404-8-5"
-       x="437.10352"
+       x="583.35352"
        y="517.58057"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.3</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="437.01562"
+     x="583.26562"
      y="566.46002"
      id="text52406-5"><tspan
        sodipodi:role="line"
        id="tspan52404-4"
-       x="437.01562"
+       x="583.26562"
        y="566.46002"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.0</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="436.7959"
+     x="583.0459"
      y="615.33948"
      id="text52406-9"><tspan
        sodipodi:role="line"
        id="tspan52404-47"
-       x="436.7959"
+       x="583.0459"
        y="615.33948"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.1</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="437.42871"
+     x="583.67871"
      y="908.09845"
      id="text52406-0"><tspan
        sodipodi:role="line"
        id="tspan52404-7"
-       x="437.42871"
+       x="583.67871"
        y="908.09845"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="437.10352"
+     x="583.35352"
      y="956.97797"
      id="text52406-4"><tspan
        sodipodi:role="line"
        id="tspan52404-74"
-       x="437.10352"
+       x="583.35352"
        y="956.97797"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.3</tspan></text>
   <text
      id="text52406-83"
      y="224.43315"
-     x="91.663628"
+     x="237.91365"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="224.43315"
-       x="91.663628"
+       x="237.91365"
        id="tspan52404-91"
        sodipodi:role="line">|1.0</tspan></text>
   <text
      id="text52406-49-4"
      y="126.80368"
-     x="91.443901"
+     x="237.69392"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="126.80368"
-       x="91.443901"
+       x="237.69392"
        id="tspan52404-34-8"
        sodipodi:role="line">|0.1</tspan></text>
   <text
      id="text52406-49-9-8"
      y="78.653458"
-     x="94.259331"
+     x="240.50935"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="78.653458"
-       x="94.259331"
+       x="240.50935"
        id="tspan52404-34-5-3"
        sodipodi:role="line">|0.0</tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="101.15346"
-       x="94.259331"
+       x="240.50935"
        sodipodi:role="line"
        id="tspan9-6" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="91.443901"
+     x="237.69392"
      y="273.31262"
      id="text52406-8-06"><tspan
        sodipodi:role="line"
        id="tspan52404-9-09"
-       x="91.443901"
+       x="237.69392"
        y="273.31262"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.1</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="92.076714"
+     x="238.32674"
      y="468.70111"
      id="text52406-6-7"><tspan
        sodipodi:role="line"
        id="tspan52404-8-3"
-       x="92.076714"
+       x="238.32674"
        y="468.70111"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="91.751518"
+     x="238.00154"
      y="517.58057"
      id="text52406-6-1-0"><tspan
        sodipodi:role="line"
        id="tspan52404-8-5-8"
-       x="91.751518"
+       x="238.00154"
        y="517.58057"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.3</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="91.663628"
+     x="237.91365"
      y="566.46002"
      id="text52406-5-2"><tspan
        sodipodi:role="line"
        id="tspan52404-4-2"
-       x="91.663628"
+       x="237.91365"
        y="566.46002"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.0</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="91.443901"
+     x="237.69392"
      y="615.33948"
      id="text52406-9-24"><tspan
        sodipodi:role="line"
        id="tspan52404-47-4"
-       x="91.443901"
+       x="237.69392"
        y="615.33948"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.1</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="92.076714"
+     x="238.32674"
      y="908.09845"
      id="text52406-0-4"><tspan
        sodipodi:role="line"
        id="tspan52404-7-3"
-       x="92.076714"
+       x="238.32674"
        y="908.09845"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="91.751518"
+     x="238.00154"
      y="956.97797"
      id="text52406-4-7"><tspan
        sodipodi:role="line"
        id="tspan52404-74-8"
-       x="91.751518"
+       x="238.00154"
        y="956.97797"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.3</tspan></text>
   <text
      id="text52406-96"
      y="224.43315"
-     x="627.73535"
+     x="773.98535"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="224.43315"
-       x="627.73535"
+       x="773.98535"
        id="tspan52404-5"
        sodipodi:role="line">|1.0</tspan></text>
   <text
      id="text52406-49-1"
      y="126.80368"
-     x="627.51562"
+     x="773.76562"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="126.80368"
-       x="627.51562"
+       x="773.76562"
        id="tspan52404-34-2"
        sodipodi:role="line">|0.1</tspan></text>
   <text
      id="text52406-49-9-87"
      y="78.653458"
-     x="630.33105"
+     x="776.58105"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="78.653458"
-       x="630.33105"
+       x="776.58105"
        id="tspan52404-34-5-7"
        sodipodi:role="line">|0.0</tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
        y="101.15346"
-       x="630.33105"
+       x="776.58105"
        sodipodi:role="line"
        id="tspan9-5" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="627.51562"
+     x="773.76562"
      y="273.31262"
      id="text52406-8-4"><tspan
        sodipodi:role="line"
        id="tspan52404-9-5"
-       x="627.51562"
+       x="773.76562"
        y="273.31262"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.1</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="628.14844"
+     x="774.39844"
      y="468.70111"
      id="text52406-6-6"><tspan
        sodipodi:role="line"
        id="tspan52404-8-6"
-       x="628.14844"
+       x="774.39844"
        y="468.70111"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="627.82324"
+     x="774.07324"
      y="517.58057"
      id="text52406-6-1-02"><tspan
        sodipodi:role="line"
        id="tspan52404-8-5-4"
-       x="627.82324"
+       x="774.07324"
        y="517.58057"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.3</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="627.73535"
+     x="773.98535"
      y="566.46002"
      id="text52406-5-9"><tspan
        sodipodi:role="line"
        id="tspan52404-4-6"
-       x="627.73535"
+       x="773.98535"
        y="566.46002"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.0</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="627.51562"
+     x="773.76562"
      y="615.33948"
      id="text52406-9-28"><tspan
        sodipodi:role="line"
        id="tspan52404-47-8"
-       x="627.51562"
+       x="773.76562"
        y="615.33948"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.1</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="628.14844"
+     x="774.39844"
      y="908.09845"
      id="text52406-0-99"><tspan
        sodipodi:role="line"
        id="tspan52404-7-34"
-       x="628.14844"
+       x="774.39844"
        y="908.09845"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="627.82324"
+     x="774.07324"
      y="956.97797"
      id="text52406-4-51"><tspan
        sodipodi:role="line"
        id="tspan52404-74-1"
-       x="627.82324"
+       x="774.07324"
+       y="956.97797"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.3</tspan></text>
+  <text
+     id="text52406-96-4"
+     y="224.43317"
+     x="1556.5811"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
+       y="224.43317"
+       x="1556.5811"
+       id="tspan52404-5-6"
+       sodipodi:role="line">|1.0</tspan></text>
+  <text
+     id="text52406-49-1-7"
+     y="126.8037"
+     x="1556.3613"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
+       y="126.8037"
+       x="1556.3613"
+       id="tspan52404-34-2-4"
+       sodipodi:role="line">|0.1</tspan></text>
+  <text
+     id="text52406-49-9-87-5"
+     y="78.653473"
+     x="1559.1768"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
+       y="78.653473"
+       x="1559.1768"
+       id="tspan52404-34-5-7-8"
+       sodipodi:role="line">|0.0</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75"
+       y="101.15347"
+       x="1559.1768"
+       sodipodi:role="line"
+       id="tspan9-5-2" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="1556.3613"
+     y="273.31265"
+     id="text52406-8-4-6"><tspan
+       sodipodi:role="line"
+       id="tspan52404-9-5-7"
+       x="1556.3613"
+       y="273.31265"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="1556.9941"
+     y="468.70114"
+     id="text52406-6-6-8"><tspan
+       sodipodi:role="line"
+       id="tspan52404-8-6-2"
+       x="1556.9941"
+       y="468.70114"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="1556.6689"
+     y="517.58057"
+     id="text52406-6-1-02-2"><tspan
+       sodipodi:role="line"
+       id="tspan52404-8-5-4-4"
+       x="1556.6689"
+       y="517.58057"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|1.3</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="1556.5811"
+     y="566.46002"
+     id="text52406-5-9-8"><tspan
+       sodipodi:role="line"
+       id="tspan52404-4-6-7"
+       x="1556.5811"
+       y="566.46002"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.0</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="1556.3613"
+     y="615.33948"
+     id="text52406-9-28-8"><tspan
+       sodipodi:role="line"
+       id="tspan52404-47-8-9"
+       x="1556.3613"
+       y="615.33948"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="1556.9941"
+     y="908.09845"
+     id="text52406-0-99-4"><tspan
+       sodipodi:role="line"
+       id="tspan52404-7-34-5"
+       x="1556.9941"
+       y="908.09845"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="1556.6689"
+     y="956.97797"
+     id="text52406-4-51-4"><tspan
+       sodipodi:role="line"
+       id="tspan52404-74-1-5"
+       x="1556.6689"
        y="956.97797"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">|2.3</tspan></text>
   <g
-     transform="translate(516.99999,329.71585)"
+     transform="translate(663.25001,329.71585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_1">
     <g
@@ -2459,7 +2564,7 @@
     </g>
   </g>
   <g
-     transform="translate(468.34511,817.21585)"
+     transform="translate(614.59513,817.21585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_2">
     <g
@@ -2632,7 +2737,7 @@
     </g>
   </g>
   <g
-     transform="translate(419.69023,768.46585)"
+     transform="translate(565.94025,768.46585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_3">
     <g
@@ -2787,7 +2892,7 @@
     </g>
   </g>
   <g
-     transform="translate(371.03536,85.96585)"
+     transform="translate(517.28538,85.96585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_4">
     <g
@@ -2935,7 +3040,7 @@
     </g>
   </g>
   <g
-     transform="translate(371.13048,134.71585)"
+     transform="translate(517.3805,134.71585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_5">
     <g
@@ -3109,7 +3214,7 @@
     </g>
   </g>
   <g
-     transform="translate(78.7256,134.71585)"
+     transform="translate(224.97562,134.71585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_6">
     <g
@@ -3259,7 +3364,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.07072,183.46585)"
+     transform="translate(176.32074,183.46585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_7">
     <g
@@ -3421,7 +3526,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.16584,183.46585)"
+     transform="translate(176.41586,183.46585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_8">
     <g
@@ -3584,7 +3689,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.26097,183.46585)"
+     transform="translate(176.51099,183.46585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_9">
     <g
@@ -3810,7 +3915,7 @@
     </g>
   </g>
   <g
-     transform="translate(-115.89391,232.21585)"
+     transform="translate(30.35611,232.21585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_10">
     <g
@@ -3967,7 +4072,7 @@
     </g>
   </g>
   <g
-     transform="translate(-115.79879,232.21585)"
+     transform="translate(30.45123,232.21585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_11">
     <g
@@ -4116,7 +4221,7 @@
     </g>
   </g>
   <g
-     transform="translate(-213.20367,280.96585)"
+     transform="translate(-66.95365,280.96585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_12">
     <g
@@ -4272,7 +4377,7 @@
     </g>
   </g>
   <g
-     transform="translate(-213.10855,280.96585)"
+     transform="translate(-66.85853,280.96585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_13">
     <g
@@ -4442,7 +4547,7 @@
     </g>
   </g>
   <g
-     transform="translate(-213.01342,280.96585)"
+     transform="translate(-66.7634,280.96585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_14">
     <g
@@ -4598,7 +4703,7 @@
     </g>
   </g>
   <g
-     transform="translate(-359.1683,475.96585)"
+     transform="translate(-212.91828,475.96585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_15">
     <g
@@ -4761,7 +4866,7 @@
     </g>
   </g>
   <g
-     transform="translate(370.74999,414.98185)"
+     transform="translate(517.00001,414.98185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_16">
     <g
@@ -4960,7 +5065,7 @@
     </g>
   </g>
   <g
-     transform="translate(370.84511,414.98185)"
+     transform="translate(517.09513,414.98185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_17">
     <g
@@ -5152,7 +5257,7 @@
     </g>
   </g>
   <g
-     transform="translate(224.69023,463.73185)"
+     transform="translate(370.94025,463.73185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_18">
     <g
@@ -5363,7 +5468,7 @@
     </g>
   </g>
   <g
-     transform="translate(224.78536,463.73185)"
+     transform="translate(371.03538,463.73185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_19">
     <g
@@ -5567,7 +5672,7 @@
     </g>
   </g>
   <g
-     transform="translate(224.88048,463.73185)"
+     transform="translate(371.1305,463.73185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_20">
     <g
@@ -5799,7 +5904,7 @@
     </g>
   </g>
   <g
-     transform="translate(78.7256,512.48185)"
+     transform="translate(224.97562,512.48185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_21">
     <g
@@ -5941,7 +6046,7 @@
     </g>
   </g>
   <g
-     transform="translate(78.82072,512.48185)"
+     transform="translate(225.07074,512.48185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_22">
     <g
@@ -6118,7 +6223,7 @@
     </g>
   </g>
   <g
-     transform="translate(78.91584,512.48185)"
+     transform="translate(225.16586,512.48185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_23">
     <g
@@ -6303,7 +6408,7 @@
     </g>
   </g>
   <g
-     transform="translate(-67.23903,561.23185)"
+     transform="translate(79.01099,561.23185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_24">
     <g
@@ -6466,7 +6571,7 @@
     </g>
   </g>
   <g
-     transform="translate(-67.14391,561.23185)"
+     transform="translate(79.10611,561.23185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_25">
     <g
@@ -6636,7 +6741,7 @@
     </g>
   </g>
   <g
-     transform="translate(-67.04879,561.23185)"
+     transform="translate(79.20123,561.23185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_26">
     <g
@@ -6800,7 +6905,7 @@
     </g>
   </g>
   <g
-     transform="translate(-213.20367,609.98185)"
+     transform="translate(-66.95365,609.98185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_27">
     <g
@@ -6984,7 +7089,7 @@
     </g>
   </g>
   <g
-     transform="translate(-213.10855,609.98185)"
+     transform="translate(-66.85853,609.98185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_28">
     <g
@@ -7154,7 +7259,7 @@
     </g>
   </g>
   <g
-     transform="translate(-213.01342,609.98185)"
+     transform="translate(-66.7634,609.98185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_29">
     <g
@@ -7332,7 +7437,7 @@
     </g>
   </g>
   <g
-     transform="translate(-359.1683,658.73185)"
+     transform="translate(-212.91828,658.73185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_30">
     <g
@@ -7509,7 +7614,7 @@
     </g>
   </g>
   <g
-     transform="translate(614.49999,12.74785)"
+     transform="translate(760.75001,12.74785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_31">
     <g
@@ -7656,7 +7761,7 @@
     </g>
   </g>
   <g
-     transform="translate(614.59509,12.74785)"
+     transform="translate(760.84511,12.74785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_32">
     <g
@@ -7796,7 +7901,7 @@
     </g>
   </g>
   <g
-     transform="translate(614.69019,12.74785)"
+     transform="translate(760.94021,12.74785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_33">
     <g
@@ -7936,7 +8041,7 @@
     </g>
   </g>
   <g
-     transform="translate(614.78539,12.74785)"
+     transform="translate(761.03541,12.74785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_34">
     <g
@@ -8076,7 +8181,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.38048,61.49785)"
+     transform="translate(468.6305,61.49785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_35">
     <g
@@ -8230,7 +8335,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.4756,61.49785)"
+     transform="translate(468.72562,61.49785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_36">
     <g
@@ -8384,7 +8489,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.57072,61.49785)"
+     transform="translate(468.82074,61.49785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_37">
     <g
@@ -8517,7 +8622,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.66584,61.49785)"
+     transform="translate(468.91586,61.49785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_38">
     <g
@@ -8685,7 +8790,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.76097,61.49785)"
+     transform="translate(469.01099,61.49785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_39">
     <g
@@ -8818,7 +8923,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.85609,61.49785)"
+     transform="translate(469.10611,61.49785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_40">
     <g
@@ -8951,7 +9056,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.45121,110.24785)"
+     transform="translate(176.70123,110.24785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_41">
     <g
@@ -9091,7 +9196,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.54633,110.24785)"
+     transform="translate(176.79635,110.24785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_42">
     <g
@@ -9252,7 +9357,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.64145,110.24785)"
+     transform="translate(176.89147,110.24785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_43">
     <g
@@ -9434,7 +9539,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.73658,110.24785)"
+     transform="translate(176.9866,110.24785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_44">
     <g
@@ -9560,7 +9665,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.8317,110.24785)"
+     transform="translate(177.08172,110.24785)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_45">
     <g
@@ -9700,7 +9805,7 @@
     </g>
   </g>
   <g
-     transform="translate(516.99999,293.01385)"
+     transform="translate(663.25001,293.01385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_46">
     <g
@@ -9840,7 +9945,7 @@
     </g>
   </g>
   <g
-     transform="translate(517.09511,293.01385)"
+     transform="translate(663.34513,293.01385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_47">
     <g
@@ -9987,7 +10092,7 @@
     </g>
   </g>
   <g
-     transform="translate(517.19023,293.01385)"
+     transform="translate(663.44025,293.01385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_48">
     <g
@@ -10128,7 +10233,7 @@
     </g>
   </g>
   <g
-     transform="translate(517.28536,293.01385)"
+     transform="translate(663.53538,293.01385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_49">
     <g
@@ -10275,7 +10380,7 @@
     </g>
   </g>
   <g
-     transform="translate(517.38048,293.01385)"
+     transform="translate(663.6305,293.01385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_50">
     <g
@@ -10416,7 +10521,7 @@
     </g>
   </g>
   <g
-     transform="translate(517.4756,293.01385)"
+     transform="translate(663.72562,293.01385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_51">
     <g
@@ -10570,7 +10675,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.07072,341.76385)"
+     transform="translate(371.32074,341.76385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_52">
     <g
@@ -10703,7 +10808,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.16584,341.76385)"
+     transform="translate(371.41586,341.76385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_53">
     <g
@@ -10836,7 +10941,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.26097,341.76385)"
+     transform="translate(371.51099,341.76385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_54">
     <g
@@ -10983,7 +11088,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.35609,341.76385)"
+     transform="translate(371.60611,341.76385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_55">
     <g
@@ -11137,7 +11242,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.45121,341.76385)"
+     transform="translate(371.70123,341.76385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_56">
     <g
@@ -11270,7 +11375,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.54633,341.76385)"
+     transform="translate(371.79635,341.76385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_57">
     <g
@@ -11403,7 +11508,7 @@
     </g>
   </g>
   <g
-     transform="translate(-66.85855,390.51385)"
+     transform="translate(79.39147,390.51385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_58">
     <g
@@ -11550,7 +11655,7 @@
     </g>
   </g>
   <g
-     transform="translate(-66.76342,390.51385)"
+     transform="translate(79.4866,390.51385)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_59">
     <g
@@ -11704,7 +11809,7 @@
     </g>
   </g>
   <g
-     transform="translate(-700.4183,-48.23615)"
+     transform="translate(-554.16828,-48.23615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_60">
     <g
@@ -11882,7 +11987,7 @@
     </g>
   </g>
   <g
-     transform="translate(29.50007,-109.22015)"
+     transform="translate(175.75009,-109.22015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_61">
     <g
@@ -12038,7 +12143,7 @@
     </g>
   </g>
   <g
-     transform="translate(-67.90483,-255.47015)"
+     transform="translate(78.34519,-255.47015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_62">
     <g
@@ -12187,7 +12292,7 @@
     </g>
   </g>
   <g
-     transform="translate(-67.80973,-255.47015)"
+     transform="translate(78.44029,-255.47015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_63">
     <g
@@ -12336,7 +12441,7 @@
     </g>
   </g>
   <g
-     transform="translate(-165.21463,232.02985)"
+     transform="translate(-18.96461,232.02985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_64">
     <g
@@ -12534,7 +12639,7 @@
     </g>
   </g>
   <g
-     transform="translate(-165.11953,232.02985)"
+     transform="translate(-18.86951,232.02985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_65">
     <g
@@ -12711,7 +12816,7 @@
     </g>
   </g>
   <g
-     transform="translate(-165.02433,232.02985)"
+     transform="translate(-18.77431,232.02985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_66">
     <g
@@ -12874,7 +12979,7 @@
     </g>
   </g>
   <g
-     transform="translate(-164.92923,232.02985)"
+     transform="translate(-18.67921,232.02985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_67">
     <g
@@ -13037,7 +13142,7 @@
     </g>
   </g>
   <g
-     transform="translate(-164.83413,232.02985)"
+     transform="translate(-18.58411,232.02985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_68">
     <g
@@ -13207,7 +13312,7 @@
     </g>
   </g>
   <g
-     transform="translate(-164.73903,232.02985)"
+     transform="translate(-18.48901,232.02985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_69">
     <g
@@ -13370,7 +13475,7 @@
     </g>
   </g>
   <g
-     transform="translate(-457.14393,280.77985)"
+     transform="translate(-310.89391,280.77985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_70">
     <g
@@ -13561,7 +13666,7 @@
     </g>
   </g>
   <g
-     transform="translate(-408.29873,-255.47015)"
+     transform="translate(-262.04871,-255.47015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_71">
     <g
@@ -13710,7 +13815,7 @@
     </g>
   </g>
   <g
-     transform="translate(-408.20363,-255.47015)"
+     transform="translate(-261.95361,-255.47015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_72">
     <g
@@ -13873,7 +13978,7 @@
     </g>
   </g>
   <g
-     transform="translate(-19.05973,-267.70415)"
+     transform="translate(127.19029,-267.70415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_78">
     <g
@@ -14029,7 +14134,7 @@
     </g>
   </g>
   <g
-     transform="translate(-18.96463,-267.70415)"
+     transform="translate(127.28539,-267.70415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_79">
     <g
@@ -14178,7 +14283,7 @@
     </g>
   </g>
   <g
-     transform="translate(-18.86953,-267.70415)"
+     transform="translate(127.38049,-267.70415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_80">
     <g
@@ -14334,7 +14439,7 @@
     </g>
   </g>
   <g
-     transform="translate(-18.77443,-267.70415)"
+     transform="translate(127.47559,-267.70415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_81">
     <g
@@ -14483,7 +14588,7 @@
     </g>
   </g>
   <g
-     transform="translate(-311.67923,-218.95415)"
+     transform="translate(-165.42921,-218.95415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_82">
     <g
@@ -14667,7 +14772,7 @@
     </g>
   </g>
   <g
-     transform="translate(176.41584,-23.95415)"
+     transform="translate(322.66586,-23.95415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_83">
     <g
@@ -14800,7 +14905,7 @@
     </g>
   </g>
   <g
-     transform="translate(176.51097,-23.95415)"
+     transform="translate(322.76099,-23.95415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_84">
     <g
@@ -14954,7 +15059,7 @@
     </g>
   </g>
   <g
-     transform="translate(176.60609,-23.95415)"
+     transform="translate(322.85611,-23.95415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_85">
     <g
@@ -15087,7 +15192,7 @@
     </g>
   </g>
   <g
-     transform="translate(176.70121,-23.95415)"
+     transform="translate(322.95123,-23.95415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_86">
     <g
@@ -15227,7 +15332,7 @@
     </g>
   </g>
   <g
-     transform="translate(176.79633,-23.95415)"
+     transform="translate(323.04635,-23.95415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_87">
     <g
@@ -15374,7 +15479,7 @@
     </g>
   </g>
   <g
-     transform="translate(-554.85857,-218.95415)"
+     transform="translate(-408.60855,-218.95415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_88">
     <g
@@ -15523,7 +15628,7 @@
     </g>
   </g>
   <g
-     transform="translate(516.99999,61.31185)"
+     transform="translate(663.25001,61.31185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_91">
     <g
@@ -15684,7 +15789,7 @@
     </g>
   </g>
   <g
-     transform="translate(760.84511,-133.68815)"
+     transform="translate(907.09513,-133.68815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_92">
     <g
@@ -15936,7 +16041,7 @@
     </g>
   </g>
   <g
-     transform="translate(760.94021,-133.68815)"
+     transform="translate(907.19023,-133.68815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_93">
     <g
@@ -16144,7 +16249,7 @@
     </g>
   </g>
   <g
-     transform="translate(419.78536,-279.93815)"
+     transform="translate(566.03538,-279.93815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_94">
     <g
@@ -16298,7 +16403,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.38048,-377.43815)"
+     transform="translate(468.6305,-377.43815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_95">
     <g
@@ -16445,7 +16550,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.2256,-36.18815)"
+     transform="translate(712.47562,-36.18815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_96">
     <g
@@ -16639,7 +16744,7 @@
     </g>
   </g>
   <g
-     transform="translate(517.57056,158.81185)"
+     transform="translate(663.82058,158.81185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_97">
     <g
@@ -16860,7 +16965,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.41596,-133.68815)"
+     transform="translate(712.66598,-133.68815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_98">
     <g
@@ -17063,7 +17168,7 @@
     </g>
   </g>
   <g
-     transform="translate(469.01086,158.81185)"
+     transform="translate(615.26088,158.81185)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_99">
     <g
@@ -17231,7 +17336,7 @@
     </g>
   </g>
   <g
-     transform="translate(517.85616,-133.68815)"
+     transform="translate(664.10618,-133.68815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_100">
     <g
@@ -17440,7 +17545,7 @@
     </g>
   </g>
   <g
-     transform="translate(79.20121,-377.43815)"
+     transform="translate(225.45123,-377.43815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_101">
     <g
@@ -17621,7 +17726,7 @@
     </g>
   </g>
   <g
-     transform="translate(469.29636,-133.68815)"
+     transform="translate(615.54638,-133.68815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_102">
     <g
@@ -17817,7 +17922,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.64145,-377.43815)"
+     transform="translate(176.89147,-377.43815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_103">
     <g
@@ -17992,7 +18097,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.73658,-377.43815)"
+     transform="translate(176.9866,-377.43815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_104">
     <g
@@ -18118,7 +18223,7 @@
     </g>
   </g>
   <g
-     transform="translate(30.8317,-377.43815)"
+     transform="translate(177.08172,-377.43815)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_105">
     <g
@@ -18237,7 +18342,7 @@
     </g>
   </g>
   <g
-     transform="translate(760.74999,-438.42215)"
+     transform="translate(907.00001,-438.42215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_106">
     <g
@@ -18363,7 +18468,7 @@
     </g>
   </g>
   <g
-     transform="translate(468.34511,-389.67215)"
+     transform="translate(614.59513,-389.67215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_107">
     <g
@@ -18524,7 +18629,7 @@
     </g>
   </g>
   <g
-     transform="translate(419.69023,-292.17215)"
+     transform="translate(565.94025,-292.17215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_108">
     <g
@@ -18664,7 +18769,7 @@
     </g>
   </g>
   <g
-     transform="translate(-165.21463,-487.17215)"
+     transform="translate(-18.96461,-487.17215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_109">
     <g
@@ -18901,7 +19006,7 @@
     </g>
   </g>
   <g
-     transform="translate(614.88048,-340.92215)"
+     transform="translate(761.1305,-340.92215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_110">
     <g
@@ -19110,7 +19215,7 @@
     </g>
   </g>
   <g
-     transform="translate(614.97558,-340.92215)"
+     transform="translate(761.2256,-340.92215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_111">
     <g
@@ -19270,7 +19375,7 @@
     </g>
   </g>
   <g
-     transform="translate(615.07068,-340.92215)"
+     transform="translate(761.3207,-340.92215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_112">
     <g
@@ -19478,7 +19583,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.16584,-389.67215)"
+     transform="translate(371.41586,-389.67215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_113">
     <g
@@ -19660,7 +19765,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.26114,-389.67215)"
+     transform="translate(371.51116,-389.67215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_114">
     <g
@@ -19869,7 +19974,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.35624,-389.67215)"
+     transform="translate(371.60626,-389.67215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_115">
     <g
@@ -20050,7 +20155,7 @@
     </g>
   </g>
   <g
-     transform="translate(712.95105,-292.17215)"
+     transform="translate(859.20107,-292.17215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_116">
     <g
@@ -20225,7 +20330,7 @@
     </g>
   </g>
   <g
-     transform="translate(274.29617,-243.42215)"
+     transform="translate(420.54619,-243.42215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_117">
     <g
@@ -20399,7 +20504,7 @@
     </g>
   </g>
   <g
-     transform="translate(225.64129,-48.42215)"
+     transform="translate(371.89131,-48.42215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_118">
     <g
@@ -20587,7 +20692,7 @@
     </g>
   </g>
   <g
-     transform="translate(371.98658,-340.92215)"
+     transform="translate(518.2366,-340.92215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_119">
     <g
@@ -20782,7 +20887,7 @@
     </g>
   </g>
   <g
-     transform="translate(274.58168,-340.92215)"
+     transform="translate(420.8317,-340.92215)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_120">
     <g
@@ -20942,7 +21047,7 @@
     </g>
   </g>
   <g
-     transform="translate(809.49983,-11.90615)"
+     transform="translate(955.74985,-11.90615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_121">
     <g
@@ -21116,7 +21221,7 @@
     </g>
   </g>
   <g
-     transform="translate(809.59493,-11.90615)"
+     transform="translate(955.84495,-11.90615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_122">
     <g
@@ -21298,7 +21403,7 @@
     </g>
   </g>
   <g
-     transform="translate(809.69003,-11.90615)"
+     transform="translate(955.94005,-11.90615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_123">
     <g
@@ -21499,7 +21604,7 @@
     </g>
   </g>
   <g
-     transform="translate(663.5352,-60.65615)"
+     transform="translate(809.78522,-60.65615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_124">
     <g
@@ -21687,7 +21792,7 @@
     </g>
   </g>
   <g
-     transform="translate(761.13033,-11.90615)"
+     transform="translate(907.38035,-11.90615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_125">
     <g
@@ -21868,7 +21973,7 @@
     </g>
   </g>
   <g
-     transform="translate(614.97547,-304.40615)"
+     transform="translate(761.22549,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_126">
     <g
@@ -22050,7 +22155,7 @@
     </g>
   </g>
   <g
-     transform="translate(761.32068,-401.90615)"
+     transform="translate(907.5707,-401.90615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_127">
     <g
@@ -22245,7 +22350,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.41577,-304.40615)"
+     transform="translate(712.66579,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_128">
     <g
@@ -22419,7 +22524,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.51087,-304.40615)"
+     transform="translate(712.76089,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_129">
     <g
@@ -22607,7 +22712,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.60597,-304.40615)"
+     transform="translate(712.85599,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_130">
     <g
@@ -22795,7 +22900,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.70107,-304.40615)"
+     transform="translate(712.95109,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_131">
     <g
@@ -22969,7 +23074,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.79617,-304.40615)"
+     transform="translate(713.04619,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_132">
     <g
@@ -23157,7 +23262,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.89129,-304.40615)"
+     transform="translate(713.14131,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_133">
     <g
@@ -23345,7 +23450,7 @@
     </g>
   </g>
   <g
-     transform="translate(566.98639,-304.40615)"
+     transform="translate(713.23641,-304.40615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_134">
     <g
@@ -23560,7 +23665,7 @@
     </g>
   </g>
   <g
-     transform="translate(177.0815,-60.65615)"
+     transform="translate(323.33152,-60.65615)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_135">
     <g
@@ -23762,7 +23867,7 @@
     </g>
   </g>
   <g
-     transform="translate(809.49983,-414.14015)"
+     transform="translate(955.74985,-414.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_136">
     <g
@@ -23929,7 +24034,7 @@
     </g>
   </g>
   <g
-     transform="translate(955.84503,-72.89015)"
+     transform="translate(1102.0951,-72.89015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_137">
     <g
@@ -24096,7 +24201,7 @@
     </g>
   </g>
   <g
-     transform="translate(1004.6902,-462.89015)"
+     transform="translate(1150.9402,-462.89015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_138">
     <g
@@ -24284,7 +24389,7 @@
     </g>
   </g>
   <g
-     transform="translate(712.28523,-414.14015)"
+     transform="translate(858.53525,-414.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_139">
     <g
@@ -24479,7 +24584,7 @@
     </g>
   </g>
   <g
-     transform="translate(956.13043,-462.89015)"
+     transform="translate(1102.3805,-462.89015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_140">
     <g
@@ -24674,7 +24779,7 @@
     </g>
   </g>
   <g
-     transform="translate(663.72543,-414.14015)"
+     transform="translate(809.97545,-414.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_141">
     <g
@@ -24834,7 +24939,7 @@
     </g>
   </g>
   <g
-     transform="translate(810.07056,-72.89015)"
+     transform="translate(956.32058,-72.89015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_142">
     <g
@@ -24994,7 +25099,7 @@
     </g>
   </g>
   <g
-     transform="translate(858.91583,-462.89015)"
+     transform="translate(1005.1659,-462.89015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_143">
     <g
@@ -25175,7 +25280,7 @@
     </g>
   </g>
   <g
-     transform="translate(322.76114,-511.64015)"
+     transform="translate(469.01116,-511.64015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_144">
     <g
@@ -25383,7 +25488,7 @@
     </g>
   </g>
   <g
-     transform="translate(-408.39393,-609.14015)"
+     transform="translate(-262.14391,-609.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_145">
     <g
@@ -25585,7 +25690,7 @@
     </g>
   </g>
   <g
-     transform="translate(469.20103,-414.14015)"
+     transform="translate(615.45105,-414.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_146">
     <g
@@ -25773,7 +25878,7 @@
     </g>
   </g>
   <g
-     transform="translate(469.29613,-414.14015)"
+     transform="translate(615.54615,-414.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_147">
     <g
@@ -25968,7 +26073,7 @@
     </g>
   </g>
   <g
-     transform="translate(469.39133,-414.14015)"
+     transform="translate(615.64135,-414.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_148">
     <g
@@ -26142,7 +26247,7 @@
     </g>
   </g>
   <g
-     transform="translate(469.48643,-414.14015)"
+     transform="translate(615.73645,-414.14015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_149">
     <g
@@ -26386,7 +26491,7 @@
     </g>
   </g>
   <g
-     transform="translate(274.5815,-121.64015)"
+     transform="translate(420.83152,-121.64015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_150">
     <g
@@ -26616,7 +26721,7 @@
     </g>
   </g>
   <g
-     transform="translate(906.99983,-182.62415)"
+     transform="translate(1053.2499,-182.62415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_151">
     <g
@@ -26855,7 +26960,7 @@
     </g>
   </g>
   <g
-     transform="translate(1102.0949,-475.12415)"
+     transform="translate(1248.3449,-475.12415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_152">
     <g
@@ -27067,7 +27172,7 @@
     </g>
   </g>
   <g
-     transform="translate(955.94013,-133.87415)"
+     transform="translate(1102.1902,-133.87415)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_153">
     <g
@@ -27279,7 +27384,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.28537,256.12585)"
+     transform="translate(663.53539,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_154">
     <g
@@ -27408,7 +27513,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.38049,256.12585)"
+     transform="translate(663.63051,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_155">
     <g
@@ -27565,7 +27670,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.47561,256.12585)"
+     transform="translate(663.72563,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_156">
     <g
@@ -27715,7 +27820,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.57073,256.12585)"
+     transform="translate(663.82075,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_157">
     <g
@@ -27860,7 +27965,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.66585,256.12585)"
+     transform="translate(663.91587,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_158">
     <g
@@ -28078,7 +28183,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.76098,256.12585)"
+     transform="translate(664.011,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_159">
     <g
@@ -28202,7 +28307,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.8561,256.12585)"
+     transform="translate(664.10612,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_160">
     <g
@@ -28361,7 +28466,7 @@
     </g>
   </g>
   <g
-     transform="translate(907.95122,256.12585)"
+     transform="translate(664.20124,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_161">
     <g
@@ -28492,7 +28597,7 @@
     </g>
   </g>
   <g
-     transform="translate(908.04634,256.12585)"
+     transform="translate(664.29636,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_162">
     <g
@@ -28730,7 +28835,7 @@
     </g>
   </g>
   <g
-     transform="translate(908.14146,256.12585)"
+     transform="translate(664.39148,109.87585)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_163">
     <g
@@ -28868,7 +28973,7 @@
      transform="translate(174.38375,626.2895)" />
   <g
      id="g11"
-     transform="translate(48.74999,48.75)">
+     transform="translate(195.00001,48.75)">
     <g
        id="patch_362-9"
        transform="translate(-456.85852,-304.72015)">
@@ -29020,7 +29125,7 @@
      transform="translate(174.38375,626.2895)" />
   <g
      id="g10"
-     transform="translate(48.74999,48.75)">
+     transform="translate(195.00001,48.75)">
     <g
        id="patch_367-1"
        transform="translate(-456.85852,-304.72015)">
@@ -29172,7 +29277,7 @@
      transform="translate(174.38375,626.2895)" />
   <g
      id="g7"
-     transform="translate(-826.052,-345.50965)">
+     transform="translate(-679.80198,-345.50965)">
     <g
        id="patch_372-0"
        transform="translate(174.38375,626.2895)">
@@ -29323,7 +29428,7 @@
   </g>
   <g
      id="patch_377-2"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path3946"
@@ -29338,7 +29443,7 @@
      transform="translate(174.38375,626.2895)" />
   <g
      id="patch_378-4"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path3951"
@@ -29347,7 +29452,7 @@
   </g>
   <g
      id="patch_379-7"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path3954"
@@ -29356,7 +29461,7 @@
   </g>
   <g
      id="patch_380-1"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path3957"
@@ -29365,7 +29470,7 @@
   </g>
   <g
      id="patch_381-6"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path3960"
@@ -29374,7 +29479,7 @@
   </g>
   <g
      id="text_267-8"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- ⊃ -->
     <g
        id="g3968"
@@ -29399,7 +29504,7 @@
   </g>
   <g
      id="text_268-2"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- fork -->
     <g
        id="g3979"
@@ -29437,7 +29542,7 @@
   </g>
   <g
      id="text_269-5"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- 2| -->
     <g
        id="g3986"
@@ -29461,7 +29566,7 @@
   </g>
   <g
      id="text_270-6"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- M -->
     <g
        id="g3991"
@@ -29478,7 +29583,7 @@
   </g>
   <g
      id="patch_382-7"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path3995"
@@ -29493,7 +29598,7 @@
      transform="translate(174.38375,626.2895)" />
   <g
      id="patch_383-7"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path4000"
@@ -29502,7 +29607,7 @@
   </g>
   <g
      id="patch_384-8"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path4003"
@@ -29511,7 +29616,7 @@
   </g>
   <g
      id="patch_385-0"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path4006"
@@ -29520,7 +29625,7 @@
   </g>
   <g
      id="patch_386-8"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <path
        inkscape:connector-curvature="0"
        id="path4009"
@@ -29529,7 +29634,7 @@
   </g>
   <g
      id="text_271-2"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- ⊓ -->
     <g
        id="g4017"
@@ -29554,7 +29659,7 @@
   </g>
   <g
      id="text_272-6"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- bracket -->
     <g
        id="g4034"
@@ -29613,7 +29718,7 @@
   </g>
   <g
      id="text_273-1"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- 2| -->
     <g
        id="g4041"
@@ -29637,7 +29742,7 @@
   </g>
   <g
      id="text_274-0"
-     transform="translate(-19.74993,-267.70415)">
+     transform="translate(126.50009,-267.70415)">
     <!-- M -->
     <g
        id="g4046"
@@ -29660,7 +29765,7 @@
      transform="translate(174.38375,626.2895)" />
   <g
      id="g9"
-     transform="translate(-729.14719,-845.24365)">
+     transform="translate(-582.89717,-845.24365)">
     <g
        id="patch_442-4"
        transform="translate(174.38375,626.2895)">
@@ -29805,7 +29910,7 @@
      transform="translate(174.38375,626.2895)" />
   <g
      id="g8"
-     transform="translate(-729.14719,-845.24365)">
+     transform="translate(-582.89717,-845.24365)">
     <g
        id="patch_447-7"
        transform="translate(174.38375,626.2895)">
@@ -29952,12 +30057,78 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-     x="862.49011"
+     x="1008.7401"
      y="420.24789"
      id="text52406-03-1-2-5-4-1-2"><tspan
        sodipodi:role="line"
        id="tspan52404-3-9-3-2-9-5-2"
-       x="862.49011"
+       x="1008.7401"
        y="420.24789"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#99c1f1;stroke-width:0.75">-</tspan></text>
+  <text
+     id="text52406-49-9-4"
+     y="32.889309"
+     x="340.5264"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="32.889309"
+       x="340.5264"
+       sodipodi:role="line"
+       id="tspan9-69">MODIFIERS</tspan></text>
+  <text
+     id="text52406-49-9-4-9"
+     y="80.521423"
+     x="164.62077"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="80.521423"
+       x="164.62077"
+       sodipodi:role="line"
+       id="tspan9-69-91">CONSTANTS</tspan></text>
+  <text
+     id="text52406-49-9-4-4"
+     y="32.889309"
+     x="691.94531"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="32.889309"
+       x="691.94531"
+       sodipodi:role="line"
+       id="tspan9-69-9">PERVASIVES</tspan></text>
+  <text
+     id="text52406-49-9-4-4-7"
+     y="32.889309"
+     x="1169.0039"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="32.889309"
+       x="1169.0039"
+       sodipodi:role="line"
+       id="tspan9-69-9-4">GLYPHLESS</tspan></text>
+  <text
+     id="text52406-49-9-4-9-0"
+     y="131.09131"
+     x="164.62077"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="131.09131"
+       x="164.62077"
+       sodipodi:role="line"
+       id="tspan9-69-91-5">MONADICS</tspan></text>
+  <text
+     id="text52406-49-9-4-9-0-2"
+     y="569.02625"
+     x="164.62077"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="569.02625"
+       x="164.62077"
+       sodipodi:role="line"
+       id="tspan9-69-91-5-7">DIADICS</tspan></text>
 </svg>
