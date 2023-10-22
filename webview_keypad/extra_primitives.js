@@ -41,7 +41,7 @@ const extra_primitives = [
         "docs":"types#characters"
     },
     {
-        "name": "format / multiline string",
+        "name": "fmt/multiline str",
         "description": "",
         "glyph": "$",
         "count_inputs": null,
@@ -51,7 +51,7 @@ const extra_primitives = [
         "docs":"functions#format-strings"
     },
     {
-        "name": "String Delimiter",
+        "name": "string",
         "description": "",
         "glyph": "\"",
         "count_inputs": null,
@@ -61,7 +61,7 @@ const extra_primitives = [
         "docs":"types#characters"
     },
     {
-        "name": "Placeholder",
+        "name": "placeholder",
         "description": "",
         "glyph": "^",
         "count_inputs": null,
@@ -71,7 +71,7 @@ const extra_primitives = [
         "docs":"custommodifiers"
     },
     {
-        "name": "Binding",
+        "name": "binding",
         "description": "Gives a global name a value",
         "glyph": "←",
         "count_inputs": null,
