@@ -94,6 +94,7 @@ body{
 .modifier2-button {
     color: #cc6be9;
 }
+
 .trans{
     background-image: linear-gradient(180deg, #5BCEFA 29%, #F5A9B8 29%, #F5A9B8 43%, #FFFFFF 43%, #FFFFFF 57%, #F5A9B8 57%, #F5A9B8 71%, #5BCEFA 71%);
     background-size: 100%;

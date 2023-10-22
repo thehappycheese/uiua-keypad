@@ -2,6 +2,11 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.2.23] - 2023-10-22
+
+- Language updates
+- Added missing glyph `$`
+
 ## [0.1.22] - 2023-10-21
 
 - Ctrl+click now opens docs

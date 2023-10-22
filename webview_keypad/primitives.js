@@ -42,7 +42,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack"
+        "primitive_class": "Planet"
     },
     {
         "name": "not",
@@ -407,7 +407,7 @@ const primitives=[
     {
         "name": "match",
         "description": "Check if two arrays are exactly the same",
-        "glyph": "≅",
+        "glyph": "≍",
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
@@ -540,15 +540,6 @@ const primitives=[
         "primitive_class": "AggregatingModifier"
     },
     {
-        "name": "fold",
-        "description": "Apply a reducing function to an array with an initial value",
-        "glyph": "∧",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "AggregatingModifier"
-    },
-    {
         "name": "scan",
         "description": "Reduce, but keep intermediate values",
         "glyph": "\\",
@@ -579,6 +570,15 @@ const primitives=[
         "name": "distribute",
         "description": "Apply a function to a fixed value and each row of an array",
         "glyph": "∺",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "IteratingModifier"
+    },
+    {
+        "name": "tribute",
+        "description": "Apply a function to each row of an array and a fixed value",
+        "glyph": "≐",
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
@@ -630,6 +630,15 @@ const primitives=[
         "primitive_class": "AggregatingModifier"
     },
     {
+        "name": "pack",
+        "description": "Apply a function with implicit (un)boxing",
+        "glyph": "⊐",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier"
+    },
+    {
         "name": "invert",
         "description": "Invert the behavior of a function",
         "glyph": "⍘",
@@ -645,7 +654,7 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Stack"
+        "primitive_class": "Planet"
     },
     {
         "name": "dip",
@@ -654,7 +663,7 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Stack"
+        "primitive_class": "Planet"
     },
     {
         "name": "both",
@@ -672,7 +681,7 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "Stack"
+        "primitive_class": "Planet"
     },
     {
         "name": "bracket",
@@ -681,7 +690,7 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "Stack"
+        "primitive_class": "Planet"
     },
     {
         "name": "under",
@@ -693,15 +702,6 @@ const primitives=[
         "primitive_class": "OtherModifier"
     },
     {
-        "name": "level",
-        "description": "Apply a function at a different array depth",
-        "glyph": "⍚",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "IteratingModifier"
-    },
-    {
         "name": "fill",
         "description": "Set the fill value for a function",
         "glyph": "⬚",
@@ -711,8 +711,80 @@ const primitives=[
         "primitive_class": "OtherModifier"
     },
     {
+        "name": "level",
+        "description": "Apply a function at a different array depth",
+        "glyph": "≑",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "IteratingModifier"
+    },
+    {
+        "name": "fold",
+        "description": "Apply a function to aggregate at different array depths",
+        "glyph": "∧",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "AggregatingModifier"
+    },
+    {
+        "name": "combinate",
+        "description": "Apply a function to combinations at array depths",
+        "glyph": "◳",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "IteratingModifier"
+    },
+    {
+        "name": "rock",
+        "description": "⊂ ∞ to an array",
+        "glyph": "⋄",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Ocean"
+    },
+    {
+        "name": "surface",
+        "description": "⊂ ¯1 to an array",
+        "glyph": "~",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Ocean"
+    },
+    {
+        "name": "deep",
+        "description": "⊂ 2 to an array",
+        "glyph": "≊",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Ocean"
+    },
+    {
+        "name": "abyss",
+        "description": "⊂ 1 to an array",
+        "glyph": "≃",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Ocean"
+    },
+    {
+        "name": "seabed",
+        "description": "⊂ 0 to an array",
+        "glyph": "∸",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Ocean"
+    },
+    {
         "name": "bind",
-        "description": "Compose two functions",
+        "description": "Syntactically bind two functions",
         "glyph": "'",
         "count_inputs": null,
         "count_outputs": 1,
@@ -735,7 +807,7 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "OtherModifier"
+        "primitive_class": "Control"
     },
     {
         "name": "assert",
@@ -765,29 +837,11 @@ const primitives=[
         "primitive_class": "Misc"
     },
     {
-        "name": "call",
-        "description": "Call a function",
-        "glyph": "!",
-        "count_inputs": null,
-        "count_outputs": null,
-        "count_modifier_inputs": null,
-        "primitive_class": "Control"
-    },
-    {
         "name": "break",
         "description": "Break out of a loop",
         "glyph": "⎋",
         "count_inputs": 1,
         "count_outputs": 0,
-        "count_modifier_inputs": null,
-        "primitive_class": "Control"
-    },
-    {
-        "name": "recur",
-        "description": "Call a function recursively",
-        "glyph": "↬",
-        "count_inputs": 1,
-        "count_outputs": null,
         "count_modifier_inputs": null,
         "primitive_class": "Control"
     },
@@ -829,7 +883,7 @@ const primitives=[
     },
     {
         "name": "regex",
-        "description": "Parse a regex pattern",
+        "description": "Match a regex pattern",
         "glyph": null,
         "count_inputs": 2,
         "count_outputs": 1,
@@ -846,15 +900,6 @@ const primitives=[
         "primitive_class": "Misc"
     },
     {
-        "name": "use",
-        "description": "Extract a named function from a module",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Misc"
-    },
-    {
         "name": "tag",
         "description": "Generate a unique tag",
         "glyph": null,
@@ -866,15 +911,6 @@ const primitives=[
     {
         "name": "type",
         "description": "Check the type of an array",
-        "glyph": null,
-        "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Misc"
-    },
-    {
-        "name": "sig",
-        "description": "Get the stack signature of a value",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 1,
@@ -929,7 +965,7 @@ const primitives=[
     {
         "name": "trace",
         "description": "Debug print the top value on the stack without popping it",
-        "glyph": "~",
+        "glyph": "⸮",
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
@@ -1081,9 +1117,9 @@ const primitives=[
     },
     {
         "name": "&i",
-        "description": "Run the code from a file in a scope",
+        "description": "Import an item from a file",
         "glyph": null,
-        "count_inputs": 1,
+        "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Sys"
@@ -1263,9 +1299,9 @@ const primitives=[
         "name": "&ast",
         "description": "Synthesize and stream audio",
         "glyph": null,
-        "count_inputs": 1,
+        "count_inputs": 0,
         "count_outputs": 0,
-        "count_modifier_inputs": null,
+        "count_modifier_inputs": 1,
         "primitive_class": "Sys"
     },
     {

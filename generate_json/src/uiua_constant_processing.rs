@@ -19,7 +19,7 @@ pub fn get_constants() -> Vec<ConstantData> {
                 uiua::value::Value::Num(arr) => Some(format!("Numeric Array [{:?}]", arr.shape())),
                 uiua::value::Value::Byte(arr) => Some(format!("Byte Array [{:?}]", arr.shape())),
                 uiua::value::Value::Char(arr) => Some(format!("Char Array [{:?}]", arr.shape())),
-                uiua::value::Value::Func(arr) => Some(format!("Func Array [{:?}]", arr.shape())),
+                uiua::value::Value::Box(arr) => Some(format!("Box Array [{:?}]", arr.shape())),
             },
         })
         .collect()

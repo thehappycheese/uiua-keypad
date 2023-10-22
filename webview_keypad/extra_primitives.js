@@ -1,7 +1,7 @@
 // Kinda sucks to maintain this manually... but its fine for now.
 const extra_primitives = [
     {
-        "name": "Array",
+        "name": "array",
         "description": "",
         "glyph": "[]",
         "count_inputs": null,
@@ -11,7 +11,7 @@ const extra_primitives = [
         "docs":"arrays"
     },
     {
-        "name": "Box Array",
+        "name": "box array",
         "description": "",
         "glyph": "{}",
         "count_inputs": null,
@@ -21,7 +21,7 @@ const extra_primitives = [
         "docs":"arrays#nested-arrays"
     },
     {
-        "name": "Function",
+        "name": "function",
         "description": "",
         "glyph": "()",
         "count_inputs": null,
@@ -31,8 +31,8 @@ const extra_primitives = [
         "docs":"functions#inline-functions"
     },
     {
-        "name": "@",
-        "description": "Character",
+        "name": "character",
+        "description": "",
         "glyph": "@",
         "count_inputs": null,
         "count_outputs": null,
@@ -41,14 +41,34 @@ const extra_primitives = [
         "docs":"types#characters"
     },
     {
-        "name": "\"",
-        "description": "String Delimiter",
+        "name": "format / multiline string",
+        "description": "",
+        "glyph": "$",
+        "count_inputs": null,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Syntax",
+        "docs":"functions#format-strings"
+    },
+    {
+        "name": "String Delimiter",
+        "description": "",
         "glyph": "\"",
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
         "primitive_class": "Syntax",
         "docs":"types#characters"
+    },
+    {
+        "name": "Placeholder",
+        "description": "",
+        "glyph": "^",
+        "count_inputs": null,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Syntax",
+        "docs":"custommodifiers"
     },
     {
         "name": "Binding",
@@ -61,7 +81,7 @@ const extra_primitives = [
         "docs":"bindings"
     },
     {
-        "name": "Signature / Terminator",
+        "name": "signature / terminator",
         "description": "",
         "glyph": "|",
         "count_inputs": null,
@@ -71,7 +91,7 @@ const extra_primitives = [
         "docs":"functions#stack-signatures"
     },
     {
-        "name": "Comment",
+        "name": "comment",
         "description": "",
         "glyph": "#",
         "count_inputs": null,
@@ -79,5 +99,5 @@ const extra_primitives = [
         "count_modifier_inputs": null,
         "primitive_class": "Syntax",
         "docs":"basic#comments"
-    },
+    }
 ]
