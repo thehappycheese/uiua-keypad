@@ -20,8 +20,8 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      inkscape:current-layer="svg46989"
-     inkscape:cy="671.9525"
-     inkscape:cx="1117.5218"
+     inkscape:cy="749.15834"
+     inkscape:cx="1092.0046"
      inkscape:zoom="0.76419092"
      inkscape:snap-others="false"
      inkscape:snap-nodes="false"
@@ -13146,7 +13146,7 @@
     </g>
   </g>
   <g
-     transform="translate(-18.58412,280.77985)"
+     transform="translate(-116.08415,-60.47015)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_68">
     <g
@@ -13316,7 +13316,7 @@
     </g>
   </g>
   <g
-     transform="translate(-18.48901,232.02985)"
+     transform="translate(-67.23902,280.77985)"
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_69">
     <g
@@ -30083,12 +30083,12 @@
   <text
      id="text52406-49-9-4-9"
      y="80.521423"
-     x="190.08105"
+     x="189.04744"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="80.521423"
-       x="190.08105"
+       x="189.04744"
        sodipodi:role="line"
        id="tspan9-69-91">SIDE EFFECTS</tspan></text>
   <text
@@ -30127,46 +30127,46 @@
   <text
      id="text52406-49-9-4-9-0"
      y="323.77145"
-     x="173.66377"
+     x="189.04744"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="323.77145"
-       x="173.66377"
+       x="189.04744"
        sodipodi:role="line"
        id="tspan9-69-91-5">MONADICS</tspan></text>
   <text
      id="text52406-49-9-4-9-0-9"
      y="115.90817"
-     x="189.99316"
+     x="189.04744"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="115.90817"
-       x="189.99316"
+       x="189.04744"
        sodipodi:role="line"
-       id="tspan9-69-91-5-2">PURE MODIFIERS</tspan><tspan
+       id="tspan9-69-91-5-2">PURE MONADIC</tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="138.40817"
-       x="189.99316"
+       x="189.04744"
        sodipodi:role="line"
-       id="tspan11">MONADIC</tspan></text>
+       id="tspan11">MODIFIERS</tspan></text>
   <text
      id="text52406-49-9-4-9-0-9-7"
      y="163.82384"
-     x="190.08105"
+     x="189.04744"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="163.82384"
-       x="190.08105"
+       x="189.04744"
        sodipodi:role="line"
-       id="tspan9-69-91-5-2-1">PURE MODIFIERS</tspan><tspan
+       id="tspan11-8">PURE DYADIC</tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="186.32384"
-       x="190.08105"
+       x="189.04744"
        sodipodi:role="line"
-       id="tspan11-8">DYADIC</tspan></text>
+       id="tspan6">MODIFIERS</tspan></text>
   <text
      id="text52406-49-9-4-9-0-9-4"
      y="115.99512"
@@ -30185,29 +30185,76 @@
        id="tspan12">CONSTANTS</tspan></text>
   <text
      id="text52406-49-9-4-9-0-2"
-     y="617.77625"
-     x="190.08104"
+     y="665.41583"
+     x="189.04744"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
-       y="617.77625"
-       x="190.08104"
+       y="665.41583"
+       x="189.04744"
        sodipodi:role="line"
        id="tspan9-69-91-5-7">DYADICS</tspan></text>
   <text
+     id="text52406-49-9-4-9-0-2-4"
+     y="957.95294"
+     x="189.79645"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="957.95294"
+       x="189.79645"
+       sodipodi:role="line"
+       id="tspan9-69-91-5-7-5">DOUBLE</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="980.45294"
+       x="189.79645"
+       sodipodi:role="line"
+       id="tspan4">DIPPING</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="1002.9529"
+       x="189.79645"
+       sodipodi:role="line"
+       id="tspan3">DYADICS</tspan></text>
+  <text
      id="text52406-49-9-4-9-0-9-4-0"
      y="263.85654"
-     x="187.59557"
+     x="188.87166"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="263.85654"
-       x="187.59557"
+       x="188.87166"
        sodipodi:role="line"
-       id="tspan12-3">OUTPUT / </tspan><tspan
+       id="tspan13">DISCARDING</tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
        y="286.35654"
-       x="187.59557"
+       x="188.87166"
        sodipodi:role="line"
-       id="tspan13">DISCARDING</tspan></text>
+       id="tspan2">MONAICS</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="308.85654"
+       x="188.87166"
+       sodipodi:role="line"
+       id="tspan1" /></text>
+  <text
+     id="text52406-49-9-4-9-0-9-4-0-2"
+     y="604.35938"
+     x="188.87166"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="604.35938"
+       x="188.87166"
+       sodipodi:role="line"
+       id="tspan13-5">DISCARDING</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="626.85938"
+       x="188.87166"
+       sodipodi:role="line"
+       id="tspan2-2">DYADICS</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono Bold';text-align:end;text-anchor:end;fill:#57e389;stroke-width:0.75"
+       y="649.35938"
+       x="188.87166"
+       sodipodi:role="line"
+       id="tspan1-3" /></text>
 </svg>
