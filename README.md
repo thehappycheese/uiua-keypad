@@ -1,15 +1,23 @@
 # Uiua Keypad (unofficial)
 
-> Note: This extension is not supported by the Uiua language developers. The 
+> Note: This extension is not supported by the Uiua language developers. The
 > language is not stable, so please be patient if this extension is out of date.
 > Hopefully this extension can be merged with the official extension, or
 > replaced in the future if something better comes along.
-
 
 ![keypad screenshot](https://github.com/thehappycheese/uiua-keypad/raw/main/resources/screenshot.png)
 
 The icon on the left bar should appear when editing editing a file with the
 `.ua` extension, or you can do `Ctrl+Shift+P` and search for `uiua activate keypad`.
+
+## Want to try voice commands instead?
+
+For this extention you have to click glyph buttons with your mouse. Thats hard work!
+Check out my video explaining how to use your voice to input Uiua glyphs :smile:
+
+https://www.youtube.com/watch?v=-VOxSNyaLTg
+
+[![Uiua-Talon Youtube Intro](https://img.youtube.com/vi/-VOxSNyaLTg/0.jpg)](https://www.youtube.com/watch?v=-VOxSNyaLTg)
 
 ## Known Issues
 
