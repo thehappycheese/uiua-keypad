@@ -25,24 +25,60 @@ body{
         grid-template-areas: "a a a" "b b b" "c d e";
     }
 }
-.bar {
+.top-bar {
     padding:0.3em;
     display:grid;
+    grid-template-columns: 3em 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "a b"
+        "a c";
     gap:0.3em;
     padding: 0.5em;
     padding-bottom: 0;
 }
-.bar > div {
+tooltip-display,tooltip-display-desc {
     display:flex;
     align-items: center;
     justify-content: left;
 }
+
+#periodic-container{
+    width :3em;
+    height:3em;
+    border:1px solid #606468;
+    grid-area: a;
+    padding:0.3;
+    position: relative;
+}
+#periodic-glyph{
+    position:absolute;
+    top :0.1em;
+    left:0.1em;
+    font-size:2em;
+}
+#periodic-signature{
+    position:absolute;
+    right :0.3em;
+    bottom:0.3em;
+    text-align: right;
+    font-size: 0.7em;
+}
+#periodic-pervasive{
+    position:absolute;
+    right :0.3em;
+    top   :0.3em;
+    text-align: right;
+    font-size: 0.7em;
+}
+
 #tooltip-display{
+    grid-area: b;
     font-size: 1.1em;
     font-weight: bold;
 }
 #tooltip-display-desc{
+    grid-area: c;
     font-size: 0.6em;
     white-space: nowrap;
     overflow:hidden;
@@ -79,24 +115,49 @@ body{
     color: #d1daec;
     font-family:  "DejaVu Sans Mono", sans-serif;
 }
-.noadic-function-button {
+.stack-function {
+    color: #d1daec;
+}
+.noadic-function {
     color: #ed5e6a;
 }
-.monadic-function-button {
+.monadic-function {
     color: #95d16a;
 }
-.dyadic-function-button {
+.dyadic-function {
     color: #54b0fc;
 }
-.modifier1-button {
+.monadic-modifier {
     color: #f0c36f;
 }
-.modifier2-button {
+.dyadic-modifier {
     color: #cc6be9;
 }
+.ocean-function {
+    color: #03d7d9;
+}
+.comment-span {
+    color: #888;
+}
+.unknown {
+    color: limegreen;
+}
+.unknown-variadic {
+    color: red;
+}
 
-.trans{
-    background-image: linear-gradient(180deg, #5BCEFA 29%, #F5A9B8 29%, #F5A9B8 43%, #FFFFFF 43%, #FFFFFF 57%, #F5A9B8 57%, #F5A9B8 71%, #5BCEFA 71%);
+
+
+.trans {
+    background-image: linear-gradient(180deg,
+            #5BCEFA 36%,
+            #F5A9B8 36%,
+            #F5A9B8 47%,
+            #FFFFFF 47%,
+            #FFFFFF 58%,
+            #F5A9B8 58%,
+            #F5A9B8 69%,
+            #5BCEFA 69%);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -104,6 +165,8 @@ body{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
+
 
 
 label{

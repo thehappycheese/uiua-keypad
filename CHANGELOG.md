@@ -2,7 +2,12 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
-## [0.2.23] - 2023-10-22
+## [0.1.24] - 2023-10-28
+
+- Finally fix colors
+- Add periodic-table-like indicator
+
+## [0.1.23] - 2023-10-22
 
 - Language updates
 - Added missing glyph `$`

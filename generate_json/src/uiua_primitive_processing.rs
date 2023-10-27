@@ -14,16 +14,15 @@ pub struct UiuaPrimitiveDescription {
 
 pub fn get_all_primitives() -> Vec<UiuaPrimitiveDescription> {
     Primitive::non_deprecated()
-        .filter_map(|prim: Primitive| {
-            Some(UiuaPrimitiveDescription {
-                name: prim.names()?.text.into(),
-                glyph: prim.names()?.glyph,
-                description: prim.doc().map(|doc| doc.short_text())?.into(),
-                count_inputs: prim.args(),
-                count_outputs: prim.outputs(),
-                count_modifier_inputs: prim.modifier_args(),
-                primitive_class: Some(format!("{:?}", prim.class())),
-            })
+        .map(|prim| UiuaPrimitiveDescription {
+            name: prim.names().text.into(),
+            glyph: prim.names().glyph,
+            description: prim.doc().map(|doc| doc.short_text().into_owned()).unwrap_or("".to_owned()),
+            count_inputs: prim.args(),
+            count_outputs: prim.outputs(),
+            count_modifier_inputs: prim.modifier_args(),
+            primitive_class: Some(format!("{:?}", prim.class())),
         })
         .collect()
 }
+

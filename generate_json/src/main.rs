@@ -1,3 +1,4 @@
+#![feature(try_blocks)]
 mod util;
 mod uiua_primitive_processing;
 mod uiua_constant_processing;

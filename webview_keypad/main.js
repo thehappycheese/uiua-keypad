@@ -9,22 +9,50 @@ try{
 
 let tooltip_title    = document.querySelector("#tooltip-display");
 let tooltip_subtitle = document.querySelector("#tooltip-display-desc");
-const set_tooltip = (title, subtitle) => ()=>{
-    tooltip_title.innerText    = title;
-    tooltip_subtitle.innerText = subtitle;
+
+/**
+ * 
+ * @param {Primitive} primitive
+ */
+const periodic_glyph_div = document.querySelector("#periodic-glyph");
+const periodic_signature_div = document.querySelector("#periodic-signature");
+const periodic_pervasive = document.querySelector("#periodic-pervasive");
+function set_tooltip(primitive) {
+    return ()=>{
+        tooltip_title.innerText    = primitive.name;
+        tooltip_subtitle.innerText = primitive.description;
+        periodic_glyph_div.innerText = primitive.glyph ?? "";
+        periodic_glyph_div.setAttribute("class", "code-font " + primitive_style(primitive));
+        periodic_signature_div.innerText = primitive_signature(primitive)
+        let other_indicators = ""
+        if (primitive.primitive_class.includes("Pervasive")) 
+            other_indicators += "∀";
+        // if (primitive.primitive_class.includes("Modifier")) 
+        //     other_indicators += "M";
+        if (primitive.primitive_class.includes("Aggregating")) 
+            other_indicators += "∫";
+        periodic_pervasive.innerText = other_indicators
+    }
 };
 const clear_tooltip = () => {
-    tooltip_title.innerHTML     = "&nbsp;";
+    tooltip_title.innerHTML    = "&nbsp;";
     tooltip_subtitle.innerHTML = "&nbsp;";
 }
-const configure_tooltip = (element, title, subtitle) => {
-    element.addEventListener("mouseover", set_tooltip(title, subtitle));
+
+/**
+ * 
+ * @param {HTMLElement} element 
+ * @param {Primitive} primitive 
+ */
+function configure_tooltip (element, primitive) {
+    element.addEventListener("mouseover", set_tooltip(primitive));
     element.addEventListener("mouseout", clear_tooltip);
+    
 }
 
 let event_target_is_not_a_button = e => !(e.target.tagName === "BUTTON" || e.target.parentElement?.tagName === "BUTTON")
 
-document.addEventListener("contextmenu", e=>{
+document.addEventListener("contextmenu", e=> {
     if (event_target_is_not_a_button(e)){
         // Disable context menu on right click
         e.preventDefault();
@@ -56,7 +84,7 @@ let div_constant = document.querySelector("#div-constant");
 for(let primitive of [...primitives, ...extra_primitives]){
     
     let button = document.createElement("button");
-    configure_tooltip(button, primitive.name, primitive.description);
+    configure_tooltip(button, primitive);
     let button_inner_div = document.createElement("div");
     button.appendChild(button_inner_div);
     
@@ -95,33 +123,19 @@ for(let primitive of [...primitives, ...extra_primitives]){
             })
     );
     
-    button_inner_div.classList.add("code-font")
-    if (primitive.name==="transpose"){
-        button_inner_div.classList.add("trans")
-    }else if(primitive.primitive_class=="Stack" && primitive.count_modifier_inputs===null){
-        button_inner_div.classList.add("stack-function-button")
-    }else if(primitive.count_inputs===null){
-        if(primitive.count_modifier_inputs===null){
-            button_inner_div.classList.add("variadic-function-button")
-        }else{
-            button_inner_div.classList.add(`modifier${primitive.count_modifier_inputs}-button`)
-        }
-    }else{
-        button_inner_div.classList.add(
-            ["no","mon","dy","tri"][primitive.count_inputs]+"adic-function-button"
-        )
-    }
+    ["code-font", ...primitive_style(primitive)].forEach(item=>button.classList.add(item));
 
     if (primitive.glyph){
         document.querySelector("#div-glyph").appendChild(button);
-    }else if(primitive.primitive_class==="Sys"){
+    }else if(primitive?.primitive_class?.startsWith("Sys")){
         document.querySelector("#div-system").appendChild(button);
     }else{
         document.querySelector("#div-nonglyph").appendChild(button);
     }
+
 }
 
-for(let constant of constants){
+for (let constant of constants) {
     let button = document.createElement("button");
     configure_tooltip(button, constant.name, constant.description);
     let button_inner_div = document.createElement("div");
@@ -135,6 +149,7 @@ for(let constant of constants){
         })
     );
     button_inner_div.classList.add("code-font")
+    button_inner_div.classList.add("noadic-function")
     document.querySelector("#div-constant").appendChild(button);
 }
 

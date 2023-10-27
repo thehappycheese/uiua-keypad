@@ -97,7 +97,7 @@ const extra_primitives = [
         "count_inputs": null,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Syntax",
+        "primitive_class": "Comment",
         "docs":"basic#comments"
     }
 ]

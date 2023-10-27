@@ -10,6 +10,11 @@ const constants=[
         "value": "Numeric Array [[]]"
     },
     {
+        "name": "MaxInt",
+        "description": "The maximum integer that can be represented exactly",
+        "value": "Numeric Array [[]]"
+    },
+    {
         "name": "os",
         "description": "A string identifying the operating system",
         "value": "Char Array [[7]]"

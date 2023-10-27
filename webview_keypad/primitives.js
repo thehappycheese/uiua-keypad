@@ -837,6 +837,33 @@ const primitives=[
         "primitive_class": "Misc"
     },
     {
+        "name": "send",
+        "description": "Send a value to a thread",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc"
+    },
+    {
+        "name": "recv",
+        "description": "Receive a value from a thread",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc"
+    },
+    {
+        "name": "tryrecv",
+        "description": "Try to receive a value from a thread",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc"
+    },
+    {
         "name": "break",
         "description": "Break out of a loop",
         "glyph": "⎋",
@@ -847,7 +874,7 @@ const primitives=[
     },
     {
         "name": "random",
-        "description": "Generate a random number between 0 and 1",
+        "description": "Generate a random number in the range [0, 1)",
         "glyph": "⚂",
         "count_inputs": 0,
         "count_outputs": 1,
@@ -987,7 +1014,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(StdIO)"
     },
     {
         "name": "&pf",
@@ -996,7 +1023,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(StdIO)"
     },
     {
         "name": "&p",
@@ -1005,7 +1032,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(StdIO)"
     },
     {
         "name": "&sc",
@@ -1014,7 +1041,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(StdIO)"
     },
     {
         "name": "&ts",
@@ -1023,7 +1050,16 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Env)"
+    },
+    {
+        "name": "&raw",
+        "description": "Set the terminal to raw mode",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Sys(Env)"
     },
     {
         "name": "&args",
@@ -1032,7 +1068,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Env)"
     },
     {
         "name": "&var",
@@ -1041,7 +1077,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Env)"
     },
     {
         "name": "&runi",
@@ -1050,7 +1086,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Command)"
     },
     {
         "name": "&runc",
@@ -1059,7 +1095,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 3,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Command)"
     },
     {
         "name": "&cd",
@@ -1068,7 +1104,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&sl",
@@ -1077,7 +1113,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Misc)"
     },
     {
         "name": "&rs",
@@ -1086,7 +1122,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Stream)"
     },
     {
         "name": "&rb",
@@ -1095,7 +1131,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Stream)"
     },
     {
         "name": "&ru",
@@ -1104,7 +1140,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Stream)"
     },
     {
         "name": "&w",
@@ -1113,7 +1149,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Stream)"
     },
     {
         "name": "&i",
@@ -1122,7 +1158,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&invk",
@@ -1131,7 +1167,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Command)"
     },
     {
         "name": "&cl",
@@ -1140,7 +1176,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Stream)"
     },
     {
         "name": "&fo",
@@ -1149,7 +1185,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&fc",
@@ -1158,7 +1194,25 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
+    },
+    {
+        "name": "&fde",
+        "description": "Delete a file or directory",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Sys(Filesystem)"
+    },
+    {
+        "name": "&ftr",
+        "description": "Move a file or directory to the trash",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&fe",
@@ -1167,7 +1221,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&fld",
@@ -1176,7 +1230,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&fif",
@@ -1185,7 +1239,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&fras",
@@ -1194,7 +1248,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&frab",
@@ -1203,7 +1257,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&fwa",
@@ -1212,7 +1266,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Filesystem)"
     },
     {
         "name": "&imd",
@@ -1221,7 +1275,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Images)"
     },
     {
         "name": "&ime",
@@ -1230,7 +1284,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Images)"
     },
     {
         "name": "&ims",
@@ -1239,25 +1293,34 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Images)"
+    },
+    {
+        "name": "&gifd",
+        "description": "Decode a gif from a byte array",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 2,
+        "count_modifier_inputs": null,
+        "primitive_class": "Sys(Gifs)"
     },
     {
         "name": "&gife",
         "description": "Encode a gif into a byte array",
         "glyph": null,
-        "count_inputs": 1,
+        "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Gifs)"
     },
     {
         "name": "&gifs",
         "description": "Show a gif",
         "glyph": null,
-        "count_inputs": 1,
+        "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Gifs)"
     },
     {
         "name": "&ad",
@@ -1266,7 +1329,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Audio)"
     },
     {
         "name": "&ae",
@@ -1275,7 +1338,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Audio)"
     },
     {
         "name": "&ap",
@@ -1284,7 +1347,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Audio)"
     },
     {
         "name": "&asr",
@@ -1293,7 +1356,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Audio)"
     },
     {
         "name": "&ast",
@@ -1302,7 +1365,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": 1,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Audio)"
     },
     {
         "name": "&tcpl",
@@ -1311,7 +1374,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     },
     {
         "name": "&tcpa",
@@ -1320,7 +1383,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     },
     {
         "name": "&tcpc",
@@ -1329,7 +1392,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     },
     {
         "name": "&tcpsnb",
@@ -1338,7 +1401,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     },
     {
         "name": "&tcpsrt",
@@ -1347,7 +1410,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     },
     {
         "name": "&tcpswt",
@@ -1356,7 +1419,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     },
     {
         "name": "&tcpaddr",
@@ -1365,7 +1428,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     },
     {
         "name": "&httpsw",
@@ -1374,6 +1437,6 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys"
+        "primitive_class": "Sys(Tcp)"
     }
 ];
