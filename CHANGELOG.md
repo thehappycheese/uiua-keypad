@@ -2,6 +2,15 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.1.27] - 2023-10-28
+
+- Improve primitive class indicators
+
+## [0.1.26] - 2023-10-28
+
+- improve font handling
+- fix background error message
+
 ## [0.1.24] - 2023-10-28
 
 - Finally fix colors

@@ -19,6 +19,20 @@ https://www.youtube.com/watch?v=-VOxSNyaLTg
 
 [![Uiua-Talon Youtube Intro](https://img.youtube.com/vi/-VOxSNyaLTg/0.jpg)](https://www.youtube.com/watch?v=-VOxSNyaLTg)
 
+## Choice of Primitive Class Indicators
+
+| Concept      | Symbol | Explanation |
+|--------------|:------:|-------------|
+| Pervasive    | 🐜     | Get everywhere; apply to every element. |
+| Array        | 🐟     | Swim in schools; operate on arrays. |
+| Aggregating  | 🧺     | Collect items into a single grouping. |
+| Planet       | 🪐     | Reach into the stack |
+| Ocean        | 🌊     | Reach into the ranks of your arrays |
+| Control      | 🕹️     | Get in the flow |
+| Iterating    | 🍇     | One by one |
+| Stack        | 🥞     | Flip! |
+
+
 ## Known Issues
 
 There are still some weird glitches when clicking glyphs related to setting the

@@ -27,13 +27,20 @@ function set_tooltip(primitive) {
         periodic_glyph_div.innerText = primitive.glyph ?? "";
         periodic_glyph_div.setAttribute("class", "code-font use-glyph-font " + primitive_style(primitive));
         periodic_signature_div.innerText = primitive_signature(primitive)
-        let other_indicators = ""
-        if (primitive.primitive_class?.includes("Pervasive")) 
-            other_indicators += "∀";
-        // if (primitive.primitive_class.includes("Modifier")) 
-        //     other_indicators += "M";
-        if (primitive.primitive_class?.includes("Aggregating")) 
-            other_indicators += "∫";
+        const indicatorsMap = {
+            "Pervasive"   : "🐜",
+            "Array"       : "🐟",
+            "Aggregating" : "🧺",
+            "Planet"      : "🪐",
+            "Ocean"       : "🌊",
+            "Control"     : "🕹️",
+            "Iterating"   : "🍇",
+            "Stack"       : "🥞",
+        };
+        const other_indicators = Object.keys(indicatorsMap).reduce(
+            (acc, key) => primitive.primitive_class?.includes(key) ? acc + indicatorsMap[key] : acc,
+            ""
+        );
         periodic_pervasive.innerText = other_indicators
     }
 };
