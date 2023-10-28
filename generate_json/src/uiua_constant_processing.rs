@@ -3,9 +3,12 @@ use uiua::primitive::CONSTANTS;
 
 #[derive(Serialize)]
 pub struct ConstantData {
-    pub name: String,
-    pub description: String,
-    pub value: Option<String>,
+    pub name          : String,
+    pub description   : String,
+    pub value_type    : String,
+    pub value         : String,
+    pub count_inputs  : u8,
+    pub count_outputs : u8,
 }
 
 pub fn get_constants() -> Vec<ConstantData> {
@@ -14,13 +17,19 @@ pub fn get_constants() -> Vec<ConstantData> {
         .map(|constant| ConstantData {
             name: constant.name.to_owned(),
             description: constant.doc.trim().to_owned(),
-            value: match &constant.value {
+            value_type: match &constant.value {
                 // TODO: just extracting shape for test. Want to convert value to string;
-                uiua::value::Value::Num(arr) => Some(format!("Numeric Array [{:?}]", arr.shape())),
-                uiua::value::Value::Byte(arr) => Some(format!("Byte Array [{:?}]", arr.shape())),
-                uiua::value::Value::Char(arr) => Some(format!("Char Array [{:?}]", arr.shape())),
-                uiua::value::Value::Box(arr) => Some(format!("Box Array [{:?}]", arr.shape())),
+                uiua::value::Value::Num(_) => "Numeric Array {:?}".to_owned(),
+                uiua::value::Value::Byte(_) => "Byte Array {:?}".to_owned(),
+                uiua::value::Value::Char(_) => "Char Array {:?}".to_owned(),
+                uiua::value::Value::Box(_) => "Box Array {:?}".to_owned(),
             },
+            value: match constant.name {
+                "e"|"NaN" => format!("{:?}", constant.value),
+                _ => "[system specific]".to_owned()
+            },
+            count_inputs: 0,
+            count_outputs: 1,
         })
         .collect()
 }

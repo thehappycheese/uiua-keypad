@@ -45,7 +45,7 @@ function primitive_style(primitive){
  * @param {Primitive} primitive 
  */
 function primitive_signature(primitive){
-    let has_modifier = primitive.count_modifier_inputs !== null;
+    let has_modifier = primitive.count_modifier_inputs != null; // != includes undefined
     let has_inputs = primitive.count_inputs !== null;
     if (primitive.count_outputs === null) return "";
 

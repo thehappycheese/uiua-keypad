@@ -137,7 +137,7 @@ for(let primitive of [...primitives, ...extra_primitives]){
 
 for (let constant of constants) {
     let button = document.createElement("button");
-    configure_tooltip(button, constant.name, constant.description);
+    configure_tooltip(button, constant);
     let button_inner_div = document.createElement("div");
     button.appendChild(button_inner_div);
     button_inner_div.innerText = constant.name;
