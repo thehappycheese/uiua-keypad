@@ -1,6 +1,16 @@
 // Kinda sucks to maintain this manually... but its fine for now.
 const extra_primitives = [
     {
+        "name": "strand",
+        "description": "Connect elements into an array 1_2_3 == [1 2 3]",
+        "glyph": "_",
+        "count_inputs": null,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Syntax",
+        "docs":"arrays#creating-arrays"
+    },
+    {
         "name": "array",
         "description": "",
         "glyph": "[]",
@@ -52,7 +62,7 @@ const extra_primitives = [
     },
     {
         "name": "string",
-        "description": "",
+        "description": "Create an array of chars",
         "glyph": "\"",
         "count_inputs": null,
         "count_outputs": null,
@@ -62,7 +72,7 @@ const extra_primitives = [
     },
     {
         "name": "placeholder",
-        "description": "",
+        "description": "Create custom modifiers",
         "glyph": "^",
         "count_inputs": null,
         "count_outputs": null,

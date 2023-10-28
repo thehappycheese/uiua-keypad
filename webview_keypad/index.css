@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Code Font";
+    src: url(https://www.uiua.org/DejaVuSansMono.ttf) format("truetype");
+}
+
 
 html,body{
     height: 100%;
@@ -8,7 +13,7 @@ html,body{
 
 
 body{
-    font-family:  "DejaVu Sans Mono", sans-serif;
+    font-family: "DejaVu Sans Mono", sans-serif;
     font-size: min(25pt, max(12pt, min(3.8vh, 3.8vw)));
     user-select: none;
     background-color: #141a1f;
@@ -111,9 +116,12 @@ tooltip-display,tooltip-display-desc {
     background-color: #0003;
 }
 
+.use-glyph-font{
+    font-family: "Code Font", "DejaVu Sans Mono", sans-serif !important;
+}
+
 .code-font {
     color: #d1daec;
-    font-family:  "DejaVu Sans Mono", sans-serif;
 }
 .stack-function {
     color: #d1daec;

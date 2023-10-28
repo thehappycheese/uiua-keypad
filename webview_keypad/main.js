@@ -10,6 +10,9 @@ try{
 let tooltip_title    = document.querySelector("#tooltip-display");
 let tooltip_subtitle = document.querySelector("#tooltip-display-desc");
 
+
+
+
 /**
  * 
  * @param {Primitive} primitive
@@ -22,14 +25,14 @@ function set_tooltip(primitive) {
         tooltip_title.innerText    = primitive.name;
         tooltip_subtitle.innerText = primitive.description;
         periodic_glyph_div.innerText = primitive.glyph ?? "";
-        periodic_glyph_div.setAttribute("class", "code-font " + primitive_style(primitive));
+        periodic_glyph_div.setAttribute("class", "code-font use-glyph-font " + primitive_style(primitive));
         periodic_signature_div.innerText = primitive_signature(primitive)
         let other_indicators = ""
-        if (primitive.primitive_class.includes("Pervasive")) 
+        if (primitive.primitive_class?.includes("Pervasive")) 
             other_indicators += "∀";
         // if (primitive.primitive_class.includes("Modifier")) 
         //     other_indicators += "M";
-        if (primitive.primitive_class.includes("Aggregating")) 
+        if (primitive.primitive_class?.includes("Aggregating")) 
             other_indicators += "∫";
         periodic_pervasive.innerText = other_indicators
     }
@@ -126,7 +129,9 @@ for(let primitive of [...primitives, ...extra_primitives]){
     ["code-font", ...primitive_style(primitive)].forEach(item=>button.classList.add(item));
 
     if (primitive.glyph){
+        button.classList.add("use-glyph-font");
         document.querySelector("#div-glyph").appendChild(button);
+
     }else if(primitive?.primitive_class?.startsWith("Sys")){
         document.querySelector("#div-system").appendChild(button);
     }else{
