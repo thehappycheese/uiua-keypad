@@ -657,6 +657,15 @@ const primitives=[
         "primitive_class": "Planet"
     },
     {
+        "name": "reach",
+        "description": "Pop the second stack value then call a function",
+        "glyph": "⟜",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Planet"
+    },
+    {
         "name": "dip",
         "description": "Temporarily pop the top value off the stack and call a function",
         "glyph": "⊙",
@@ -1272,7 +1281,7 @@ const primitives=[
         "name": "&imd",
         "description": "Decode an image from a byte array",
         "glyph": null,
-        "count_inputs": 1,
+        "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Sys(Images)"

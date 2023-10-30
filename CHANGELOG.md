@@ -2,6 +2,10 @@
 
 All notable changes to the "uiua-keypad" extension will be documented in this file.
 
+## [0.1.28] - 2023-10-28
+
+- Language updates; added reach `⟜`
+
 ## [0.1.27] - 2023-10-28
 
 - Improve primitive class indicators

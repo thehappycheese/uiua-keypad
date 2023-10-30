@@ -23,11 +23,11 @@ https://www.youtube.com/watch?v=-VOxSNyaLTg
 
 | Concept      | Symbol | Explanation |
 |--------------|:------:|-------------|
-| Pervasive    | 🐜     | Get everywhere; apply to every element. |
-| Array        | 🐟     | Swim in schools; operate on arrays. |
+| Pervasive    | 🐜     | Get everywhere; apply to every *element*. |
+| Array        | 🐟     | Swim in schools; operate on *arrays*. |
 | Aggregating  | 🧺     | Collect items into a single grouping. |
-| Planet       | 🪐     | Reach into the stack |
-| Ocean        | 🌊     | Reach into the ranks of your arrays |
+| Planet       | 🪐     | Probe into the *stack* |
+| Ocean        | 🌊     | Plumb the depths of your array  *ranks* |
 | Control      | 🕹️     | Get in the flow |
 | Iterating    | 🍇     | One by one |
 | Stack        | 🥞     | Flip! |

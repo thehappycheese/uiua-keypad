@@ -1,5 +1,5 @@
 use serde::Serialize;
-use uiua::primitive::Primitive;
+use uiua::Primitive;
 
 #[derive(Serialize)]
 pub struct UiuaPrimitiveDescription {

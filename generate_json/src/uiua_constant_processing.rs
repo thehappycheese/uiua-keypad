@@ -1,5 +1,4 @@
 use serde::Serialize;
-use uiua::primitive::CONSTANTS;
 
 #[derive(Serialize)]
 pub struct ConstantData {
@@ -12,17 +11,17 @@ pub struct ConstantData {
 }
 
 pub fn get_constants() -> Vec<ConstantData> {
-    CONSTANTS
+    uiua::constants()
         .iter()
         .map(|constant| ConstantData {
             name: constant.name.to_owned(),
             description: constant.doc.trim().to_owned(),
             value_type: match &constant.value {
                 // TODO: just extracting shape for test. Want to convert value to string;
-                uiua::value::Value::Num(_) => "Numeric Array {:?}".to_owned(),
-                uiua::value::Value::Byte(_) => "Byte Array {:?}".to_owned(),
-                uiua::value::Value::Char(_) => "Char Array {:?}".to_owned(),
-                uiua::value::Value::Box(_) => "Box Array {:?}".to_owned(),
+                uiua::Value::Num(_) => "Numeric Array {:?}".to_owned(),
+                uiua::Value::Byte(_) => "Byte Array {:?}".to_owned(),
+                uiua::Value::Char(_) => "Char Array {:?}".to_owned(),
+                uiua::Value::Box(_) => "Box Array {:?}".to_owned(),
             },
             value: match constant.name {
                 "e"|"NaN" => format!("{:?}", constant.value),
