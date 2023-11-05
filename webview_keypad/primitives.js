@@ -37,7 +37,7 @@ const primitives=[
     },
     {
         "name": "identity",
-        "description": "Do nothing",
+        "description": "Do nothing with one value",
         "glyph": "∘",
         "count_inputs": 1,
         "count_outputs": 1,
@@ -264,6 +264,15 @@ const primitives=[
         "name": "atangent",
         "description": "Take the arctangent of two numbers",
         "glyph": "∠",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicPervasive"
+    },
+    {
+        "name": "complex",
+        "description": "Make a complex number",
+        "glyph": "ℂ",
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
@@ -606,7 +615,7 @@ const primitives=[
         "name": "repeat",
         "description": "Repeat a function a number of times",
         "glyph": "⍥",
-        "count_inputs": 1,
+        "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
         "primitive_class": "IteratingModifier"
@@ -711,6 +720,15 @@ const primitives=[
         "primitive_class": "OtherModifier"
     },
     {
+        "name": "do",
+        "description": "Repeat a function while a condition holds",
+        "glyph": "⍢",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "IteratingModifier"
+    },
+    {
         "name": "fill",
         "description": "Set the fill value for a function",
         "glyph": "⬚",
@@ -792,15 +810,6 @@ const primitives=[
         "primitive_class": "Ocean"
     },
     {
-        "name": "bind",
-        "description": "Syntactically bind two functions",
-        "glyph": "'",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "OtherModifier"
-    },
-    {
         "name": "if",
         "description": "Call one of two functions based on a condition",
         "glyph": "?",
@@ -871,15 +880,6 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Misc"
-    },
-    {
-        "name": "break",
-        "description": "Break out of a loop",
-        "glyph": "⎋",
-        "count_inputs": 1,
-        "count_outputs": 0,
-        "count_modifier_inputs": null,
-        "primitive_class": "Control"
     },
     {
         "name": "random",

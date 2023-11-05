@@ -2,7 +2,7 @@
     "name": "uiua-keypad",
     "displayName": "Uiua Keypad",
     "description": "A keypad for the Uiua language",
-    "version": "0.1.28",
+    "version": "0.1.29",
     "license": "MIT",
 	"publisher": "engineernick",
 	"author": {"name": "Nicholas Archer"},

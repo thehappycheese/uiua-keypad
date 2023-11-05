@@ -19,7 +19,7 @@ pub fn get_constants() -> Vec<ConstantData> {
             value_type: match &constant.value {
                 // TODO: just extracting shape for test. Want to convert value to string;
                 uiua::Value::Num(_) => "Numeric Array {:?}".to_owned(),
-                uiua::Value::Byte(_) => "Byte Array {:?}".to_owned(),
+                uiua::Value::Complex(_) => "Complex Array {:?}".to_owned(),
                 uiua::Value::Char(_) => "Char Array {:?}".to_owned(),
                 uiua::Value::Box(_) => "Box Array {:?}".to_owned(),
             },

@@ -8,6 +8,14 @@ const constants=[
         "count_outputs": 1
     },
     {
+        "name": "i",
+        "description": "The imaginary unit",
+        "value_type": "Complex Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
         "name": "NaN",
         "description": "IEEE 754-2008's `NaN`",
         "value_type": "Numeric Array {:?}",
@@ -24,7 +32,7 @@ const constants=[
         "count_outputs": 1
     },
     {
-        "name": "os",
+        "name": "Os",
         "description": "A string identifying the operating system",
         "value_type": "Char Array {:?}",
         "value": "[system specific]",
