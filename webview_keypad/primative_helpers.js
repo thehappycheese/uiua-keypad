@@ -27,6 +27,8 @@ function primitive_style(primitive){
         return ["comment-span"];
     if (primitive.primitive_class === "Ocean")
         return ["ocean-function"];
+    if (primitive.name === "both")
+        return ["bi"];
     if (primitive.name === "transpose")
         return ["trans"];
     if (primitive.primitive_class === "Syntax")
