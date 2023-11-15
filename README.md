@@ -12,7 +12,7 @@ The icon on the left bar should appear when editing editing a file with the
 
 ## Want to try voice commands instead?
 
-For this extention you have to click glyph buttons with your mouse. Thats hard work!
+For this extension you have to click glyph buttons with your mouse. Thats hard work!
 Check out my video explaining how to use your voice to input Uiua glyphs :smile:
 
 https://www.youtube.com/watch?v=-VOxSNyaLTg
