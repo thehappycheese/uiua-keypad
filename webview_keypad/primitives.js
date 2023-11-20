@@ -20,7 +20,7 @@ const primitives=[
     {
         "name": "flip",
         "description": "Swap the top two values on the stack",
-        "glyph": "∶",
+        "glyph": ":",
         "count_inputs": 2,
         "count_outputs": 2,
         "count_modifier_inputs": null,
@@ -333,6 +333,15 @@ const primitives=[
         "primitive_class": "MonadicArray"
     },
     {
+        "name": "fix",
+        "description": "Add a length-1 axis to an array ex: ¤5",
+        "glyph": "¤",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "MonadicArray"
+    },
+    {
         "name": "bits",
         "description": "Encode an array as bits (big-endian)",
         "glyph": "⋯",
@@ -468,6 +477,15 @@ const primitives=[
         "primitive_class": "DyadicArray"
     },
     {
+        "name": "rerank",
+        "description": "Change the rank of an array's rows",
+        "glyph": "☇",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray"
+    },
+    {
         "name": "take",
         "description": "Take the first n elements of an array",
         "glyph": "↙",
@@ -532,7 +550,7 @@ const primitives=[
     },
     {
         "name": "indexof",
-        "description": "Find the index of each row of one array in another",
+        "description": "Find the first index of each row of one array in another",
         "glyph": "⊗",
         "count_inputs": 2,
         "count_outputs": 1,
@@ -544,6 +562,15 @@ const primitives=[
         "description": "Apply a reducing function to an array",
         "glyph": "/",
         "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "AggregatingModifier"
+    },
+    {
+        "name": "fold",
+        "description": "Apply a function to aggregate arrays",
+        "glyph": "∧",
+        "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
         "primitive_class": "AggregatingModifier"
@@ -576,24 +603,6 @@ const primitives=[
         "primitive_class": "IteratingModifier"
     },
     {
-        "name": "distribute",
-        "description": "Apply a function to a fixed value and each row of an array",
-        "glyph": "∺",
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier"
-    },
-    {
-        "name": "tribute",
-        "description": "Apply a function to each row of an array and a fixed value",
-        "glyph": "≐",
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier"
-    },
-    {
         "name": "table",
         "description": "Apply a function to each combination of elements of two arrays",
         "glyph": "⊞",
@@ -604,7 +613,7 @@ const primitives=[
     },
     {
         "name": "cross",
-        "description": "Apply a function to each combination of rows of two arrays",
+        "description": "Apply a function to each combination of rows of arrays",
         "glyph": "⊠",
         "count_inputs": 2,
         "count_outputs": 1,
@@ -657,18 +666,18 @@ const primitives=[
         "primitive_class": "OtherModifier"
     },
     {
-        "name": "gap",
-        "description": "Discard the top stack value then call a function",
-        "glyph": "⋅",
+        "name": "reach",
+        "description": "Pop the second stack value then call a function",
+        "glyph": "⟜",
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
         "primitive_class": "Planet"
     },
     {
-        "name": "reach",
-        "description": "Pop the second stack value then call a function",
-        "glyph": "⟜",
+        "name": "gap",
+        "description": "Discard the top stack value then call a function",
+        "glyph": "⋅",
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
@@ -736,87 +745,6 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": 2,
         "primitive_class": "OtherModifier"
-    },
-    {
-        "name": "level",
-        "description": "Apply a function at a different array depth",
-        "glyph": "≑",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "IteratingModifier"
-    },
-    {
-        "name": "fold",
-        "description": "Apply a function to aggregate at different array depths",
-        "glyph": "∧",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "AggregatingModifier"
-    },
-    {
-        "name": "combinate",
-        "description": "Apply a function to combinations at array depths",
-        "glyph": "◳",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "IteratingModifier"
-    },
-    {
-        "name": "rock",
-        "description": "⊂ ∞ to an array",
-        "glyph": "⋄",
-        "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Ocean"
-    },
-    {
-        "name": "surface",
-        "description": "⊂ ¯1 to an array",
-        "glyph": "~",
-        "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Ocean"
-    },
-    {
-        "name": "deep",
-        "description": "⊂ 2 to an array",
-        "glyph": "≊",
-        "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Ocean"
-    },
-    {
-        "name": "abyss",
-        "description": "⊂ 1 to an array",
-        "glyph": "≃",
-        "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Ocean"
-    },
-    {
-        "name": "seabed",
-        "description": "⊂ 0 to an array",
-        "glyph": "∸",
-        "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Ocean"
-    },
-    {
-        "name": "if",
-        "description": "Call one of two functions based on a condition",
-        "glyph": "?",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "Control"
     },
     {
         "name": "try",

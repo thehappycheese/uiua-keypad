@@ -86,5 +86,13 @@ const constants=[
         "value": "[system specific]",
         "count_inputs": 0,
         "count_outputs": 1
+    },
+    {
+        "name": "⍼",
+        "description": "",
+        "value_type": "Char Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
     }
 ];

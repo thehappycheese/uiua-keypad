@@ -1831,9 +1831,9 @@ dependencies = [
 
 [[package]]
 name = "uiua"
-version = "0.1.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af1b6e957490c923ebeee9467e3d05a1e8321b9c4a9be3a3ea14971d720da8d8"
+checksum = "e3d5f54a4030ebc6e447f93636c87a5f2158dccf14aad543750f07c9b0f49494"
 dependencies = [
  "bufreaderwriter",
  "clap",
