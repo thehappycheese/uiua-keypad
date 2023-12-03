@@ -29,6 +29,8 @@ function primitive_style(primitive){
         return ["ocean-function"];
     if (primitive.name === "both")
         return ["bi"];
+    if (primitive.name === "all")
+        return ["pan"];
     if (primitive.name === "transpose")
         return ["trans"];
     if (primitive.primitive_class === "Syntax")

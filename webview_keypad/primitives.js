@@ -334,7 +334,7 @@ const primitives=[
     },
     {
         "name": "fix",
-        "description": "Add a length-1 axis to an array ex: ¤5",
+        "description": "Add a length-1 axis to an array",
         "glyph": "¤",
         "count_inputs": 1,
         "count_outputs": 1,
@@ -343,7 +343,7 @@ const primitives=[
     },
     {
         "name": "bits",
-        "description": "Encode an array as bits (big-endian)",
+        "description": "Encode an array as bits (MSB-first)",
         "glyph": "⋯",
         "count_inputs": 1,
         "count_outputs": 1,
@@ -666,13 +666,31 @@ const primitives=[
         "primitive_class": "OtherModifier"
     },
     {
-        "name": "reach",
-        "description": "Pop the second stack value then call a function",
-        "glyph": "⟜",
+        "name": "rectify",
+        "description": "Set a function as its own inverse",
+        "glyph": "⌅",
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Planet"
+        "primitive_class": "OtherModifier"
+    },
+    {
+        "name": "setinv",
+        "description": "Set the inverse of a function",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "OtherModifier"
+    },
+    {
+        "name": "setund",
+        "description": "Set the under-compatible inverse of a function",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 3,
+        "primitive_class": "OtherModifier"
     },
     {
         "name": "gap",
@@ -699,7 +717,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Stack"
+        "primitive_class": "Planet"
     },
     {
         "name": "fork",
@@ -714,6 +732,15 @@ const primitives=[
         "name": "bracket",
         "description": "Call two functions on two distinct sets of values",
         "glyph": "⊓",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "Planet"
+    },
+    {
+        "name": "all",
+        "description": "Call a function on many distinct sets of values",
+        "glyph": "⋔",
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
@@ -753,7 +780,7 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "Control"
+        "primitive_class": "Misc"
     },
     {
         "name": "assert",
@@ -762,7 +789,34 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Control"
+        "primitive_class": "Misc"
+    },
+    {
+        "name": "this",
+        "description": "Set a function to recur to",
+        "glyph": "↬",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Misc"
+    },
+    {
+        "name": "recur",
+        "description": "Call a function recursively",
+        "glyph": "↫",
+        "count_inputs": 0,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc"
+    },
+    {
+        "name": "random",
+        "description": "Generate a random number in the range [0, 1)",
+        "glyph": "⚂",
+        "count_inputs": 0,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc"
     },
     {
         "name": "spawn",
@@ -805,15 +859,6 @@ const primitives=[
         "description": "Try to receive a value from a thread",
         "glyph": null,
         "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Misc"
-    },
-    {
-        "name": "random",
-        "description": "Generate a random number in the range [0, 1)",
-        "glyph": "⚂",
-        "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Misc"
@@ -925,6 +970,15 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Constant"
+    },
+    {
+        "name": "stack",
+        "description": "Debug print all stack values without popping them",
+        "glyph": "?",
+        "count_inputs": 0,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Stack"
     },
     {
         "name": "trace",
@@ -1209,7 +1263,7 @@ const primitives=[
         "name": "&imd",
         "description": "Decode an image from a byte array",
         "glyph": null,
-        "count_inputs": 2,
+        "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Sys(Images)"
