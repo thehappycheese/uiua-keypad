@@ -414,13 +414,13 @@ const primitives=[
         "primitive_class": "MonadicArray"
     },
     {
-        "name": "unbox",
-        "description": "Take an array out of a box",
-        "glyph": "⊔",
+        "name": "parse",
+        "description": "Parse a string as a number",
+        "glyph": "⋕",
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "Misc"
     },
     {
         "name": "match",
@@ -640,7 +640,7 @@ const primitives=[
     },
     {
         "name": "partition",
-        "description": "Group elements of an array into buckets by sequential keys",
+        "description": "Group sequential sections of an array",
         "glyph": "⊜",
         "count_inputs": 2,
         "count_outputs": 1,
@@ -648,8 +648,8 @@ const primitives=[
         "primitive_class": "AggregatingModifier"
     },
     {
-        "name": "pack",
-        "description": "Apply a function with implicit (un)boxing",
+        "name": "unpack",
+        "description": "Apply a function with implicit unboxing",
         "glyph": "⊐",
         "count_inputs": null,
         "count_outputs": 1,
@@ -657,9 +657,9 @@ const primitives=[
         "primitive_class": "OtherModifier"
     },
     {
-        "name": "invert",
+        "name": "un",
         "description": "Invert the behavior of a function",
-        "glyph": "⍘",
+        "glyph": "°",
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
@@ -877,15 +877,6 @@ const primitives=[
         "description": "Randomly reorder the rows of an array with a seed",
         "glyph": null,
         "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Misc"
-    },
-    {
-        "name": "parse",
-        "description": "Parse a string as a number",
-        "glyph": null,
-        "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Misc"

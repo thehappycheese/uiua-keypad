@@ -17,7 +17,7 @@ pub fn get_all_primitives() -> Vec<UiuaPrimitiveDescription> {
         .map(|prim| UiuaPrimitiveDescription {
             name: prim.names().text.into(),
             glyph: prim.names().glyph,
-            description: prim.doc().map(|doc| doc.short_text().into_owned()).unwrap_or("".to_owned()),
+            description: prim.doc().short_text().into_owned(),
             count_inputs: prim.args(),
             count_outputs: prim.outputs(),
             count_modifier_inputs: prim.modifier_args(),
