@@ -3,6 +3,12 @@
 All notable changes to the "uiua-keypad" extension will be documented in this
 file.
 
+## [0.2.1] - 2024-01-20
+
+- After some consideration... switching back to supporting the latest crates.io
+  release, rather than the git main branch; this will align with the version
+  installed by `cargo install uiua`
+
 ## [0.2.0] - 2024-01-20
 
 - Now tracking github main branch instead of crates.io since updates to

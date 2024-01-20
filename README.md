@@ -5,15 +5,20 @@
 > Hopefully this extension can be merged with the official extension, or
 > replaced in the future if something better comes along.
 
+Targets the latest version released on crates.io (i.e. the version installed by
+`cargo install uiua`)
+
 ![keypad screenshot](https://github.com/thehappycheese/uiua-keypad/raw/main/resources/screenshot.png)
 
 The icon on the left bar should appear when editing editing a file with the
-`.ua` extension, or you can do `Ctrl+Shift+P` and search for `uiua activate keypad`.
+`.ua` extension, or you can do `Ctrl+Shift+P` and search for
+`uiua activate keypad`.
 
 ## Want to try voice commands instead?
 
-For this extension you have to click glyph buttons with your mouse. Thats hard work!
-Check out my video explaining how to use your voice to input Uiua glyphs :smile:
+For this extension you have to click glyph buttons with your mouse. Thats hard
+work! Check out my video explaining how to use your voice to input Uiua glyphs
+😊
 
 https://www.youtube.com/watch?v=-VOxSNyaLTg
 

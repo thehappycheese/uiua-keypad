@@ -35,7 +35,7 @@ const primitives=[
     {
         "name": "pop",
         "description": "Discard the top stack value",
-        "glyph": "◌",
+        "glyph": ";",
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
@@ -419,7 +419,7 @@ const primitives=[
     },
     {
         "name": "bits",
-        "description": "Encode an array as bits (LSB-first)",
+        "description": "Encode an array as bits (MSB-first)",
         "glyph": "⋯",
         "count_inputs": 1,
         "count_outputs": 1,
@@ -486,18 +486,7 @@ const primitives=[
     {
         "name": "deduplicate",
         "description": "Remove duplicate elements from an array",
-        "glyph": "◴",
-        "count_inputs": 1,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray",
-        "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "unique",
-        "description": "Get a mask of first occurrences of items in an array",
-        "glyph": "◰",
+        "glyph": "⊝",
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
@@ -760,7 +749,7 @@ const primitives=[
     },
     {
         "name": "table",
-        "description": "Apply a function to each combination of rows of two arrays",
+        "description": "Apply a function to each combination of elements of two arrays",
         "glyph": "⊞",
         "count_inputs": 2,
         "count_outputs": 1,
@@ -778,7 +767,7 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "IteratingModifier",
         "experimental": false,
-        "deprecated": true
+        "deprecated": false
     },
     {
         "name": "repeat",
@@ -877,7 +866,7 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "InversionModifier",
         "experimental": true,
-        "deprecated": true
+        "deprecated": false
     },
     {
         "name": "setinv",
@@ -921,17 +910,6 @@ const primitives=[
         "count_modifier_inputs": 2,
         "primitive_class": "Planet",
         "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "cascade",
-        "description": "Call one function after another, reusing some values",
-        "glyph": "⪾",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "Planet",
-        "experimental": true,
         "deprecated": false
     },
     {
@@ -1031,17 +1009,6 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
         "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "bind",
-        "description": "Bind local values",
-        "glyph": null,
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
-        "experimental": true,
         "deprecated": false
     },
     {
@@ -1240,61 +1207,6 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "Constant",
         "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "map",
-        "description": "Create a hashmap from lists of keys and values",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Map",
-        "experimental": true,
-        "deprecated": false
-    },
-    {
-        "name": "insert",
-        "description": "Insert a key-value pair into a map array",
-        "glyph": null,
-        "count_inputs": 3,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Map",
-        "experimental": true,
-        "deprecated": false
-    },
-    {
-        "name": "has",
-        "description": "Check if a map array has a key",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Map",
-        "experimental": true,
-        "deprecated": false
-    },
-    {
-        "name": "get",
-        "description": "Get the value corresponding to a key in a map array",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Map",
-        "experimental": true,
-        "deprecated": false
-    },
-    {
-        "name": "remove",
-        "description": "Remove the value corresponding to a key from a map array",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Map",
-        "experimental": true,
         "deprecated": false
     },
     {
