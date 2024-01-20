@@ -6,14 +6,17 @@ pub struct UiuaPrimitiveDescription {
     name: String,
     description: String,
     glyph: Option<char>,
-    count_inputs: Option<u8>,
-    count_outputs: Option<u8>,
-    count_modifier_inputs: Option<u8>,
+    count_inputs: Option<usize>,
+    count_outputs: Option<usize>,
+    count_modifier_inputs: Option<usize>,
     primitive_class: Option<String>,
+    experimental:bool,
+    deprecated:bool,
 }
 
 pub fn get_all_primitives() -> Vec<UiuaPrimitiveDescription> {
-    Primitive::non_deprecated()
+    
+    Primitive::all()
         .map(|prim| UiuaPrimitiveDescription {
             name: prim.names().text.into(),
             glyph: prim.names().glyph,
@@ -22,6 +25,8 @@ pub fn get_all_primitives() -> Vec<UiuaPrimitiveDescription> {
             count_outputs: prim.outputs(),
             count_modifier_inputs: prim.modifier_args(),
             primitive_class: Some(format!("{:?}", prim.class())),
+            experimental: prim.is_experimental(),
+            deprecated: prim.is_deprecated(),
         })
         .collect()
 }

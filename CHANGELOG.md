@@ -1,6 +1,12 @@
 # Change Log
 
-All notable changes to the "uiua-keypad" extension will be documented in this file.
+All notable changes to the "uiua-keypad" extension will be documented in this
+file.
+
+## [0.2.0] - 2024-01-20
+
+- Now tracking github main branch instead of crates.io since updates to
+  crates.io have been a bit slow recently
 
 ## [0.1.28] - 2023-10-28
 

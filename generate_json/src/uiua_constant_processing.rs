@@ -22,6 +22,7 @@ pub fn get_constants() -> Vec<ConstantData> {
                 uiua::Value::Complex(_) => "Complex Array {:?}".to_owned(),
                 uiua::Value::Char(_) => "Char Array {:?}".to_owned(),
                 uiua::Value::Box(_) => "Box Array {:?}".to_owned(),
+                uiua::Value::Byte(_) => "Byte Array {:?}".to_owned(),
             },
             value: match constant.name {
                 "e"|"NaN" => format!("{:?}", constant.value),

@@ -32,7 +32,6 @@ https://www.youtube.com/watch?v=-VOxSNyaLTg
 | Iterating    | 🍇     | One by one |
 | Stack        | 🥞     | Flip! |
 
-
 ## Known Issues
 
 There are still some weird glitches when clicking glyphs related to setting the
@@ -47,3 +46,17 @@ kernel yet so I haven't bothered trying to fix that.
 Thanks to @thekifake for creating
 https://github.com/thekifake/uiua-gen-functions-json which I have copy pasted
 into this project
+
+
+# Notes to Self
+
+<details>
+
+<summary>Clearing the cargo cache</summary>
+
+Because we specify latest
+uiua version, Rust Analyzer will sometimes refuse to look at the current version
+of uiua. To fix it need to delete old cached versions in somewhere
+`~\.cargo\registry\src\...\uiua **`
+
+</details>

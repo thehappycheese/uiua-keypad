@@ -6,7 +6,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 2,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack"
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "over",
@@ -15,7 +17,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 3,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack"
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "flip",
@@ -24,16 +28,20 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 2,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack"
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "pop",
         "description": "Discard the top stack value",
-        "glyph": ";",
+        "glyph": "◌",
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack"
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "identity",
@@ -42,7 +50,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Planet"
+        "primitive_class": "Planet",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "not",
@@ -51,7 +61,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "sign",
@@ -60,7 +72,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "negate",
@@ -69,7 +83,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "absolute value",
@@ -78,7 +94,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "sqrt",
@@ -87,7 +105,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "sine",
@@ -96,7 +116,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "floor",
@@ -105,7 +127,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "ceiling",
@@ -114,7 +138,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "round",
@@ -123,7 +149,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicPervasive"
+        "primitive_class": "MonadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "equals",
@@ -132,7 +160,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "not equals",
@@ -141,7 +171,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "less than",
@@ -150,7 +182,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "less or equal",
@@ -159,7 +193,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "greater than",
@@ -168,7 +204,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "greater or equal",
@@ -177,7 +215,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "add",
@@ -186,7 +226,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "subtract",
@@ -195,7 +237,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "multiply",
@@ -204,7 +248,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "divide",
@@ -213,7 +259,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "modulus",
@@ -222,7 +270,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "power",
@@ -231,7 +281,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "logarithm",
@@ -240,7 +292,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "minimum",
@@ -249,7 +303,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "maximum",
@@ -258,7 +314,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "atangent",
@@ -267,7 +325,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "complex",
@@ -276,7 +336,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicPervasive"
+        "primitive_class": "DyadicPervasive",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "length",
@@ -285,7 +347,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "shape",
@@ -294,7 +358,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "range",
@@ -303,7 +369,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "first",
@@ -312,7 +380,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "reverse",
@@ -321,7 +391,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "deshape",
@@ -330,7 +402,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "fix",
@@ -339,16 +413,20 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "bits",
-        "description": "Encode an array as bits (MSB-first)",
+        "description": "Encode an array as bits (LSB-first)",
         "glyph": "⋯",
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "transpose",
@@ -357,7 +435,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "rise",
@@ -366,7 +446,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "fall",
@@ -375,7 +457,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "where",
@@ -384,7 +468,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "classify",
@@ -393,16 +479,31 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "deduplicate",
         "description": "Remove duplicate elements from an array",
-        "glyph": "⊝",
+        "glyph": "◴",
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "unique",
+        "description": "Get a mask of first occurrences of items in an array",
+        "glyph": "◰",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "box",
@@ -411,7 +512,20 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "MonadicArray"
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "unbox",
+        "description": "Take an array out of a box",
+        "glyph": "⊔",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "MonadicArray",
+        "experimental": false,
+        "deprecated": true
     },
     {
         "name": "parse",
@@ -420,7 +534,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "match",
@@ -429,7 +545,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "couple",
@@ -438,7 +556,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "join",
@@ -447,7 +567,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "select",
@@ -456,7 +578,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "pick",
@@ -465,7 +589,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "reshape",
@@ -474,7 +600,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "rerank",
@@ -483,7 +611,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "take",
@@ -492,7 +622,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "drop",
@@ -501,7 +633,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "rotate",
@@ -510,7 +644,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "windows",
@@ -519,7 +655,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "keep",
@@ -528,7 +666,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "find",
@@ -537,7 +677,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "member",
@@ -546,7 +688,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "indexof",
@@ -555,7 +699,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "DyadicArray"
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "reduce",
@@ -564,7 +710,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "AggregatingModifier"
+        "primitive_class": "AggregatingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "fold",
@@ -573,7 +721,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "AggregatingModifier"
+        "primitive_class": "AggregatingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "scan",
@@ -582,7 +732,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "AggregatingModifier"
+        "primitive_class": "AggregatingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "each",
@@ -591,7 +743,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier"
+        "primitive_class": "IteratingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "rows",
@@ -600,16 +754,20 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier"
+        "primitive_class": "IteratingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "table",
-        "description": "Apply a function to each combination of elements of two arrays",
+        "description": "Apply a function to each combination of rows of two arrays",
         "glyph": "⊞",
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier"
+        "primitive_class": "IteratingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "cross",
@@ -618,7 +776,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier"
+        "primitive_class": "IteratingModifier",
+        "experimental": false,
+        "deprecated": true
     },
     {
         "name": "repeat",
@@ -627,7 +787,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier"
+        "primitive_class": "IteratingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "group",
@@ -636,7 +798,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "AggregatingModifier"
+        "primitive_class": "AggregatingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "partition",
@@ -645,7 +809,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "AggregatingModifier"
+        "primitive_class": "AggregatingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "unpack",
@@ -654,43 +820,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier"
-    },
-    {
-        "name": "un",
-        "description": "Invert the behavior of a function",
-        "glyph": "°",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier"
-    },
-    {
-        "name": "rectify",
-        "description": "Set a function as its own inverse",
-        "glyph": "⌅",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier"
-    },
-    {
-        "name": "setinv",
-        "description": "Set the inverse of a function",
-        "glyph": null,
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "OtherModifier"
-    },
-    {
-        "name": "setund",
-        "description": "Set the under-compatible inverse of a function",
-        "glyph": null,
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 3,
-        "primitive_class": "OtherModifier"
+        "primitive_class": "OtherModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "gap",
@@ -699,7 +831,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Planet"
+        "primitive_class": "Planet",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "dip",
@@ -708,7 +842,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Planet"
+        "primitive_class": "Planet",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "both",
@@ -717,34 +853,53 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Planet"
+        "primitive_class": "Planet",
+        "experimental": false,
+        "deprecated": false
     },
     {
-        "name": "fork",
-        "description": "Call two functions on the same values",
-        "glyph": "⊃",
+        "name": "un",
+        "description": "Invert the behavior of a function",
+        "glyph": "°",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "InversionModifier",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "rectify",
+        "description": "Set a function as its own inverse",
+        "glyph": "⌅",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "InversionModifier",
+        "experimental": true,
+        "deprecated": true
+    },
+    {
+        "name": "setinv",
+        "description": "Set the un-compatible inverse of a function",
+        "glyph": null,
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "Planet"
+        "primitive_class": "InversionModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
-        "name": "bracket",
-        "description": "Call two functions on two distinct sets of values",
-        "glyph": "⊓",
+        "name": "setund",
+        "description": "Set the under-compatible inverse of a function",
+        "glyph": null,
         "count_inputs": null,
         "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "Planet"
-    },
-    {
-        "name": "all",
-        "description": "Call a function on many distinct sets of values",
-        "glyph": "⋔",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "Planet"
+        "count_modifier_inputs": 3,
+        "primitive_class": "InversionModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "under",
@@ -753,7 +908,53 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "OtherModifier"
+        "primitive_class": "InversionModifier",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "fork",
+        "description": "Call two functions on the same values",
+        "glyph": "⊃",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "Planet",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "cascade",
+        "description": "Call one function after another, reusing some values",
+        "glyph": "⪾",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "Planet",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "bracket",
+        "description": "Call two functions on two distinct sets of values",
+        "glyph": "⊓",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "Planet",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "all",
+        "description": "Call a function on many distinct sets of values",
+        "glyph": "⋔",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "Planet",
+        "experimental": true,
+        "deprecated": false
     },
     {
         "name": "do",
@@ -762,7 +963,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "IteratingModifier"
+        "primitive_class": "IteratingModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "fill",
@@ -771,7 +974,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "OtherModifier"
+        "primitive_class": "OtherModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "try",
@@ -780,7 +985,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 2,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "assert",
@@ -789,7 +996,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "this",
@@ -798,7 +1007,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": true,
+        "deprecated": false
     },
     {
         "name": "recur",
@@ -807,7 +1018,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": null,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": true,
+        "deprecated": false
     },
     {
         "name": "random",
@@ -816,7 +1029,42 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "bind",
+        "description": "Bind local values",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "memo",
+        "description": "Memoize a function",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "comptime",
+        "description": "Run a function at compile time",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "spawn",
@@ -825,7 +1073,9 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier"
+        "primitive_class": "OtherModifier",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "wait",
@@ -834,7 +1084,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "send",
@@ -843,7 +1095,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "recv",
@@ -852,7 +1106,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "tryrecv",
@@ -861,7 +1117,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "gen",
@@ -870,7 +1128,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 2,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "deal",
@@ -879,7 +1139,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "regex",
@@ -888,7 +1150,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "utf",
@@ -897,7 +1161,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "tag",
@@ -906,7 +1172,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "type",
@@ -915,7 +1183,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "now",
@@ -924,7 +1194,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc"
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "eta",
@@ -933,7 +1205,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Constant"
+        "primitive_class": "Constant",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "pi",
@@ -942,7 +1216,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Constant"
+        "primitive_class": "Constant",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "tau",
@@ -951,7 +1227,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Constant"
+        "primitive_class": "Constant",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "infinity",
@@ -960,7 +1238,64 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Constant"
+        "primitive_class": "Constant",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "map",
+        "description": "Create a hashmap from lists of keys and values",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Map",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "insert",
+        "description": "Insert a key-value pair into a map array",
+        "glyph": null,
+        "count_inputs": 3,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Map",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "has",
+        "description": "Check if a map array has a key",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Map",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "get",
+        "description": "Get the value corresponding to a key in a map array",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Map",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "remove",
+        "description": "Remove the value corresponding to a key from a map array",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Map",
+        "experimental": true,
+        "deprecated": false
     },
     {
         "name": "stack",
@@ -969,7 +1304,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack"
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "trace",
@@ -978,7 +1315,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack"
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "dump",
@@ -987,7 +1326,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": 1,
-        "primitive_class": "Stack"
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&s",
@@ -996,7 +1337,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)"
+        "primitive_class": "Sys(StdIO)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&pf",
@@ -1005,7 +1348,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)"
+        "primitive_class": "Sys(StdIO)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&p",
@@ -1014,7 +1359,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)"
+        "primitive_class": "Sys(StdIO)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&sc",
@@ -1023,7 +1370,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)"
+        "primitive_class": "Sys(StdIO)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ts",
@@ -1032,7 +1381,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)"
+        "primitive_class": "Sys(Env)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&raw",
@@ -1041,7 +1392,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)"
+        "primitive_class": "Sys(Env)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&args",
@@ -1050,7 +1403,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)"
+        "primitive_class": "Sys(Env)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&var",
@@ -1059,7 +1414,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)"
+        "primitive_class": "Sys(Env)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&runi",
@@ -1068,7 +1425,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Command)"
+        "primitive_class": "Sys(Command)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&runc",
@@ -1077,7 +1436,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 3,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Command)"
+        "primitive_class": "Sys(Command)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&cd",
@@ -1086,7 +1447,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&sl",
@@ -1095,7 +1458,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Misc)"
+        "primitive_class": "Sys(Misc)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&rs",
@@ -1104,7 +1469,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)"
+        "primitive_class": "Sys(Stream)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&rb",
@@ -1113,7 +1480,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)"
+        "primitive_class": "Sys(Stream)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ru",
@@ -1122,7 +1491,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)"
+        "primitive_class": "Sys(Stream)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&w",
@@ -1131,7 +1502,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)"
+        "primitive_class": "Sys(Stream)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&i",
@@ -1140,7 +1513,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&invk",
@@ -1149,7 +1524,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Command)"
+        "primitive_class": "Sys(Command)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&cl",
@@ -1158,7 +1535,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)"
+        "primitive_class": "Sys(Stream)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fo",
@@ -1167,7 +1546,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fc",
@@ -1176,7 +1557,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fde",
@@ -1185,7 +1568,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ftr",
@@ -1194,7 +1579,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fe",
@@ -1203,7 +1590,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fld",
@@ -1212,7 +1601,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fif",
@@ -1221,7 +1612,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fras",
@@ -1230,7 +1623,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&frab",
@@ -1239,7 +1634,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&fwa",
@@ -1248,7 +1645,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)"
+        "primitive_class": "Sys(Filesystem)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&imd",
@@ -1257,7 +1656,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Images)"
+        "primitive_class": "Sys(Images)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ime",
@@ -1266,7 +1667,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Images)"
+        "primitive_class": "Sys(Images)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ims",
@@ -1275,7 +1678,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Images)"
+        "primitive_class": "Sys(Images)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&gifd",
@@ -1284,7 +1689,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 2,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Gifs)"
+        "primitive_class": "Sys(Gifs)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&gife",
@@ -1293,7 +1700,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Gifs)"
+        "primitive_class": "Sys(Gifs)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&gifs",
@@ -1302,7 +1711,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Gifs)"
+        "primitive_class": "Sys(Gifs)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ad",
@@ -1311,7 +1722,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)"
+        "primitive_class": "Sys(Audio)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ae",
@@ -1320,7 +1733,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)"
+        "primitive_class": "Sys(Audio)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ap",
@@ -1329,7 +1744,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)"
+        "primitive_class": "Sys(Audio)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&asr",
@@ -1338,7 +1755,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)"
+        "primitive_class": "Sys(Audio)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ast",
@@ -1347,7 +1766,9 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": 1,
-        "primitive_class": "Sys(Audio)"
+        "primitive_class": "Sys(Audio)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&tcpl",
@@ -1356,7 +1777,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&tcpa",
@@ -1365,7 +1788,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&tcpc",
@@ -1374,7 +1799,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&tcpsnb",
@@ -1383,7 +1810,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&tcpsrt",
@@ -1392,7 +1821,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&tcpswt",
@@ -1401,7 +1832,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&tcpaddr",
@@ -1410,7 +1843,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&httpsw",
@@ -1419,6 +1854,8 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)"
+        "primitive_class": "Sys(Tcp)",
+        "experimental": false,
+        "deprecated": false
     }
 ];
