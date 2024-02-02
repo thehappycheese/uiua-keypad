@@ -26,6 +26,17 @@ function set_tooltip(primitive) {
         tooltip_subtitle.innerText = primitive.description;
         periodic_glyph_div.innerText = primitive.glyph ?? "";
         periodic_glyph_div.setAttribute("class", "code-font use-glyph-font " + primitive_style(primitive));
+        if (primitive.deprecated && primitive.experimental){
+            periodic_glyph_div.classList.add("deprecated");
+            periodic_glyph_div.classList.add("experimental");
+            tooltip_subtitle.innerText = "🧪⚠️ Experimental & Deprecated: " + tooltip_subtitle.innerText;
+        }else if(primitive.deprecated){
+            periodic_glyph_div.classList.add("deprecated");
+            tooltip_subtitle.innerText = "⚠️ Deprecated: " + tooltip_subtitle.innerText;
+        }else if(primitive.experimental){
+            periodic_glyph_div.classList.add("experimental");
+            tooltip_subtitle.innerText = "🧪 Experimental: "+tooltip_subtitle.innerText
+        }
         periodic_signature_div.innerText = primitive_signature(primitive)
         const indicatorsMap = {
             "Pervasive"   : "🐜",
@@ -36,6 +47,7 @@ function set_tooltip(primitive) {
             "Control"     : "🕹️",
             "Iterating"   : "🍇",
             "Stack"       : "🥞",
+            "Map"         : "🗺️",
         };
         const other_indicators = Object.keys(indicatorsMap).reduce(
             (acc, key) => primitive.primitive_class?.includes(key) ? acc + indicatorsMap[key] : acc,
@@ -100,6 +112,14 @@ for(let primitive of [...primitives, ...extra_primitives]){
     
     let text_to_write = primitive.glyph || primitive.name;
     button_inner_div.innerText = text_to_write;
+
+    if(primitive.deprecated){
+        button.classList.add("deprecated");
+    }
+    if(primitive.experimental){
+        button.classList.add("experimental");
+    }
+
     
 
     // TODO: having trouble with this... should able to ignore this at the document level

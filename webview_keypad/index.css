@@ -83,6 +83,7 @@ tooltip-display,tooltip-display-desc {
     font-weight: bold;
 }
 #tooltip-display-desc{
+    font-family: sans-serif;
     grid-area: c;
     font-size: 0.6em;
     white-space: nowrap;
@@ -216,4 +217,12 @@ label:hover{
     z-index: -100;
     color: #2a3641;
     text-align: right;
+}
+
+.deprecated{
+    opacity: 30%;
+}
+
+.experimental{
+    text-decoration: wavy #F1FA8C underline;
 }

@@ -3,6 +3,10 @@
 All notable changes to the "uiua-keypad" extension will be documented in this
 file.
 
+## [0.2.2] - 2024-02-02
+
+- upgrade to uiua v0.8.0
+
 ## [0.2.1] - 2024-01-20
 
 - After some consideration... switching back to supporting the latest crates.io
