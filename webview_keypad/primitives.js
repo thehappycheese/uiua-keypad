@@ -759,6 +759,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "inventory",
+        "description": "Apply a function to each unboxed row of an array and re-box the results",
+        "glyph": "⍚",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "IteratingModifier",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "cross",
         "description": "Apply a function to each combination of rows of arrays",
         "glyph": "⊠",
@@ -816,7 +827,7 @@ const primitives=[
     {
         "name": "content",
         "description": "Unbox the arguments to a function before calling it",
-        "glyph": "⊔",
+        "glyph": "◇",
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
@@ -847,6 +858,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "on",
+        "description": "Call a function but keep its first argument on the top of the stack",
+        "glyph": "⟜",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Planet",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "both",
         "description": "Call a function on two sets of values",
         "glyph": "∩",
@@ -855,6 +877,17 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "Planet",
         "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "bind",
+        "description": "Bind local values",
+        "glyph": "λ",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": true,
         "deprecated": false
     },
     {
@@ -954,7 +987,7 @@ const primitives=[
         "count_modifier_inputs": 2,
         "primitive_class": "Planet",
         "experimental": true,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "do",
@@ -1009,7 +1042,7 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "Misc",
         "experimental": true,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "recur",
@@ -1020,7 +1053,7 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
         "experimental": true,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "random",
@@ -1031,17 +1064,6 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
         "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "bind",
-        "description": "Bind local values",
-        "glyph": null,
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
-        "experimental": true,
         "deprecated": false
     },
     {
@@ -1073,7 +1095,18 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
+        "primitive_class": "Thread",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "pool",
+        "description": "Spawn a thread in a thread pool",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Thread",
         "experimental": false,
         "deprecated": false
     },
@@ -1084,7 +1117,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc",
+        "primitive_class": "Thread",
         "experimental": false,
         "deprecated": false
     },
@@ -1095,7 +1128,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc",
+        "primitive_class": "Thread",
         "experimental": false,
         "deprecated": false
     },
@@ -1106,7 +1139,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc",
+        "primitive_class": "Thread",
         "experimental": false,
         "deprecated": false
     },
@@ -1117,7 +1150,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc",
+        "primitive_class": "Thread",
         "experimental": false,
         "deprecated": false
     },
@@ -1298,6 +1331,28 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "shapes",
+        "description": "Validate the shapes of some arrays",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 0,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "types",
+        "description": "Validate the types of some arrays",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 0,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "stack",
         "description": "Debug print all stack values without popping them",
         "glyph": "?",
@@ -1331,13 +1386,46 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "stringify",
+        "description": "Convert code into a string instead of running it",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "signature",
+        "description": "Get the signature of a function",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 2,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "repr",
+        "description": "Convert a value to its code representation",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "&s",
         "description": "Print a nicely formatted representation of a value to stdout",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)",
+        "primitive_class": "StdIO",
         "experimental": false,
         "deprecated": false
     },
@@ -1348,7 +1436,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)",
+        "primitive_class": "StdIO",
         "experimental": false,
         "deprecated": false
     },
@@ -1359,7 +1447,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)",
+        "primitive_class": "StdIO",
         "experimental": false,
         "deprecated": false
     },
@@ -1370,7 +1458,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(StdIO)",
+        "primitive_class": "StdIO",
         "experimental": false,
         "deprecated": false
     },
@@ -1381,7 +1469,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)",
+        "primitive_class": "Env",
         "experimental": false,
         "deprecated": false
     },
@@ -1392,7 +1480,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)",
+        "primitive_class": "Env",
         "experimental": false,
         "deprecated": false
     },
@@ -1403,7 +1491,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)",
+        "primitive_class": "Env",
         "experimental": false,
         "deprecated": false
     },
@@ -1414,7 +1502,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Env)",
+        "primitive_class": "Env",
         "experimental": false,
         "deprecated": false
     },
@@ -1425,7 +1513,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Command)",
+        "primitive_class": "Command",
         "experimental": false,
         "deprecated": false
     },
@@ -1436,7 +1524,18 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 3,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Command)",
+        "primitive_class": "Command",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "&runs",
+        "description": "Run a command with streaming IO",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Command",
         "experimental": false,
         "deprecated": false
     },
@@ -1447,7 +1546,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1458,7 +1557,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Misc)",
+        "primitive_class": "Misc",
         "experimental": false,
         "deprecated": false
     },
@@ -1469,7 +1568,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)",
+        "primitive_class": "Stream",
         "experimental": false,
         "deprecated": false
     },
@@ -1480,7 +1579,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)",
+        "primitive_class": "Stream",
         "experimental": false,
         "deprecated": false
     },
@@ -1491,7 +1590,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)",
+        "primitive_class": "Stream",
         "experimental": false,
         "deprecated": false
     },
@@ -1502,7 +1601,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)",
+        "primitive_class": "Stream",
         "experimental": false,
         "deprecated": false
     },
@@ -1513,9 +1612,9 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "&invk",
@@ -1524,7 +1623,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Command)",
+        "primitive_class": "Command",
         "experimental": false,
         "deprecated": false
     },
@@ -1535,7 +1634,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Stream)",
+        "primitive_class": "Stream",
         "experimental": false,
         "deprecated": false
     },
@@ -1546,7 +1645,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1557,7 +1656,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1568,7 +1667,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1579,7 +1678,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1590,7 +1689,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1601,7 +1700,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1612,7 +1711,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1623,7 +1722,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1634,7 +1733,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1645,7 +1744,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Filesystem)",
+        "primitive_class": "Filesystem",
         "experimental": false,
         "deprecated": false
     },
@@ -1654,11 +1753,11 @@ const primitives=[
         "description": "Decode an image from a byte array",
         "glyph": null,
         "count_inputs": 1,
-        "count_outputs": 1,
+        "count_outputs": 2,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Images)",
+        "primitive_class": "Images",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "&ime",
@@ -1667,7 +1766,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Images)",
+        "primitive_class": "Images",
         "experimental": false,
         "deprecated": false
     },
@@ -1678,7 +1777,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Images)",
+        "primitive_class": "Images",
         "experimental": false,
         "deprecated": false
     },
@@ -1689,9 +1788,9 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 2,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Gifs)",
+        "primitive_class": "Gifs",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "&gife",
@@ -1700,7 +1799,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Gifs)",
+        "primitive_class": "Gifs",
         "experimental": false,
         "deprecated": false
     },
@@ -1711,7 +1810,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Gifs)",
+        "primitive_class": "Gifs",
         "experimental": false,
         "deprecated": false
     },
@@ -1720,11 +1819,11 @@ const primitives=[
         "description": "Decode audio from a byte array",
         "glyph": null,
         "count_inputs": 1,
-        "count_outputs": 1,
+        "count_outputs": 2,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)",
+        "primitive_class": "Audio",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "&ae",
@@ -1733,7 +1832,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)",
+        "primitive_class": "Audio",
         "experimental": false,
         "deprecated": false
     },
@@ -1744,7 +1843,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)",
+        "primitive_class": "Audio",
         "experimental": false,
         "deprecated": false
     },
@@ -1755,7 +1854,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Audio)",
+        "primitive_class": "Audio",
         "experimental": false,
         "deprecated": false
     },
@@ -1766,7 +1865,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": 1,
-        "primitive_class": "Sys(Audio)",
+        "primitive_class": "Audio",
         "experimental": false,
         "deprecated": false
     },
@@ -1777,7 +1876,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": false
     },
@@ -1788,7 +1887,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": false
     },
@@ -1799,7 +1898,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": false
     },
@@ -1810,7 +1909,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": false
     },
@@ -1821,7 +1920,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": false
     },
@@ -1832,7 +1931,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": false
     },
@@ -1843,7 +1942,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": false
     },
@@ -1854,8 +1953,19 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Sys(Tcp)",
+        "primitive_class": "Tcp",
         "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "&ffi",
+        "description": "Call a foreign function interface",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": true,
         "deprecated": false
     }
 ];

@@ -2,10 +2,12 @@
     "name": "uiua-keypad",
     "displayName": "Uiua Keypad",
     "description": "A keypad for the Uiua language",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "license": "MIT",
-	"publisher": "engineernick",
-	"author": {"name": "Nicholas Archer"},
+    "publisher": "engineernick",
+    "author": {
+        "name": "Nicholas Archer"
+    },
     "icon": "main-icon.png",
     "repository": {
         "url": "https://github.com/thehappycheese/uiua-keypad"
@@ -19,16 +21,22 @@
     "activationEvents": [],
     "main": "./dist/extension.js",
     "contributes": {
-        "commands":[
-            {"title": "uiua activate keypad", "command": "uiua_keypad.activate_keypad" },
-            {"title": "Write Glyph",          "command": "uiua_keypad.write_glyph"    }
+        "commands": [
+            {
+                "title": "uiua activate keypad",
+                "command": "uiua_keypad.activate_keypad"
+            },
+            {
+                "title": "Write Glyph",
+                "command": "uiua_keypad.write_glyph"
+            }
         ],
         "viewsContainers": {
             "activitybar": [
                 {
-                    "id":"uiua_view_container_id",
-                    "title":"Uiua Keypad",
-                    "icon":"./resources/uiua_keypad_icon.svg"
+                    "id": "uiua_view_container_id",
+                    "title": "Uiua Keypad",
+                    "icon": "./resources/uiua_keypad_icon.svg"
                 }
             ]
         },
@@ -39,8 +47,7 @@
                     "name": "Uiua Keypad",
                     "icon": "./resources/uiua_keypad_icon.svg",
                     "contextualTitle": "Uiua Keypad",
-                    
-                    "when":"resourceExtname == .ua"
+                    "when": "resourceExtname == .ua"
                 }
             ]
         },
@@ -63,18 +70,18 @@
         "test": "node ./out/test/runTest.js"
     },
     "devDependencies": {
-        "@types/vscode": "^1.82.0",
         "@types/mocha": "^10.0.2",
         "@types/node": "18.x",
+        "@types/vscode": "^1.82.0",
         "@typescript-eslint/eslint-plugin": "^6.7.3",
         "@typescript-eslint/parser": "^6.7.3",
+        "@vscode/test-electron": "^2.3.4",
         "eslint": "^8.50.0",
         "glob": "^10.3.3",
         "mocha": "^10.2.0",
-        "typescript": "^5.2.2",
         "ts-loader": "^9.4.4",
+        "typescript": "^5.2.2",
         "webpack": "^5.88.2",
-        "webpack-cli": "^5.1.4",
-        "@vscode/test-electron": "^2.3.4"
+        "webpack-cli": "^5.1.4"
     }
 }
