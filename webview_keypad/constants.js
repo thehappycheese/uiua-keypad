@@ -3,7 +3,7 @@ const constants=[
         "name": "e",
         "description": "Euler's constant",
         "value_type": "Numeric Array {:?}",
-        "value": "2.718281828459045",
+        "value": "Lazy { cell: OnceCell(2.718281828459045), init: \"..\" }",
         "count_inputs": 0,
         "count_outputs": 1
     },
@@ -19,7 +19,15 @@ const constants=[
         "name": "NaN",
         "description": "IEEE 754-2008's `NaN`",
         "value_type": "Numeric Array {:?}",
-        "value": "NaN",
+        "value": "Lazy { cell: OnceCell(NaN), init: \"..\" }",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "W",
+        "description": "The wildcard `NaN` value that equals any other number",
+        "value_type": "Numeric Array {:?}",
+        "value": "[system specific]",
         "count_inputs": 0,
         "count_outputs": 1
     },
@@ -83,6 +91,78 @@ const constants=[
         "name": "NumProcs",
         "description": "The number of processors available",
         "value_type": "Numeric Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "Days",
+        "description": "The days of the week",
+        "value_type": "Box Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "Months",
+        "description": "The months of the year",
+        "value_type": "Box Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "MonthDays",
+        "description": "The number of days in each month in a non-leap year",
+        "value_type": "Byte Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "LeapMonthDays",
+        "description": "The number of days in each month in a leap year",
+        "value_type": "Byte Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "Planets",
+        "description": "The planets of the solar system",
+        "value_type": "Box Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "Zodiac",
+        "description": "The symbols of the zodiac",
+        "value_type": "Box Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "Suits",
+        "description": "The suits of a standard deck of playing cards",
+        "value_type": "Char Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "Cards",
+        "description": "The ranks of a standard deck of playing cards",
+        "value_type": "Box Array {:?}",
+        "value": "[system specific]",
+        "count_inputs": 0,
+        "count_outputs": 1
+    },
+    {
+        "name": "Chess",
+        "description": "The symbols of the standard chess pieces",
+        "value_type": "Char Array {:?}",
         "value": "[system specific]",
         "count_inputs": 0,
         "count_outputs": 1

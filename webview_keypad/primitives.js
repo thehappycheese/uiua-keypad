@@ -112,7 +112,7 @@ const primitives=[
     {
         "name": "sine",
         "description": "Get the sine of a number",
-        "glyph": "○",
+        "glyph": "∿",
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
@@ -671,6 +671,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "mask",
+        "description": "Mask the occurences of one array in another",
+        "glyph": "⦷",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "member",
         "description": "Check if each row of one array exists in another",
         "glyph": "∊",
@@ -690,6 +701,17 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "DyadicArray",
         "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "coordinate",
+        "description": "Find the first deep index of one array in another",
+        "glyph": "⟔",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": true,
         "deprecated": false
     },
     {
@@ -760,7 +782,7 @@ const primitives=[
     },
     {
         "name": "inventory",
-        "description": "Apply a function to each unboxed row of an array and re-box the results",
+        "description": "Apply a function to each unboxed item of an array and re-box the results",
         "glyph": "⍚",
         "count_inputs": null,
         "count_outputs": 1,
@@ -768,17 +790,6 @@ const primitives=[
         "primitive_class": "IteratingModifier",
         "experimental": false,
         "deprecated": false
-    },
-    {
-        "name": "cross",
-        "description": "Apply a function to each combination of rows of arrays",
-        "glyph": "⊠",
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "IteratingModifier",
-        "experimental": false,
-        "deprecated": true
     },
     {
         "name": "repeat",
@@ -812,17 +823,6 @@ const primitives=[
         "primitive_class": "AggregatingModifier",
         "experimental": false,
         "deprecated": false
-    },
-    {
-        "name": "unpack",
-        "description": "Apply a function with implicit unboxing",
-        "glyph": "⊐",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
-        "experimental": false,
-        "deprecated": true
     },
     {
         "name": "content",
@@ -864,8 +864,19 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "Planet",
+        "primitive_class": "Stack",
         "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "by",
+        "description": "Duplicate a function's last argument before calling it",
+        "glyph": "⊸",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Stack",
+        "experimental": true,
         "deprecated": false
     },
     {
@@ -888,7 +899,7 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "OtherModifier",
         "experimental": true,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "un",
@@ -900,17 +911,6 @@ const primitives=[
         "primitive_class": "InversionModifier",
         "experimental": false,
         "deprecated": false
-    },
-    {
-        "name": "rectify",
-        "description": "Set a function as its own inverse",
-        "glyph": "⌅",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "InversionModifier",
-        "experimental": true,
-        "deprecated": true
     },
     {
         "name": "setinv",
@@ -936,7 +936,7 @@ const primitives=[
     },
     {
         "name": "under",
-        "description": "Apply a function under another",
+        "description": "Operate on a transformed array, then reverse the transformation",
         "glyph": "⍜",
         "count_inputs": null,
         "count_outputs": 1,
@@ -1174,7 +1174,7 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "regex",
@@ -1283,7 +1283,7 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Map",
-        "experimental": true,
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -1294,7 +1294,7 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Map",
-        "experimental": true,
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -1305,7 +1305,7 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Map",
-        "experimental": true,
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -1316,7 +1316,7 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Map",
-        "experimental": true,
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -1327,7 +1327,7 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Map",
-        "experimental": true,
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -1339,7 +1339,7 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "OtherModifier",
         "experimental": true,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "types",
@@ -1350,7 +1350,7 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "OtherModifier",
         "experimental": true,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "stack",
@@ -1387,7 +1387,18 @@ const primitives=[
     },
     {
         "name": "stringify",
-        "description": "Convert code into a string instead of running it",
+        "description": "Convert code into a string instead of compiling it",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "OtherModifier",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "quote",
+        "description": "Convert a string into code at compile time",
         "glyph": null,
         "count_inputs": 0,
         "count_outputs": 1,
@@ -1405,6 +1416,17 @@ const primitives=[
         "count_modifier_inputs": 1,
         "primitive_class": "OtherModifier",
         "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "csv",
+        "description": "Encode an array into a CSV string",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -1551,6 +1573,28 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "&clget",
+        "description": "Get the contents of the clipboard",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "&clset",
+        "description": "Set the contents of the clipboard",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "&sl",
         "description": "Sleep for n seconds",
         "glyph": null,
@@ -1604,17 +1648,6 @@ const primitives=[
         "primitive_class": "Stream",
         "experimental": false,
         "deprecated": false
-    },
-    {
-        "name": "&i",
-        "description": "Import an item from a file",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Filesystem",
-        "experimental": false,
-        "deprecated": true
     },
     {
         "name": "&invk",
@@ -1948,7 +1981,7 @@ const primitives=[
     },
     {
         "name": "&httpsw",
-        "description": "Make an HTTP request",
+        "description": "Make an HTTP(S) request",
         "glyph": null,
         "count_inputs": 2,
         "count_outputs": 1,

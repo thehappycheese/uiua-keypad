@@ -1,3 +1,4 @@
+use std::ops::Deref;
 use serde::Serialize;
 
 #[derive(Serialize)]
@@ -11,12 +12,12 @@ pub struct ConstantData {
 }
 
 pub fn get_constants() -> Vec<ConstantData> {
-    uiua::constants()
+    uiua::CONSTANTS
         .iter()
         .map(|constant| ConstantData {
             name: constant.name.to_owned(),
             description: constant.doc.trim().to_owned(),
-            value_type: match &constant.value {
+            value_type: match &constant.value.deref() {
                 // TODO: just extracting shape for test. Want to convert value to string;
                 uiua::Value::Num(_) => "Numeric Array {:?}".to_owned(),
                 uiua::Value::Complex(_) => "Complex Array {:?}".to_owned(),

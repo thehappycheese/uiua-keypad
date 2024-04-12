@@ -3,6 +3,10 @@
 All notable changes to the "uiua-keypad" extension will be documented in this
 file.
 
+## [0.2.4] - 2024-04-12
+
+- Upgrade to uiua v0.10.3
+
 ## [0.2.3] - 2024-03-12
 
 - upgrade to uiua v0.9.0

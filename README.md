@@ -5,8 +5,7 @@
 > Hopefully this extension can be merged with the official extension, or
 > replaced in the future if something better comes along.
 
-Targets the latest version released on crates.io (i.e. the version installed by
-`cargo install uiua`)
+As at 2024-04-12, targets `uiua v0.10.3`
 
 ![keypad screenshot](https://github.com/thehappycheese/uiua-keypad/raw/main/resources/screenshot.png)
 

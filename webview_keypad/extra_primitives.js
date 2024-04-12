@@ -41,6 +41,17 @@ const extra_primitives = [
         "docs":"functions#inline-functions"
     },
     {
+        "name": "switch",
+        "description": "",
+        "glyph": "⟨⟩",
+        "count_inputs": null,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Syntax",
+        "docs":"controlflow#switch"
+    },
+    
+    {
         "name": "character",
         "description": "",
         "glyph": "@",
@@ -71,6 +82,16 @@ const extra_primitives = [
         "docs":"types#characters"
     },
     {
+        "name": "macro",
+        "description": "",
+        "glyph": "!",
+        "count_inputs": null,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Syntax",
+        "docs":"macros"
+    },
+    {
         "name": "placeholder",
         "description": "Create custom modifiers",
         "glyph": "^",
@@ -89,6 +110,26 @@ const extra_primitives = [
         "count_modifier_inputs": null,
         "primitive_class": "Syntax",
         "docs":"bindings"
+    },
+    {
+        "name": "private binding",
+        "description": "",
+        "glyph": "↚",
+        "count_inputs": null,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Syntax",
+        "docs":"modules#visibility"
+    },
+    {
+        "name": "import",
+        "description": "",
+        "glyph": "~",
+        "count_inputs": null,
+        "count_outputs": null,
+        "count_modifier_inputs": null,
+        "primitive_class": "Syntax",
+        "docs":"modules"
     },
     {
         "name": "signature / terminator",
