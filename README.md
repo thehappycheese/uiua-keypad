@@ -5,7 +5,7 @@
 > Hopefully this extension can be merged with the official extension, or
 > replaced in the future if something better comes along.
 
-As at 2024-04-12, targets `uiua v0.10.3`
+As at 2024-06-17, targets `uiua v0.11.1` (aiming at latest version published at https://crates.io/crates/uiua)
 
 ![keypad screenshot](https://github.com/thehappycheese/uiua-keypad/raw/main/resources/screenshot.png)
 

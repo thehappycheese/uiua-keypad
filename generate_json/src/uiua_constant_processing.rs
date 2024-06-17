@@ -1,5 +1,5 @@
-use std::ops::Deref;
 use serde::Serialize;
+use uiua::{ConstantDef, ConstantValue};
 
 #[derive(Serialize)]
 pub struct ConstantData {
@@ -14,20 +14,22 @@ pub struct ConstantData {
 pub fn get_constants() -> Vec<ConstantData> {
     uiua::CONSTANTS
         .iter()
-        .map(|constant| ConstantData {
-            name: constant.name.to_owned(),
-            description: constant.doc.trim().to_owned(),
-            value_type: match &constant.value.deref() {
-                // TODO: just extracting shape for test. Want to convert value to string;
-                uiua::Value::Num(_) => "Numeric Array {:?}".to_owned(),
-                uiua::Value::Complex(_) => "Complex Array {:?}".to_owned(),
-                uiua::Value::Char(_) => "Char Array {:?}".to_owned(),
-                uiua::Value::Box(_) => "Box Array {:?}".to_owned(),
-                uiua::Value::Byte(_) => "Byte Array {:?}".to_owned(),
-            },
-            value: match constant.name {
-                "e"|"NaN" => format!("{:?}", constant.value),
-                _ => "[system specific]".to_owned()
+        .map(|ConstantDef{name, value, doc}| ConstantData {
+            name: name.to_string(),
+            description: doc.trim().to_owned(),
+            value_type: "UNKNOWN".to_owned(),
+            value: match once_cell::sync::Lazy::<ConstantValue>::force(&value) {
+                ConstantValue::Static(value)=>match value{
+                    uiua::Value::Box    (_)=>"Box(...)".to_owned(),
+                    uiua::Value::Byte   (_)=>"Byte(..)".to_owned(),
+                    uiua::Value::Char   (_)=>"Char(..)".to_owned(),
+                    uiua::Value::Complex(_)=>"Complex(..)".to_owned(),
+                    uiua::Value::Num    (_)=>"Num(..)".to_owned(),
+                },
+                ConstantValue::ThisFile=>"[this file]".to_owned(),
+                ConstantValue::ThisFileName=>"[this file name]".to_owned(),
+                ConstantValue::ThisFileDir=>"[this file dir]".to_owned(),
+                ConstantValue::WorkingDir=>"[working directory]".to_owned()
             },
             count_inputs: 0,
             count_outputs: 1,

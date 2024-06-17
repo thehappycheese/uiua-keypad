@@ -749,7 +749,7 @@ const primitives=[
     },
     {
         "name": "each",
-        "description": "Apply a function to each element of an array or arrays.",
+        "description": "Apply a function to each element of an array or arrays",
         "glyph": "∵",
         "count_inputs": null,
         "count_outputs": 1,
@@ -876,7 +876,7 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": 1,
         "primitive_class": "Stack",
-        "experimental": true,
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -889,17 +889,6 @@ const primitives=[
         "primitive_class": "Planet",
         "experimental": false,
         "deprecated": false
-    },
-    {
-        "name": "bind",
-        "description": "Bind local values",
-        "glyph": "λ",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
-        "experimental": true,
-        "deprecated": true
     },
     {
         "name": "un",
@@ -957,17 +946,6 @@ const primitives=[
         "deprecated": false
     },
     {
-        "name": "cascade",
-        "description": "Call one function after another, reusing some values",
-        "glyph": "⪾",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "Planet",
-        "experimental": true,
-        "deprecated": true
-    },
-    {
         "name": "bracket",
         "description": "Call two functions on two distinct sets of values",
         "glyph": "⊓",
@@ -977,17 +955,6 @@ const primitives=[
         "primitive_class": "Planet",
         "experimental": false,
         "deprecated": false
-    },
-    {
-        "name": "all",
-        "description": "Call a function on many distinct sets of values",
-        "glyph": "⋔",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 2,
-        "primitive_class": "Planet",
-        "experimental": true,
-        "deprecated": true
     },
     {
         "name": "do",
@@ -1032,28 +999,6 @@ const primitives=[
         "primitive_class": "Misc",
         "experimental": false,
         "deprecated": false
-    },
-    {
-        "name": "this",
-        "description": "Set a function to recur to",
-        "glyph": "↬",
-        "count_inputs": null,
-        "count_outputs": 1,
-        "count_modifier_inputs": 1,
-        "primitive_class": "Misc",
-        "experimental": true,
-        "deprecated": true
-    },
-    {
-        "name": "recur",
-        "description": "Call a function recursively",
-        "glyph": "↫",
-        "count_inputs": 0,
-        "count_outputs": null,
-        "count_modifier_inputs": null,
-        "primitive_class": "Misc",
-        "experimental": true,
-        "deprecated": true
     },
     {
         "name": "random",
@@ -1194,7 +1139,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc",
+        "primitive_class": "Encoding",
         "experimental": false,
         "deprecated": false
     },
@@ -1331,28 +1276,6 @@ const primitives=[
         "deprecated": false
     },
     {
-        "name": "shapes",
-        "description": "Validate the shapes of some arrays",
-        "glyph": null,
-        "count_inputs": 0,
-        "count_outputs": 0,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
-        "experimental": true,
-        "deprecated": true
-    },
-    {
-        "name": "types",
-        "description": "Validate the types of some arrays",
-        "glyph": null,
-        "count_inputs": 0,
-        "count_outputs": 0,
-        "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
-        "experimental": true,
-        "deprecated": true
-    },
-    {
         "name": "stack",
         "description": "Debug print all stack values without popping them",
         "glyph": "?",
@@ -1419,13 +1342,35 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "json",
+        "description": "Encode an array into a JSON string",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Encoding",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "csv",
         "description": "Encode an array into a CSV string",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc",
+        "primitive_class": "Encoding",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "xlsx",
+        "description": "Encode an array into XLSX bytes",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Encoding",
         "experimental": false,
         "deprecated": false
     },
@@ -1437,7 +1382,7 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
-        "experimental": true,
+        "experimental": false,
         "deprecated": false
     },
     {
@@ -1492,6 +1437,17 @@ const primitives=[
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Env",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "&exit",
+        "description": "Exit the program with a status code",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
         "experimental": false,
         "deprecated": false
     },
@@ -1607,7 +1563,7 @@ const primitives=[
     },
     {
         "name": "&rs",
-        "description": "Read at most n bytes from a stream",
+        "description": "Read characters formed by at most n bytes from a stream",
         "glyph": null,
         "count_inputs": 2,
         "count_outputs": 1,
@@ -1914,8 +1870,19 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "&tlsl",
+        "description": "Create a TLS listener and bind it to an address",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Tcp",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "&tcpa",
-        "description": "Accept a connection with a TCP listener",
+        "description": "Accept a connection with a TCP or TLS listener",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 1,
@@ -1927,6 +1894,17 @@ const primitives=[
     {
         "name": "&tcpc",
         "description": "Create a TCP socket and connect it to an address",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Tcp",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "&tlsc",
+        "description": "Create a TCP socket with TLS support",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 1,
@@ -1988,7 +1966,7 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "Tcp",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "&ffi",
@@ -1997,7 +1975,29 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Misc",
+        "primitive_class": "Ffi",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "&memcpy",
+        "description": "Copy data from a pointer into an array",
+        "glyph": null,
+        "count_inputs": 3,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Ffi",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "&memfree",
+        "description": "Free a pointer",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Ffi",
         "experimental": true,
         "deprecated": false
     }

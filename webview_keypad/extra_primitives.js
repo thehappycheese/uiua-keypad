@@ -149,6 +149,6 @@ const extra_primitives = [
         "count_outputs": null,
         "count_modifier_inputs": null,
         "primitive_class": "Comment",
-        "docs":"basic#comments"
+        "docs":"tutorial/basic#comments"
     }
 ]
