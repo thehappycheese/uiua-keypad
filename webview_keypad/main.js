@@ -35,9 +35,12 @@ function set_tooltip(primitive) {
             tooltip_subtitle.innerText = "⚠️ Deprecated: " + tooltip_subtitle.innerText;
         }else if(primitive.experimental){
             periodic_glyph_div.classList.add("experimental");
-            tooltip_subtitle.innerText = "🧪 Experimental: "+tooltip_subtitle.innerText
+            tooltip_subtitle.innerText = "🧪 Experimental: "+tooltip_subtitle.innerText;
         }
-        periodic_signature_div.innerText = primitive_signature(primitive)
+        if (primitive.class){
+            tooltip_subtitle.innerText=primitive.class+": "+tooltip_subtitle.innerText;
+        }
+        periodic_signature_div.innerText = primitive_signature(primitive);
         const indicatorsMap = {
             "Pervasive"   : "🐜",
             "Array"       : "🐟",
@@ -53,13 +56,13 @@ function set_tooltip(primitive) {
             (acc, key) => primitive.primitive_class?.includes(key) ? acc + indicatorsMap[key] : acc,
             ""
         );
-        periodic_pervasive.innerText = other_indicators
-    }
+        periodic_pervasive.innerText = other_indicators;
+    };
 };
 const clear_tooltip = () => {
     tooltip_title.innerHTML    = "&nbsp;";
     tooltip_subtitle.innerHTML = "&nbsp;";
-}
+};
 
 /**
  * 

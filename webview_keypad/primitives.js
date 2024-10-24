@@ -22,6 +22,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "around",
+        "description": "Duplicate the top value on the stack to the third-to-top position",
+        "glyph": "’",
+        "count_inputs": 2,
+        "count_outputs": 3,
+        "count_modifier_inputs": null,
+        "primitive_class": "Stack",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "flip",
         "description": "Swap the top two values on the stack",
         "glyph": ":",
@@ -385,6 +396,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "last",
+        "description": "Get the last row of an array",
+        "glyph": "⊣",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "MonadicArray",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "reverse",
         "description": "Reverse the rows of an array",
         "glyph": "⇌",
@@ -440,6 +462,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "sort",
+        "description": "Sort an array",
+        "glyph": "⍆",
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "MonadicArray",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "rise",
         "description": "Get the indices into an array if it were sorted ascending",
         "glyph": "⍏",
@@ -474,7 +507,7 @@ const primitives=[
     },
     {
         "name": "classify",
-        "description": "Assign a unique index to each unique element in an array",
+        "description": "Assign a unique index to each unique row in an array",
         "glyph": "⊛",
         "count_inputs": 1,
         "count_outputs": 1,
@@ -485,7 +518,7 @@ const primitives=[
     },
     {
         "name": "deduplicate",
-        "description": "Remove duplicate elements from an array",
+        "description": "Remove duplicate rows from an array",
         "glyph": "◴",
         "count_inputs": 1,
         "count_outputs": 1,
@@ -606,7 +639,7 @@ const primitives=[
     },
     {
         "name": "take",
-        "description": "Take the first n elements of an array",
+        "description": "Take the first n rows of an array",
         "glyph": "↙",
         "count_inputs": 2,
         "count_outputs": 1,
@@ -617,7 +650,7 @@ const primitives=[
     },
     {
         "name": "drop",
-        "description": "Drop the first n elements of an array",
+        "description": "Drop the first n rows of an array",
         "glyph": "↘",
         "count_inputs": 2,
         "count_outputs": 1,
@@ -638,6 +671,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "orient",
+        "description": "Change the order of the axes of an array",
+        "glyph": "⤸",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "windows",
         "description": "The n-wise windows of an array",
         "glyph": "◫",
@@ -647,6 +691,17 @@ const primitives=[
         "primitive_class": "DyadicArray",
         "experimental": false,
         "deprecated": false
+    },
+    {
+        "name": "chunks",
+        "description": "Get the n-wise chunks of an array",
+        "glyph": "⑄",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": true,
+        "deprecated": true
     },
     {
         "name": "keep",
@@ -682,6 +737,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "memberof",
+        "description": "Check if each row of one array exists in another",
+        "glyph": "∈",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "member",
         "description": "Check if each row of one array exists in another",
         "glyph": "∊",
@@ -690,7 +756,7 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "DyadicArray",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "indexof",
@@ -704,9 +770,9 @@ const primitives=[
         "deprecated": false
     },
     {
-        "name": "coordinate",
-        "description": "Find the first deep index of one array in another",
-        "glyph": "⟔",
+        "name": "base",
+        "description": "Get the base digits of a number",
+        "glyph": null,
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
@@ -715,10 +781,43 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "choose",
+        "description": "Get all combinations of k rows from an array",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": true,
+        "deprecated": true
+    },
+    {
+        "name": "permute",
+        "description": "Get all permutations of k rows from an array",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": true,
+        "deprecated": true
+    },
+    {
+        "name": "coordinate",
+        "description": "Find the first deep index of one array in another",
+        "glyph": "⟔",
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "DyadicArray",
+        "experimental": true,
+        "deprecated": true
+    },
+    {
         "name": "reduce",
         "description": "Apply a reducing function to an array",
         "glyph": "/",
-        "count_inputs": 1,
+        "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
         "primitive_class": "AggregatingModifier",
@@ -771,9 +870,9 @@ const primitives=[
     },
     {
         "name": "table",
-        "description": "Apply a function to each combination of rows of two arrays",
+        "description": "Apply a function to each combination of rows of some arrays",
         "glyph": "⊞",
-        "count_inputs": 2,
+        "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
         "primitive_class": "IteratingModifier",
@@ -781,8 +880,19 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "tuples",
+        "description": "Get permutations or combinations of an array",
+        "glyph": "⧅",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "IteratingModifier",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "inventory",
-        "description": "Apply a function to each unboxed item of an array and re-box the results",
+        "description": "Apply a function to each unboxed row of an array and re-box the results",
         "glyph": "⍚",
         "count_inputs": null,
         "count_outputs": 1,
@@ -823,6 +933,17 @@ const primitives=[
         "primitive_class": "AggregatingModifier",
         "experimental": false,
         "deprecated": false
+    },
+    {
+        "name": "triangle",
+        "description": "Apply a function to each shrinking row of an array",
+        "glyph": "◹",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "AggregatingModifier",
+        "experimental": true,
+        "deprecated": true
     },
     {
         "name": "content",
@@ -880,10 +1001,65 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "with",
+        "description": "Call a function but keep its last argument on the top of the stack",
+        "glyph": "⤙",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "off",
+        "description": "Call a function but keep its first argument under the outputs on the stack",
+        "glyph": "⤚",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Stack",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "above",
+        "description": "Keep all arguments to a function above the outputs on the stack",
+        "glyph": "◠",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Stack",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "below",
+        "description": "Keep all arguments to a function below the outputs on the stack",
+        "glyph": "◡",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Stack",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "backward",
+        "description": "Call a function with its arguments reversed",
+        "glyph": "˜",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Stack",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
         "name": "both",
         "description": "Call a function on two sets of values",
         "glyph": "∩",
-        "count_inputs": 2,
+        "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
         "primitive_class": "Planet",
@@ -891,9 +1067,31 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "obverse",
+        "description": "Define the various inverses of a function",
+        "glyph": "⌅",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "InversionModifier",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "un",
         "description": "Invert the behavior of a function",
         "glyph": "°",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "InversionModifier",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "anti",
+        "description": "Invert the behavior of a function, treating its first argument as a constant",
+        "glyph": "⌝",
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
@@ -910,7 +1108,7 @@ const primitives=[
         "count_modifier_inputs": 2,
         "primitive_class": "InversionModifier",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "setund",
@@ -921,7 +1119,7 @@ const primitives=[
         "count_modifier_inputs": 3,
         "primitive_class": "InversionModifier",
         "experimental": false,
-        "deprecated": false
+        "deprecated": true
     },
     {
         "name": "under",
@@ -979,6 +1177,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "switch",
+        "description": "Call the function at the given index",
+        "glyph": "⨬",
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 2,
+        "primitive_class": "OtherModifier",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "try",
         "description": "Call a function and catch errors",
         "glyph": "⍣",
@@ -987,6 +1196,17 @@ const primitives=[
         "count_modifier_inputs": 2,
         "primitive_class": "Misc",
         "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "case",
+        "description": "Call a pattern matching case",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 1,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Misc",
+        "experimental": true,
         "deprecated": false
     },
     {
@@ -1029,7 +1249,7 @@ const primitives=[
         "count_inputs": null,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
+        "primitive_class": "Comptime",
         "experimental": false,
         "deprecated": false
     },
@@ -1101,25 +1321,14 @@ const primitives=[
     },
     {
         "name": "gen",
-        "description": "Generate a random number between 0 and 1 from a seed, as well as the next seed",
-        "glyph": null,
-        "count_inputs": 1,
-        "count_outputs": 2,
-        "count_modifier_inputs": null,
-        "primitive_class": "Misc",
-        "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "deal",
-        "description": "Randomly reorder the rows of an array with a seed",
+        "description": "Generate an array of random numbers with a seed",
         "glyph": null,
         "count_inputs": 2,
         "count_outputs": 1,
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
         "experimental": false,
-        "deprecated": true
+        "deprecated": false
     },
     {
         "name": "regex",
@@ -1133,8 +1342,19 @@ const primitives=[
         "deprecated": false
     },
     {
-        "name": "utf",
+        "name": "utf₈",
         "description": "Convert a string to UTF-8 bytes",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Encoding",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "graphemes",
+        "description": "Convert a string to a list of UTF-8 grapheme clusters",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 1,
@@ -1168,6 +1388,28 @@ const primitives=[
     {
         "name": "now",
         "description": "Get the current time in seconds",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "datetime",
+        "description": "Get the date and time information from a time",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "timezone",
+        "description": "Get the local timezone offset",
         "glyph": null,
         "count_inputs": 0,
         "count_outputs": 1,
@@ -1222,7 +1464,7 @@ const primitives=[
     },
     {
         "name": "map",
-        "description": "Create a hashmap from lists of keys and values",
+        "description": "Create a hashmap from a list of keys and list values",
         "glyph": null,
         "count_inputs": 2,
         "count_outputs": 1,
@@ -1282,7 +1524,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack",
+        "primitive_class": "Debug",
         "experimental": false,
         "deprecated": false
     },
@@ -1293,18 +1535,18 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Stack",
+        "primitive_class": "Debug",
         "experimental": false,
         "deprecated": false
     },
     {
         "name": "dump",
-        "description": "Debug print all the values currently on stack without popping them",
+        "description": "Preprocess and print all stack values without popping them",
         "glyph": null,
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": 1,
-        "primitive_class": "Stack",
+        "primitive_class": "Debug",
         "experimental": false,
         "deprecated": false
     },
@@ -1315,7 +1557,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
+        "primitive_class": "Comptime",
         "experimental": true,
         "deprecated": false
     },
@@ -1326,7 +1568,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
+        "primitive_class": "Comptime",
         "experimental": true,
         "deprecated": false
     },
@@ -1337,7 +1579,40 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 2,
         "count_modifier_inputs": 1,
-        "primitive_class": "OtherModifier",
+        "primitive_class": "Comptime",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "struct",
+        "description": "Generate a constructor and getters for a struct",
+        "glyph": null,
+        "count_inputs": 0,
+        "count_outputs": 0,
+        "count_modifier_inputs": 1,
+        "primitive_class": "Misc",
+        "experimental": true,
+        "deprecated": true
+    },
+    {
+        "name": "fft",
+        "description": "Run the Fast Fourier Transform on an array",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": true,
+        "deprecated": false
+    },
+    {
+        "name": "astar",
+        "description": "Find shortest paths in a graph",
+        "glyph": null,
+        "count_inputs": null,
+        "count_outputs": 2,
+        "count_modifier_inputs": 3,
+        "primitive_class": "Misc",
         "experimental": true,
         "deprecated": false
     },
@@ -1383,6 +1658,50 @@ const primitives=[
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
         "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "img",
+        "description": "Encode an image into a byte array with the specified format",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Encoding",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "gif",
+        "description": "Encode a gif into a byte array",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Encoding",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "audio",
+        "description": "Encode audio into a byte array",
+        "glyph": null,
+        "count_inputs": 3,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Encoding",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
+        "name": "layout",
+        "description": "Render text into an image array",
+        "glyph": null,
+        "count_inputs": 2,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Encoding",
+        "experimental": true,
         "deprecated": false
     },
     {
@@ -1511,7 +1830,7 @@ const primitives=[
         "description": "Run a command with streaming IO",
         "glyph": null,
         "count_inputs": 1,
-        "count_outputs": 1,
+        "count_outputs": 3,
         "count_modifier_inputs": null,
         "primitive_class": "Command",
         "experimental": false,
@@ -1529,22 +1848,11 @@ const primitives=[
         "deprecated": false
     },
     {
-        "name": "&clget",
+        "name": "&clip",
         "description": "Get the contents of the clipboard",
         "glyph": null,
         "count_inputs": 0,
         "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Misc",
-        "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "&clset",
-        "description": "Set the contents of the clipboard",
-        "glyph": null,
-        "count_inputs": 1,
-        "count_outputs": 0,
         "count_modifier_inputs": null,
         "primitive_class": "Misc",
         "experimental": false,
@@ -1650,6 +1958,17 @@ const primitives=[
         "deprecated": false
     },
     {
+        "name": "&fmd",
+        "description": "Create a directory",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 0,
+        "count_modifier_inputs": null,
+        "primitive_class": "Filesystem",
+        "experimental": false,
+        "deprecated": false
+    },
+    {
         "name": "&fde",
         "description": "Delete a file or directory",
         "glyph": null,
@@ -1673,7 +1992,7 @@ const primitives=[
     },
     {
         "name": "&fe",
-        "description": "Check if a file exists at a path",
+        "description": "Check if a file, directory, or symlink exists at a path",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 1,
@@ -1738,57 +2057,13 @@ const primitives=[
         "deprecated": false
     },
     {
-        "name": "&imd",
-        "description": "Decode an image from a byte array",
-        "glyph": null,
-        "count_inputs": 1,
-        "count_outputs": 2,
-        "count_modifier_inputs": null,
-        "primitive_class": "Images",
-        "experimental": false,
-        "deprecated": true
-    },
-    {
-        "name": "&ime",
-        "description": "Encode an image into a byte array with the specified format",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Images",
-        "experimental": false,
-        "deprecated": false
-    },
-    {
         "name": "&ims",
         "description": "Show an image",
         "glyph": null,
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Images",
-        "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "&gifd",
-        "description": "Decode a gif from a byte array",
-        "glyph": null,
-        "count_inputs": 1,
-        "count_outputs": 2,
-        "count_modifier_inputs": null,
-        "primitive_class": "Gifs",
-        "experimental": false,
-        "deprecated": true
-    },
-    {
-        "name": "&gife",
-        "description": "Encode a gif into a byte array",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Gifs",
+        "primitive_class": "Media",
         "experimental": false,
         "deprecated": false
     },
@@ -1799,29 +2074,7 @@ const primitives=[
         "count_inputs": 2,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Gifs",
-        "experimental": false,
-        "deprecated": false
-    },
-    {
-        "name": "&ad",
-        "description": "Decode audio from a byte array",
-        "glyph": null,
-        "count_inputs": 1,
-        "count_outputs": 2,
-        "count_modifier_inputs": null,
-        "primitive_class": "Audio",
-        "experimental": false,
-        "deprecated": true
-    },
-    {
-        "name": "&ae",
-        "description": "Encode audio into a byte array",
-        "glyph": null,
-        "count_inputs": 2,
-        "count_outputs": 1,
-        "count_modifier_inputs": null,
-        "primitive_class": "Audio",
+        "primitive_class": "Media",
         "experimental": false,
         "deprecated": false
     },
@@ -1832,7 +2085,7 @@ const primitives=[
         "count_inputs": 1,
         "count_outputs": 0,
         "count_modifier_inputs": null,
-        "primitive_class": "Audio",
+        "primitive_class": "Media",
         "experimental": false,
         "deprecated": false
     },
@@ -1843,7 +2096,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 1,
         "count_modifier_inputs": null,
-        "primitive_class": "Audio",
+        "primitive_class": "Media",
         "experimental": false,
         "deprecated": false
     },
@@ -1854,7 +2107,7 @@ const primitives=[
         "count_inputs": 0,
         "count_outputs": 0,
         "count_modifier_inputs": 1,
-        "primitive_class": "Audio",
+        "primitive_class": "Media",
         "experimental": false,
         "deprecated": false
     },
@@ -1967,6 +2220,17 @@ const primitives=[
         "primitive_class": "Tcp",
         "experimental": false,
         "deprecated": true
+    },
+    {
+        "name": "&camcap",
+        "description": "Capture an image from a webcam",
+        "glyph": null,
+        "count_inputs": 1,
+        "count_outputs": 1,
+        "count_modifier_inputs": null,
+        "primitive_class": "Misc",
+        "experimental": false,
+        "deprecated": false
     },
     {
         "name": "&ffi",

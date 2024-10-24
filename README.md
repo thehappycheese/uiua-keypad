@@ -5,7 +5,7 @@
 > Hopefully this extension can be merged with the official extension, or
 > replaced in the future if something better comes along.
 
-As at 2024-06-17, targets `uiua v0.11.1` (aiming at latest version published at https://crates.io/crates/uiua)
+As at 2024-10-24, targets `uiua v0.13.0` (aiming at latest version published at https://crates.io/crates/uiua)
 
 ![keypad screenshot](https://github.com/thehappycheese/uiua-keypad/raw/main/resources/screenshot.png)
 
@@ -23,18 +23,6 @@ https://www.youtube.com/watch?v=-VOxSNyaLTg
 
 [![Uiua-Talon Youtube Intro](https://img.youtube.com/vi/-VOxSNyaLTg/0.jpg)](https://www.youtube.com/watch?v=-VOxSNyaLTg)
 
-## Choice of Primitive Class Indicators
-
-| Concept      | Symbol | Explanation |
-|--------------|:------:|-------------|
-| Pervasive    | 🐜     | Get everywhere; apply to every *element*. |
-| Array        | 🐟     | Swim in schools; operate on *arrays*. |
-| Aggregating  | 🧺     | Collect items into a single grouping. |
-| Planet       | 🪐     | Probe into the *stack* |
-| Ocean        | 🌊     | Plumb the depths of your array  *ranks* |
-| Control      | 🕹️     | Get in the flow |
-| Iterating    | 🍇     | One by one |
-| Stack        | 🥞     | Flip! |
 
 ## Known Issues
 
